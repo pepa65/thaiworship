@@ -2,6 +2,8 @@
 ##
 ## worship.sh
 ##
+## Worship v0.5 Copyright 2016 OMF International under a GPL-3.0 license
+##
 ## Makes a single-webpage application (html,css,javascript) with all the songs, combining:
 ##  head_file (html-head), songs_file (song content), index_file (song indexes), js_file (javascript) and css_file (css)
 ## Expects these files in the same directory, and outputs worship.html
