@@ -1,7 +1,11 @@
-# Single-page browser application for song lyrics display
+# worship v0.5
 
-The bash script worship.sh builds the single-page browser application worship.html
-from the html-head file worship.head, the javascript code part worship.js 
-and the CSS style sheet worship.css
+## Single-page browser application for song lyrics display
 
-The content is provided by the files worship.songs and worship.index
+The bash script `worship.sh` builds the single-page browser application `worship.html`
+from the html-head file `worship.head`, the javascript code part `worship.js` 
+and the CSS style sheet `worship.css`.
+
+The content is provided by the files `worship.songs` and `worship.index`
+
+[View the output](https://pepa65.github.io/thaiworship)
