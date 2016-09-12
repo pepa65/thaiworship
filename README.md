@@ -8,7 +8,7 @@ and the CSS style sheet `worship.css`.
 
 The content is provided by the files `worship.songs` and `worship.index`
 
-[View the output](https://pepa65.github.io/thaiworship)
+[View the output](https://pepa65.github.io/thaiworship/index/html)
 
 # worshipp v0.5
 
@@ -19,5 +19,5 @@ from the html-head file `worshipp.head` and the CSS style sheet `worshipp.css`.
 
 The content is provided by the files `worship.songs` and `worship.index`
 
-[View the output](https://pepa65.github.io/thaiworshipp)
+[View the output](https://pepa65.github.io/thaiworship/index.htm)
 
