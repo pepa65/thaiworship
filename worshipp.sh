@@ -79,9 +79,9 @@ do
 done <"$songs_file"
 
 ## Write copyright
-echo "<div>© 2016 <a href="http://omf.org/thailand">OMF International</a></div>" >>"$html_file"
+echo '<div>© 2016 <a href="http://omf.org/thailand">OMF International</a></div>' >>"$html_file"
 ## close body/html
-echo "</body></html>" >>"$html_file"
+echo '</body></html>' >>"$html_file"
 ## insert css
 sed -i "/<style type=\"text\/css\">/r $css_file" "$html_file"
 
