@@ -286,11 +286,11 @@ list-style-type:disc;
 li ol li,li li ol li {
 list-style-type:decimal;
 }
-@media screen and max-device-width 1024px {
+@media screen and (max-device-width: 1024px) {
 div.slide {
 font-size:100%;
 }}
-@media screen and max-device-width 800px {
+@media screen and (max-device-width: 800px) {
 div.slide {
 font-size:200%;
 }
