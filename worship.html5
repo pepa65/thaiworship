@@ -1,13 +1,11 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html lang="th" xmlns="http://www.w3.org/1999/xhtml" xml:lang="th">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<!DOCTYPE html>
+<html lang="th">
+<meta charset="utf-8">
 <title>เพลงนมัสการ</title>
-<meta name="copyright" content="OMF International" />
-<meta name="date" content="20170108" />
-<meta name="reply-to" content="worship@teamlampang.org" />
-<link rel="shortcut icon" href="//omf.org/thailand/wp-content/uploads/sites/31/2015/02/OMF72.png" />
+<meta name="copyright" content="OMF International">
+<meta name="date" content="20170108">
+<meta name="reply-to" content="worship@teamlampang.org">
+<link rel="shortcut icon" href="//omf.org/thailand/wp-content/uploads/sites/31/2015/02/OMF72.png">
 <script type="application/javascript">
 //<![CDATA[<!--
 // Copyright (C) 2017 OMF International (GPL-3+ licence)
@@ -1854,51 +1852,50 @@ display:none;
 visibility:hidden;
 }}
 </style>
-</head>
 <body style="display:none;">
 <div><img id="bg" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="" /></div>
 <div class="slide title"><a id="p1"></a>
 <div class="th"><h2 class="big">บทเพลงนมัสการ</h2>
 <h1 class="big">ความช่วยเหลือ</h1>
-<p><b>F11</b> เต็มหน้าจอ<br />
+<p><b>F11</b> เต็มหน้าจอ<br>
 <b>↑ ↓</b> ขยาย และลด ขนาดตัวอักษร</p>
-<p><b>← →</b> หน้าก่อน และหน้าต่อไป [ปัด<b>ซ้าย</b> ปัด<b>ขวา</b>]<br />
-<b>Home</b> หน้าความช่วยเหลือ<br />
-<b>End</b> หน้าสารบัญบทเพลง [ปัด<b>ขึ้น</b>]<br />
-<b>วรรค</b> ป๊อปอัพ สารบัญบทเพลง<br />
+<p><b>← →</b> หน้าก่อน และหน้าต่อไป [ปัด<b>ซ้าย</b> ปัด<b>ขวา</b>]<br>
+<b>Home</b> หน้าความช่วยเหลือ<br>
+<b>End</b> หน้าสารบัญบทเพลง [ปัด<b>ขึ้น</b>]<br>
+<b>วรรค</b> ป๊อปอัพ สารบัญบทเพลง<br>
 <b>PageDown PageUp</b> บทเพลงก่อน และบทเพลงต่อไป หรือ เลื่อนลง และเลื่อนขึ้น สารบัญบทเพลง</p>
-<p><b>Delete</b> สลับกัน แสดง หรือ ซ่อน แถบเครื่องมือด้านล่าง<br />
-<b>Insert</b> สลับกันแสดงเว็บไซต์แบบ ทุกหน้ามีภาคบทเพลง หรือ บทเพลงทั้งหมดที่หน้าเดียว<br />
+<p><b>Delete</b> สลับกัน แสดง หรือ ซ่อน แถบเครื่องมือด้านล่าง<br>
+<b>Insert</b> สลับกันแสดงเว็บไซต์แบบ ทุกหน้ามีภาคบทเพลง หรือ บทเพลงทั้งหมดที่หน้าเดียว<br>
 <b>CapsLock</b> เปลี่ยนพื้นหลังของหน้า</p>
 <p><b>Enter</b> พิมพ์หมายเลขของเพลงที่ต้องการแล้วกด Enter</p>
 <p id="th" class="intro"></p>
 </div>
 <div class="en" lang="en"><h2 class="big">Thai worship songs</h2>
 <h1 class="big">Help</h1>
-<p><b>F11</b> Full screen<br />
+<p><b>F11</b> Full screen<br>
 <b>↑ ↓</b> Increase and Decrease font size</p>
-<p><b>← →</b> Previous and Next page [swipe <b>Left</b> and <b>Right</b>]<br />
-<b>Home</b> Help page<br />
-<b>End</b> Song titles list page [swipe <b>Up</b>]<br />
-<b>Spacebar</b> Song titles list pop-up<br />
+<p><b>← →</b> Previous and Next page [swipe <b>Left</b> and <b>Right</b>]<br>
+<b>Home</b> Help page<br>
+<b>End</b> Song titles list page [swipe <b>Up</b>]<br>
+<b>Spacebar</b> Song titles list pop-up<br>
 <b>PageDown PageUp</b> Previous and Next song, or move Down and Up in the song titles list</p>
-<p><b>Delete</b> Toggle Show or Hide the bottom toolbar<br />
-<b>Insert</b> Toggle display Verse per page or All songs on a single page<br />
+<p><b>Delete</b> Toggle Show or Hide the bottom toolbar<br>
+<b>Insert</b> Toggle display Verse per page or All songs on a single page<br>
 <b>CapsLock</b> Change the page background</p>
 <p><b>Enter</b> Type a song number and hit Enter to go straight to it</p>
 <p id="en" class="intro"></p>
 </div>
 <div class="nl" lang="nl"><h2 class="big">Thaise aanbiddingsliederen</h2>
 <h1 class="big">Help</h1>
-<p><b>F11</b> Schermvullend<br />
+<p><b>F11</b> Schermvullend<br>
 <b>↑ ↓</b> Vergroten en Verkleinen van het letterformaat</p>
-<p><b>← →</b> Vorige en Volgende pagina [veeg naar <b>Links</b> en <b>Rechts</b>]<br />
-<b>Home</b> Helppagina<br />
-<b>End</b> Titellijstpagina [veeg <b>Omhoog</b>]<br />
-<b>Spatiebalk</b> Titellijst pop-up<br />
+<p><b>← →</b> Vorige en Volgende pagina [veeg naar <b>Links</b> en <b>Rechts</b>]<br>
+<b>Home</b> Helppagina<br>
+<b>End</b> Titellijstpagina [veeg <b>Omhoog</b>]<br>
+<b>Spatiebalk</b> Titellijst pop-up<br>
 <b>PageDown PageUp</b> Volgende en Vorige lied, of ga naar Beneden of Boven in de titellijst</p>
-<p><b>Delete</b> Schakel tussen Tonen of Verbergen van de werbbalk onderaan<br />
-<b>Insert</b> Schakel tussen toon een Vers per pagina of Alle liederen op 1 pagina<br />
+<p><b>Delete</b> Schakel tussen Tonen of Verbergen van de werbbalk onderaan<br>
+<b>Insert</b> Schakel tussen toon een Vers per pagina of Alle liederen op 1 pagina<br>
 <b>CapsLock</b> Verander de pagina achtergrond</p>
 <p><b>Enter</b> Typ een liednummer in en druk Enter om er heen te gaan</p>
 <p id="nl" class="intro"></p>
@@ -1907,645 +1904,645 @@ visibility:hidden;
 <span class="th">สารบัญ บทเพลงนมัสการ</span>
 <span class="en" lang="en">Table of song titles</span>
 <span class="nl" lang="nl">Inhoudsopgave</span>
-</h1><br />
-<a href="#p3"><span class="nonum">สรรเสริญ. </span>&#160;&#160;ข้อสรรเสริญ <span class="en">(Doxology)</span><span class="key"> C</span></a><br />
+</h1><br>
+<a href="#p3"><span class="nonum">สรรเสริญ. </span>&#160;&#160;ข้อสรรเสริญ <span class="en">(Doxology)</span><span class="key"> C</span></a><br>
 <h3>เพลงเชิญชวนเข้านมัสการ 1-19</h3>
-<a href="#p4">1. เราจะยินดีและเราจะเปรมปรีดิ์ <span class="en">(I will rejoice in You and be glad)</span><span class="key"> C</span></a><br />
-<a href="#p5">2. ข้ายินดีเมื่อเขากล่าวแก่ข้าว่า <span class="en">(I was glad when they said unto me)</span><span class="key"> C</span></a><br />
-<a href="#p6">3. ฮาเลลูยาสรรเสริญ <span class="en">(Halleluia, praise the Lord)</span><span class="key"> C</span></a><br />
-<a href="#p7">4. มานี่เป็นเวลานมัสการ <span class="en">(Come, now is the time)</span><span class="key"> D</span></a><br />
-<a href="#p10">5. จงรวมกันผนึกกำลัง <span class="en">(We are gathering together unto Him)</span><span class="key"> D</span></a><br />
-<a href="#p12">6. เราจะเข้ามาสรรเสริญ <span class="en">(I will enter His gates)</span><span class="key"> D</span></a><br />
-<a href="#p14">7. มาเถิดให้เราพากันไป <span class="en">(Come and let us go up)</span><span class="key"> D</span></a><br />
-<a href="#p16">8. เรานำเสียงการสรรเสริญมา <span class="en">(We bring a sacrifice of praise)</span><span class="key"> D</span></a><br />
-<a href="#p17">9. มาเถิดมาสรรเสริญพระผู้เป็นเจ้า<span class="key"> D</span></a><br />
-<a href="#p22">10. ข้าอยากเห็นพระเยชูยกขึ้นสูง <span class="en">(We want to see Jesus lifted high)</span><span class="key"> E</span></a><br />
-<a href="#p24">11. วันนี้เป็นวัน <span class="en">(This is the day)</span><span class="key"> E</span></a><br />
-<a href="#p25">12. จงร้องเพลงสรรเสริญบทใหม่<span class="key"> E</span></a><br />
-<a href="#p29">13. เชิญมารื่นเริงยินดี <span class="en">(Celebrate)</span><span class="key"> F</span></a><br />
-<a href="#p31">14. ให้เราเข้ามา<span class="key"> G</span></a><br />
-<a href="#p32">15. เชิญมาเยินยอพระนาม<span class="key"> G</span></a><br />
-<a href="#p36">16. น่าจะสรรเสริญพระนามพระเจ้า <span class="en">(Praise ye the Lord)</span><span class="key"> G</span></a><br />
-<a href="#p37">17. จงสรรเสริญพระเจ้าเถิด <span class="en">(Come and praise the Lord)</span><span class="key"> G</span></a><br />
-<a href="#p39">18. มาเร็ว มาร้องสรรเสริญพระเจ้า<span class="key"> A</span></a><br />
-<a href="#p42">19. ฉันจะยินดี <span class="en">(I will rejoice)</span><span class="key"> F</span></a><br />
+<a href="#p4">1. เราจะยินดีและเราจะเปรมปรีดิ์ <span class="en">(I will rejoice in You and be glad)</span><span class="key"> C</span></a><br>
+<a href="#p5">2. ข้ายินดีเมื่อเขากล่าวแก่ข้าว่า <span class="en">(I was glad when they said unto me)</span><span class="key"> C</span></a><br>
+<a href="#p6">3. ฮาเลลูยาสรรเสริญ <span class="en">(Halleluia, praise the Lord)</span><span class="key"> C</span></a><br>
+<a href="#p7">4. มานี่เป็นเวลานมัสการ <span class="en">(Come, now is the time)</span><span class="key"> D</span></a><br>
+<a href="#p10">5. จงรวมกันผนึกกำลัง <span class="en">(We are gathering together unto Him)</span><span class="key"> D</span></a><br>
+<a href="#p12">6. เราจะเข้ามาสรรเสริญ <span class="en">(I will enter His gates)</span><span class="key"> D</span></a><br>
+<a href="#p14">7. มาเถิดให้เราพากันไป <span class="en">(Come and let us go up)</span><span class="key"> D</span></a><br>
+<a href="#p16">8. เรานำเสียงการสรรเสริญมา <span class="en">(We bring a sacrifice of praise)</span><span class="key"> D</span></a><br>
+<a href="#p17">9. มาเถิดมาสรรเสริญพระผู้เป็นเจ้า<span class="key"> D</span></a><br>
+<a href="#p22">10. ข้าอยากเห็นพระเยชูยกขึ้นสูง <span class="en">(We want to see Jesus lifted high)</span><span class="key"> E</span></a><br>
+<a href="#p24">11. วันนี้เป็นวัน <span class="en">(This is the day)</span><span class="key"> E</span></a><br>
+<a href="#p25">12. จงร้องเพลงสรรเสริญบทใหม่<span class="key"> E</span></a><br>
+<a href="#p29">13. เชิญมารื่นเริงยินดี <span class="en">(Celebrate)</span><span class="key"> F</span></a><br>
+<a href="#p31">14. ให้เราเข้ามา<span class="key"> G</span></a><br>
+<a href="#p32">15. เชิญมาเยินยอพระนาม<span class="key"> G</span></a><br>
+<a href="#p36">16. น่าจะสรรเสริญพระนามพระเจ้า <span class="en">(Praise ye the Lord)</span><span class="key"> G</span></a><br>
+<a href="#p37">17. จงสรรเสริญพระเจ้าเถิด <span class="en">(Come and praise the Lord)</span><span class="key"> G</span></a><br>
+<a href="#p39">18. มาเร็ว มาร้องสรรเสริญพระเจ้า<span class="key"> A</span></a><br>
+<a href="#p42">19. ฉันจะยินดี <span class="en">(I will rejoice)</span><span class="key"> F</span></a><br>
 <h3>เพลงสั้นสรรเสริญ 20-148</h3>
-<a href="#p44">20. เราจะสร้างประชากรเพื่อสรรเสริญ <span class="en">(For I'm building a people)</span><span class="key"> C</span></a><br />
-<a href="#p46">21. เหตุนั้นเมื่อเราได้เป็นคนชอบธรรม<span class="key"> C</span></a><br />
-<a href="#p48">22. ชัยชนะโลกนี้ <span class="en">(We have overcome)</span><span class="key"> C</span></a><br />
-<a href="#p49">23. พระเกียรติ พระสิริ <span class="en">(Blessing and honour)</span><span class="key"> C</span></a><br />
-<a href="#p53">24. เราประกาศว่าแผ่นดินของพระเจ้าอยู่นี่ <span class="en">(We declare that the kingdom of God is here)</span><span class="key"> C</span></a><br />
-<a href="#p56">25. ความรักของพระเจ้าดีกว่าชีวิต <span class="en">(Thy loving kindness)</span><span class="key"> C</span></a><br />
-<a href="#p58">26. ยามเราอยู่ร่วมกัน<span class="key"> C</span></a><br />
-<a href="#p60">27. องค์พระเยซูคริสต์ที่รักของข้า<span class="key"> C</span></a><br />
-<a href="#p62">29. ทางเดียวเยซู <span class="en">(One way, Jesus)</span><span class="key"> B</span></a><br />
-<a href="#p66">30. เมตตาหลั่งลงมา <span class="en">(Mercy is falling)</span><span class="key"> D</span></a><br />
-<a href="#p71">31. องค์พระเจ้าของเรายิ่งใหญ่ <span class="en">(What a mighty God we serve)</span><span class="key"> D</span></a><br />
-<a href="#p72">32. ให้ผู้ที่พระเจ้าทรงไถ่ไว้ร้องว่า <span class="en">(Let the redeemed of the Lord)</span><span class="key"> D</span></a><br />
-<a href="#p73">33. ร้องโฮซันนา <span class="en">(Sing hosanna)</span><span class="key"> D</span></a><br />
-<a href="#p74">34. ไม่ใช่ฤทธิ์ไม่ใช่แรง <span class="en">(Not by might, nor by power)</span><span class="key"> D</span></a><br />
-<a href="#p75">35. ฉันเป็นไท<span class="key"> D</span></a><br />
-<a href="#p76">36. ในพระนามพระเยซู <span class="en">(In the name of Jesus)</span><span class="key"> D</span></a><br />
-<a href="#p77">37. ข้าได้ยินเสียงกองทัพของพระเจ้า <span class="en">(I hear the sound of the army)</span><span class="key"> D</span></a><br />
-<a href="#p78">38. ร้องเพลงถวาย สรรเสริญพระนาม <span class="en">(Sing unto God, sing praises to His name)</span><span class="key"> D</span></a><br />
-<a href="#p80">39. องค์พระเจ้าผู้ทรงสร้างฟ้าสวรรค์ <span class="en">(Ah Lord God)</span><span class="key"> D</span></a><br />
-<a href="#p82">40. พระเจ้าดีตลอดเวลา <span class="en">(God is good, all the time)</span><span class="key"> D</span></a><br />
-<a href="#p86">41. อันทางของคนชอบธรรม <span class="en">(The steps of a good man)</span><span class="key"> D</span></a><br />
-<a href="#p88">42. ดีสักเท่าไหร่<span class="key"> D</span></a><br />
-<a href="#p90">43. เราจะร้อง เราจะร้อง <span class="en">(I will sing, I will sing)</span><span class="key"> D</span></a><br />
-<a href="#p96">44. มาร้องรำ นำเพลง <span class="en">(We will dance on the streets)</span><span class="key"> D</span></a><br />
-<a href="#p100">45. ข้ารับการไถ่ <span class="en">(I've been redeemed)</span><span class="key"> D</span></a><br />
-<a href="#p101">46. ความยินดีในพระเจ้าเป็นกำลังของข้า <span class="en">(The joy of the Lord is my strength)</span><span class="key"> D</span></a><br />
-<a href="#p106">47. เมื่อข้าพระองค์ได้เห็นพระพักตร์ <span class="en">(As for me, I will behold Thy face)</span><span class="key"> D</span></a><br />
-<a href="#p107">48. ครองราชย์องค์พระเยซู <span class="en">(Reign King Jesus, reign)</span><span class="key"> D</span></a><br />
-<a href="#p108">49. ฉันจะร้องเพลงถึงความรักมั่นคง <span class="en">(I will sing of the mercies)</span><span class="key"> D</span></a><br />
-<a href="#p110">50. พระกรุณาและปรานี <span class="en">(Surely goodness and mercy)</span><span class="key"> D</span></a><br />
-<a href="#p111">51. ยังมีสายธารในพระพักตร์พระเจ้า<span class="key"> D</span></a><br />
-<a href="#p114">52. ทรงเปลี่ยนความเศร้าโศก <span class="en">(He turned my mourning into dancing)</span><span class="key"> D</span></a><br />
-<a href="#p116">53. บุคคลผู้ใดกระหาย<span class="key"> D</span></a><br />
-<a href="#p118">54. เราจะเดินในทางของพระเยซู<span class="key"> D</span></a><br />
-<a href="#p120">55. ในทุ่งหญ้าของพระเจ้า<span class="key"> D</span></a><br />
-<a href="#p122">56. รู้สึกไหมถึงภูเขาไหวหวั่น <span class="en">(Did you hear the mountains tremble)</span><span class="key"> D</span></a><br />
-<a href="#p128">57. ไม่มีผู้ใดไม่มีนามใด <span class="en">(No other name)</span><span class="key"> A</span></a><br />
-<a href="#p129">58. องค์พระคริสต์ทรงนำทัพมุ่งไป <span class="en">(For the Lord is marching on)</span><span class="key"> D</span></a><br />
-<a href="#p131">59. สุขที่ไหนจะมาเปรียบปาน<span class="key"> D</span></a><br />
-<a href="#p132">60. จงแสวงหาแผ่นดินของพระเจ้า <span class="en">(Seek ye first the kingdom of God)</span><span class="key"> D</span></a><br />
-<a href="#p133">61. เมื่อได้มองแสงทองที่ส่องสวยงาม<span class="key"> D</span></a><br />
-<a href="#p136">62. โอ! วิถีคนชอบธรรม <span class="en">(O the light of the righteous)</span><span class="key"> E</span></a><br />
-<a href="#p137">63. สาธุการพระนามแด่พระเจ้า <span class="en">(Blessed be the name of the Lord most high)</span><span class="key"> E</span></a><br />
-<a href="#p141">64. อัศจรรย์พระเยซูของเรา <span class="en">(Wonderful, wonderful, Jesus is to me)</span><span class="key"> E</span></a><br />
-<a href="#p142">65. เกลือ แสงสว่าง <span class="en">(Salt and light)</span><span class="key"> E</span></a><br />
-<a href="#p144">66. โรมันสิบหกสิบเก้าว่า<span class="key"> E</span></a><br />
-<a href="#p145">67. ไฟ ไฟ ไฟ<span class="key"> E</span></a><br />
-<a href="#p146">68. เราพบพระเยซูคริสต์<span class="key"> E</span></a><br />
-<a href="#p147">69. มีพระเยซูอยู่ในใจฉัน <span class="en">(With Jesus in my heart I can smile)</span><span class="key"> E</span></a><br />
-<a href="#p149">70. ฉันมีพระเยซูฉันจะไม่หวั่นไหว <span class="en">(We shall not be moved)</span><span class="key"> E</span></a><br />
-<a href="#p151">71. ฉันได้วางใจในพระเจ้า <span class="en">(I just keep trusting the Lord)</span><span class="key"> E</span></a><br />
-<a href="#p153">72. สรรเสริญพระเจ้าผู้รับใช้ของพระองค์ <span class="en">(Come bless the Lord)</span><span class="key"> E</span></a><br />
-<a href="#p154">73. องค์พระเยซูคือผู้ใด <span class="en">(Everybody ought to know)</span><span class="key"> E</span></a><br />
-<a href="#p155">74. โปรดทรงสำแดงในใจข้าเถิด <span class="en">(Open the eyes of my heart)</span><span class="key"> E</span></a><br />
-<a href="#p158">75. ของประทานแห่งพระวิญญาณ<span class="key"> E</span></a><br />
-<a href="#p162">76. ฉันจะร้องถึงความรัก <span class="en">(I will sing of Your love forever)</span><span class="key"> E</span></a><br />
-<a href="#p167">77. ชีวิตอยู่ในพระองค์ <span class="en">(My life is in You, Lord)</span><span class="key"> F</span></a><br />
-<a href="#p168">78. พระเจ้ายิ่งใหญ่และสมควรจะสรรเสริญ <span class="en">(Great is the Lord)</span><span class="key"> F</span></a><br />
-<a href="#p170">79. จุดไฟลุกโชนในใจ <span class="en">(Light the fire again)</span><span class="key"> F</span></a><br />
-<a href="#p173">80. พระคริสต์เจ้าใครเปรียบได้ <span class="en">(Isn't He wonderful)</span><span class="key"> F</span></a><br />
-<a href="#p175">81. ฉันรักคุณด้วยความรักของพระเจ้า <span class="en">(I love you with the love of the Lord)</span><span class="key"> C</span></a><br />
-<a href="#p176">82. แสนยินดี พระเยซู เรายินดี <span class="en">(Celebrate, Jesus celebrate)</span><span class="key"> F</span></a><br />
-<a href="#p177">83. เริ่มให้ถูก<span class="key"> F</span></a><br />
-<a href="#p179">84. ฉันเชื่อว่าสิ่งอัศจรรย์ <span class="en">(I believe in miracles)</span><span class="key"> F</span></a><br />
-<a href="#p180">85. เดินกับพระเยซู <span class="en">(Walking with Jesus)</span><span class="key"> F</span></a><br />
-<a href="#p181">86. ขอพระวิญญาณเทลงมา <span class="en">(There's going to be a great awakening)</span><span class="key"> G</span></a><br />
-<a href="#p187">87. สายน้ำไหลหลาก <span class="en">(Down the mountain the river flows)</span><span class="key"> G</span></a><br />
-<a href="#p193">88. โฮซันนาแด่พระเจ้าสูงสุด <span class="en">(Hosanna in the highest)</span><span class="key"> G</span></a><br />
-<a href="#p195">89. สรรเสริญแด่พระเจ้า <span class="en">(Glory, glory in the highest)</span><span class="key"> G</span></a><br />
-<a href="#p197">90. สรรเสริญพระนามขององค์พระเจ้า<span class="key"> G</span></a><br />
-<a href="#p198">91. จงร้องเพลงสรรเสริญถวายพระเจ้า<span class="key"> G</span></a><br />
-<a href="#p200">92. พระเยซูคือองค์ราชันย์ <span class="en">(You are crowned with many crowns)</span><span class="key"> G</span></a><br />
-<a href="#p201">93. ชนะ ชนะ ชนะ ชั่วนิรันดร์<span class="key"> G</span></a><br />
-<a href="#p202">94. ไม่มีอะไรที่ยากสำหรับพระเจ้า <span class="en">(Nothing is too difficult)</span><span class="key"> G</span></a><br />
-<a href="#p204">95. ข้ายกเสียงขึ้น ด้วยเพลงสรรเสริญ <span class="en">(I lift my voice in song)</span><span class="key"> G</span></a><br />
-<a href="#p206">96. พระเยซูชนะ <span class="en">(Jesus overcame)</span><span class="key"> G</span></a><br />
-<a href="#p208">97. ผู้ที่ทรงไถ่ไว้ของพระเจ้า <span class="en">(Therefore the redeemed)</span><span class="key"> G</span></a><br />
-<a href="#p209">98. ข้าไม่มีชีวิตอยู่ต่อไป <span class="en">(It's no longer I that liveth)</span><span class="key"> G</span></a><br />
-<a href="#p210">99. วันต่อวันฉันเดินไปกับองค์พระเยซู<span class="key"> G</span></a><br />
-<a href="#p211">100. พระเยซูเป็นที่รักของข้า <span class="en">(Jesus, lover of my soul)</span><span class="key"> G</span></a><br />
-<a href="#p213">102. อย่าลืมว่าพระเยซูทอดพระเนตร<span class="key"> G</span></a><br />
-<a href="#p214">103. จงหยั่งลึกลึกลงถึงแก่น<span class="key"> G</span></a><br />
-<a href="#p218">104. ข้ารับชีวิตพระคริสต์ <span class="en">(I'm a new creation, I'm a brand new man)</span><span class="key"> G</span></a><br />
-<a href="#p219">105. ดวงใจข้ารักพระนิเวศน์พระเจ้า<span class="key"> G</span></a><br />
-<a href="#p220">106. โอ้ความรักของพระองค์ <span class="en">(Shine Jesus, shine)</span><span class="key"> G</span></a><br />
-<a href="#p222">108. ฉันคิดถึงคุณ<span class="key"> G</span></a><br />
-<a href="#p224">109. เราเป็นหนึ่งในความรักพระคริสต์ <span class="en">(We are one in the bonds of love)</span><span class="key"> G</span></a><br />
-<a href="#p226">110. พระองค์อยู่เคียง<span class="key"> G</span></a><br />
-<a href="#p227">111. ฮาเลลูยา พระเยซูทรงพระชนม์ <span class="en">(Halleluia, Jesus is alive)</span><span class="key"> A</span></a><br />
-<a href="#p228">112. ขอให้พระเกียรติ <span class="en">(Unto Him be glory in the Church)</span><span class="key"> A</span></a><br />
-<a href="#p229">113. ด้วยสุดใจ<span class="key"> A</span></a><br />
-<a href="#p231">114. ใครลำบากเหน็ดเหนื่อย<span class="key"> A</span></a><br />
-<a href="#p233">115. เราจะร้องสรรเสริญพระนาม <span class="en">(I sing praises to Your name)</span><span class="key"> A</span></a><br />
-<a href="#p236">116. พื้นฟ้าสวรรค์ประกาศพระบารมี <span class="en">(All heaven declares)</span><span class="key"> A</span></a><br />
-<a href="#p238">117. แต่ละวันที่ได้เดินก้าวมา<span class="key"> A</span></a><br />
-<a href="#p241">118. จงมีพลังสู้ทนอย่าหวั่น<span class="key"> A</span></a><br />
-<a href="#p242">119. พระเจ้าของเราอยู่ท่ามกลางพวกเรา <span class="en">(The Lord your God is in your midst)</span><span class="key"> A</span></a><br />
-<a href="#p244">120. ความสุขภายในใจ<span class="key"> C</span></a><br />
-<a href="#p246">121. ลำธาร<span class="key"> A</span></a><br />
-<a href="#p249">123. ร่วมกันในพระเยซู<span class="key"> A</span></a><br />
-<a href="#p253">124. ขอทรงสอน<span class="key"> A</span></a><br />
-<a href="#p255">125. ดั่งดาวิด <span class="en">(As David danced)</span><span class="key"> Am</span></a><br />
-<a href="#p260">126. ข้ายกพระนามพระเจ้าของข้า <span class="en">(I lift Your name high O Lord)</span><span class="key"> A</span></a><br />
-<a href="#p261">127. ใครเปรียบดังพระองค์ <span class="en">(Who is like the Lord)</span><span class="key"> Am</span></a><br />
-<a href="#p264">128. แด่จอมราชานิจนิรันดร์ <span class="en">(Now unto the King eternal)</span><span class="key"> Bm</span></a><br />
-<a href="#p268">129. น้ำพุของพระเจ้าพลุ่งอยู่เสมอ<span class="key"> Dm</span></a><br />
-<a href="#p269">130. ดวงใจของข้าเผาผลาญ <span class="en">(The zeal of God)</span><span class="key"> Dm</span></a><br />
-<a href="#p270">131. โดยพระเจ้าพวกเราจึงมีกำลัง <span class="en">(Through our God)</span><span class="key"> Dm</span></a><br />
-<a href="#p273">132. โอ้อิสราเอลจงรีบตื่นขึ้นเถิด <span class="en">(O Israel)</span><span class="key"> Dm</span></a><br />
-<a href="#p274">133. จงชื่นชมยินดีในพระเป็นเจ้า<span class="key"> Dm</span></a><br />
-<a href="#p278">134. เยโฮวาห์ยีเรห์ <span class="en">(Jehovah Jireh, my provider)</span><span class="key"> Dm</span></a><br />
-<a href="#p280">135. นั่นไม่ใช่ฤทธิ์หรือแรง <span class="en">(It's not by might, nor by power)</span><span class="key"> Dm</span></a><br />
-<a href="#p282">136. ลุกขึ้นชนชาติขององค์พระเจ้า<span class="key"> C</span></a><br />
-<a href="#p284">137. ชื่นชมยินดี <span class="en">(Jubilate, everybody)</span><span class="key"> Dm</span></a><br />
-<a href="#p286">138. โอ้เสียงแห่งความยินดี<span class="key"> C</span></a><br />
-<a href="#p288">139. ชูใจของคุณ <span class="en">(Lift up your heart and magnify)</span><span class="key"> Dm</span></a><br />
-<a href="#p292">140. พระคริสต์เป็นพระเจ้าของเรา<span class="key"> Dm</span></a><br />
-<a href="#p294">141. พระเจ้าดี <span class="en">(God is good, I sing and shout)</span><span class="key"> Em</span></a><br />
-<a href="#p296">142. เราจะสรรเสริญพระองค์ <span class="en">(I will worship the Lord)</span><span class="key"> Em</span></a><br />
-<a href="#p298">143. พระเยซูเป็นพระเจ้า <span class="en">(Jesus Christ is Lord)</span><span class="key"> Em</span></a><br />
-<a href="#p300">144. ดูเถิดพระเจ้าเป็นความรอดของข้า<span class="key"> Em</span></a><br />
-<a href="#p301">145. องค์พระคริสต์ทรงฤทธิ์ใหญ่ยิ่ง <span class="en">(King of kings and Lord of lords)</span><span class="key"> Em</span></a><br />
-<a href="#p302">146. เกิดความยินดี<span class="key"> Em</span></a><br />
-<a href="#p303">147. องค์อธิปไตยพระเจ้าเกรียงไกร <span class="en">(The Spirit of the sovereign Lord)</span><span class="key"> Em</span></a><br />
-<a href="#p310">148. ใครจะขึ้นไปบนภูเขาของพระเจ้า <span class="en">(Who can ascend)</span><span class="key"> Em</span></a><br />
-<a href="#p312">149. ข้าแสวงหาพระองค์ <span class="en">(Lord, I seek after Thee)</span><span class="key"> C</span></a><br />
-<a href="#p314">150. พระบิดาเรารัก <span class="en">(Father, I love You)</span><span class="key"> C</span></a><br />
-<a href="#p317">151. พระนามพระเยซู <span class="en">(The name of Jesus)</span><span class="key"> C</span></a><br />
-<a href="#p318">152. ข้าเงยหน้ามองขึ้น <span class="en">(I lift my eyes up)</span><span class="key"> C</span></a><br />
-<a href="#p320">153. เข้าเฝ้าที่พระพักตร์พระเจ้า <span class="en">(Into Your presence we come)</span><span class="key"> C</span></a><br />
-<a href="#p321">154. มองพระพักตร์องค์พระเยซู <span class="en">(Turn your eyes upon Jesus)</span><span class="key"> C</span></a><br />
-<a href="#p322">155. พระวิญญาณของพระเจ้า<span class="key"> C</span></a><br />
-<a href="#p324">156. โปรดให้ฉันใกล้พระองค์<span class="key"> C</span></a><br />
-<a href="#p325">157. อิมมานูเอล <span class="en">(Emmanuel)</span><span class="key"> C</span></a><br />
-<a href="#p326">158. บริสุทธิ์ บริสุทธิ์ บริสุทธิ์ <span class="en">(Holy, holy, holy is the Lord)</span><span class="key"> C</span></a><br />
-<a href="#p328">159. ในเวลาของพระคริสต์ <span class="en">(In His time)</span><span class="key"> C</span></a><br />
-<a href="#p330">160. โปรดประทาน การฟื้นใจ <span class="en">(I cast all my cares)</span><span class="key"> C</span></a><br />
-<a href="#p331">161. ท่ามกลางภาระหนักเราร้องเพลง <span class="en">(In moments like these)</span><span class="key"> C</span></a><br />
-<a href="#p333">162. ฉันได้ตัดสินใจ <span class="en">(I have decided to follow Jesus)</span><span class="key"> C</span></a><br />
-<a href="#p334">163. เวลานี้เราจะถ่อมตัวลง<span class="key"> C</span></a><br />
-<a href="#p338">164. เปลี่ยนแปลงชีวิตข้า <span class="en">(Change my heart O God)</span><span class="key"> C</span></a><br />
-<a href="#p339">165. โลหิตพระคริสต์ทรงชำระข้า <span class="en">(It's Your blood that cleanses)</span><span class="key"> C</span></a><br />
-<a href="#p340">166. ความรักยิ่งใหญ่เรารับจากพระบิดา <span class="en">(I have the greatest love)</span><span class="key"> C</span></a><br />
-<a href="#p342">167. ที่บนกางเขน<span class="key"> C</span></a><br />
-<a href="#p344">168. สรรเสริญ สดุดี จงมีแด่พระเจ้า<span class="key"> C</span></a><br />
-<a href="#p345">169. พระบิดาผู้ไม่ทรงเปลี่ยนแปลง <span class="en">(Faithful One)</span><span class="key"> C</span></a><br />
-<a href="#p347">170. เราคืออัลฟาและโอเมกา <span class="en">(Alpha and Omega)</span><span class="key"> C</span></a><br />
-<a href="#p348">171. เพราะพระองค์นั้นทรงเปี่ยมรัก<span class="key"> C</span></a><br />
-<a href="#p351">172. เพื่อน<span class="key"> C</span></a><br />
-<a href="#p353">173. ปรารถนาพระองค์ <span class="en">(Hungry I come to You)</span><span class="key"> C</span></a><br />
-<a href="#p356">174. โปรดให้เข้าใกล้พระองค์<span class="key"> C</span></a><br />
-<a href="#p358">175. ถวายกายใจ<span class="key"> C</span></a><br />
-<a href="#p360">176. ขอบพระคุณพระเจ้า<span class="key"> C</span></a><br />
-<a href="#p366">177. พระเยซูผู้สมควรสรรเสริญ<span class="key"> D</span></a><br />
-<a href="#p370">178. พระเยซูโปรดฟื้นฟู<span class="key"> D</span></a><br />
-<a href="#p372">179. มีพระเยซู<span class="key"> D</span></a><br />
-<a href="#p374">180. แต่ข้ารู้จักพระองค์ <span class="en">(I know Whom I have believed)</span><span class="key"> D</span></a><br />
-<a href="#p378">181. ให้เราเข้าในวิหารนี้ <span class="en">(We have come into this place)</span><span class="key"> D</span></a><br />
-<a href="#p380">182. ให้เราสรรเสริญพระนาม ยะโฮวาห์ <span class="en">(Lord, I worship You)</span><span class="key"> D</span></a><br />
-<a href="#p382">183. เขาจะบินขึ้น<span class="key"> D</span></a><br />
-<a href="#p384">184. วิญญาณข้าแสวงหาพระเจ้า <span class="en">(As the deer pants)</span><span class="key"> D</span></a><br />
-<a href="#p385">185. เมื่อพวกเราชุมนุมกัน <span class="en">(As we gather)</span><span class="key"> D</span></a><br />
-<a href="#p386">186. เยชูขอทรงเป็นศูนย์กลาง <span class="en">(Jesus, be the centre)</span><span class="key"> D</span></a><br />
-<a href="#p389">187. น้ำแห่งชีวิต<span class="key"> D</span></a><br />
-<a href="#p391">188. ข้าจะสรรเสริญองค์พระบิดา<span class="key"> D</span></a><br />
-<a href="#p392">189. พระเจ้าทรงสัมผัสฉันวันนี้<span class="key"> D</span></a><br />
-<a href="#p396">190. พระเยซูพระองค์ทรงเป็นพระผู้เป็นเจ้า<span class="key"> D</span></a><br />
-<a href="#p397">191. สันติสุขของพระคริสต์ <span class="en">(My peace I give unto you)</span><span class="key"> D</span></a><br />
-<a href="#p400">192. ขอพระเจ้าสดับคำร้องวิงวอนของข้า <span class="en">(Hear my cry O Lord)</span><span class="key"> D</span></a><br />
-<a href="#p404">194. พระบิดาข้ารักจะอยู่<span class="key"> D</span></a><br />
-<a href="#p406">195. เปิดตาข้า <span class="en">(Fill my eyes, o my God)</span><span class="key"> D</span></a><br />
-<a href="#p407">196. ทรงนำข้าผ่านลานชั้นนอก <span class="en">(Take me in)</span><span class="key"> Em</span></a><br />
-<a href="#p410">197. จงยอพระเกียรติพระเจ้า <span class="en">(Exalt the Lord our God)</span><span class="key"> D</span></a><br />
-<a href="#p411">198. โปรดเปิดดวงตา <span class="en">(Open my eyes)</span><span class="key"> D</span></a><br />
-<a href="#p412">199. ด้วยมือที่ข้าชูขึ้น <span class="en">(With my hands lifted up)</span><span class="key"> D</span></a><br />
-<a href="#p413">200. สรรเสริญนามพระเยซู <span class="en">(Praise the name of Jesus)</span><span class="key"> D</span></a><br />
-<a href="#p414">201. เป้าหมายสูงสุดในชีวิตฉัน <span class="en">(The greatest thing in all of my life)</span><span class="key"> D</span></a><br />
-<a href="#p415">202. คำสรรเสริญล้นจากวิญญาณ <span class="en">(His praise fills the temple)</span><span class="key"> D</span></a><br />
-<a href="#p416">203. นี่คือเวลาเราบูชาพระบิดา <span class="en">(Now is the time)</span><span class="key"> D</span></a><br />
-<a href="#p417">204. เมื่อรับการสวมทับ <span class="en">(When I feel the touch of Your hand)</span><span class="key"> D</span></a><br />
-<a href="#p418">205. พระองค์เป็นที่กำบัง <span class="en">(You are my hiding place)</span><span class="key"> D</span></a><br />
-<a href="#p419">206. ล้ำเลิศพระองค์ล้ำเลิศ <span class="en">(Worthy, You are worthy)</span><span class="key"> </span></a><br />
-<a href="#p420">207. พระเยซูบุตรพระเจ้า <span class="en">(You are my all in all)</span><span class="key"> D</span></a><br />
-<a href="#p425">208. เชิญพระวิญญาณ <span class="en">(O let the Son of God enfold you)</span><span class="key"> D</span></a><br />
-<a href="#p429">209. เชิญองค์พระวิญญาณโปรดเจิมข้า <span class="en">(Come Holy Spirit)</span><span class="key"> D</span></a><br />
-<a href="#p430">210. ขอบคุณพระเยซู <span class="en">(Thank You Lord)</span><span class="key"> D</span></a><br />
-<a href="#p431">211. อีกครั้ง <span class="en">(Once again)</span><span class="key"> D</span></a><br />
-<a href="#p434">212. สาธุการพระนามพระเยซู <span class="en">(Blessed be the name of the Lord)</span><span class="key"> D</span></a><br />
-<a href="#p435">213. รักในพระคุณ<span class="key"> D</span></a><br />
-<a href="#p437">214. โปรดเจิมใจฉันให้ร้อนด้วยไฟ<span class="key"> D</span></a><br />
-<a href="#p439">215. เรายืนอยู่จำเพาะพระพักตร์ <span class="en">(We are standing on holy ground)</span><span class="key"> D</span></a><br />
-<a href="#p440">216. ชำระใจของข้า <span class="en">(Purify my heart)</span><span class="key"> D</span></a><br />
-<a href="#p444">217. ขอให้คำจากปากของข้า <span class="en">(Let the words of my mouth)</span><span class="key"> D</span></a><br />
-<a href="#p446">218. ความรักมั่นคง <span class="en">(The steadfast love of the Lord)</span><span class="key"> D</span></a><br />
-<a href="#p447">219. งามจริงพระพักตร์พระเจ้า <span class="en">(O Lord, You're beautiful)</span><span class="key"> D</span></a><br />
-<a href="#p450">220. เมื่อมองดูความบริสุทธิ์ของพระองค์ <span class="en">(When I look into Your holiness)</span><span class="key"> D</span></a><br />
-<a href="#p453">221. เชิญมาพระวิญญาณเติมชีวิต <span class="en">(Come Lord, come reign)</span><span class="key"> D</span></a><br />
-<a href="#p454">222. พระเจ้าผู้รักษาเจ้า <span class="en">(I am the God that healeth thee)</span><span class="key"> D</span></a><br />
-<a href="#p456">223. ขอพระวิญญาณทรงโปรดประทาน<span class="key"> D</span></a><br />
-<a href="#p457">224. 178 ข้าเชื่อในพระเยซู <span class="en">(I believe in Jesus)</span><span class="key"> D</span></a><br />
-<a href="#p458">225. ผู้ทรงสิรินั้นคือผู้ใด<span class="key"> C</span></a><br />
-<a href="#p459">226. เรานมัสการ<span class="key"> D</span></a><br />
-<a href="#p461">227. ขอโปรดเตรียมเรา <span class="en">(Lord, prepare me)</span><span class="key"> D</span></a><br />
-<a href="#p462">228. นิมิต<span class="key"> D</span></a><br />
-<a href="#p464">229. มีความเข้าใจกันในพวกเรา <span class="en">(There's a quiet understanding)</span><span class="key"> D</span></a><br />
-<a href="#p466">230. จิตใจฉันอาลัย<span class="key"> D</span></a><br />
-<a href="#p468">231. จะเป็นดั่งแสง<span class="key"> D</span></a><br />
-<a href="#p472">232. ในโลกนี้มีคนมากมาย<span class="key"> D</span></a><br />
-<a href="#p473">233. พรุ่งนี้เราจะได้พบอะไร<span class="key"> D</span></a><br />
-<a href="#p475">235. ข้ากราบกรานตรงที่พระบาท <span class="en">(We fall down)</span><span class="key"> E</span></a><br />
-<a href="#p476">236. อ้อมแขนอันอุ่นใจ <span class="en">(Arms of love)</span><span class="key"> E</span></a><br />
-<a href="#p478">237. ขอบพระคุณพระองค์ทรงเมตตา <span class="en">(I want to thank You for Your goodness)</span><span class="key"> E</span></a><br />
-<a href="#p480">238. พระองค์โอ้พระองค์ทรงสมควร <span class="en">(Worthy, o worthy are You)</span><span class="key"> E</span></a><br />
-<a href="#p482">239. สรรเสริญและโมทนา<span class="key"> E</span></a><br />
-<a href="#p483">240. เชิญพระเยซูอยู่ในใจ <span class="en">(Into my heart)</span><span class="key"> E</span></a><br />
-<a href="#p484">241. โปรดทรงอวยพรประเทศไทย<span class="key"> E</span></a><br />
-<a href="#p488">242. พระศิลา<span class="key"> E</span></a><br />
-<a href="#p491">243. ข้ารักพระองค์ ข้าจึงขอบูชา <span class="en">(I love You, Lord)</span><span class="key"> F</span></a><br />
-<a href="#p492">244. สาธุการแด่พระเจ้า <span class="en">(Bless the Lord, o my soul)</span><span class="key"> F</span></a><br />
-<a href="#p493">245. ข้ามอบชีวิต<span class="key"> F</span></a><br />
-<a href="#p497">246. พระองค์ทรงสมควร<span class="key"> F</span></a><br />
-<a href="#p501">247. โมทนาพระคุณพระเจ้า <span class="en">(Give thanks with a grateful heart)</span><span class="key"> F</span></a><br />
-<a href="#p503">248. พระเยซูพระนามเหนือนามใด <span class="en">(Jesus, name above all names)</span><span class="key"> F</span></a><br />
-<a href="#p505">249. ข้ายกย่องพระองค์ <span class="en">(I exalt Thee)</span><span class="key"> F</span></a><br />
-<a href="#p507">250. พระองค์ผู้ทรงรักษาให้หาย<span class="key"> F</span></a><br />
-<a href="#p511">251. ความรักพระองค์ใหญ่หลวง <span class="en">(Your steadfast love reaches to the heavens)</span><span class="key"> F</span></a><br />
-<a href="#p513">252. พระนามยิ่งใหญ่ประเสริฐ <span class="en">(His name is wonderful)</span><span class="key"> F</span></a><br />
-<a href="#p515">253. ให้เราได้รักพระองค์ด้วยสิ้นสุดใจ<span class="key"> G</span></a><br />
-<a href="#p517">254. ประทับอยู่ท่ามกลางเรา<span class="key"> G</span></a><br />
-<a href="#p519">255. พระคริสต์ยื่นพระหัตถ์ออกมาช่วยข้า<span class="key"> G</span></a><br />
-<a href="#p520">256. พระนามดุจน้ำมันชโลมข้า <span class="en">(Your name is as ointment)</span><span class="key"> G</span></a><br />
-<a href="#p521">257. ข้าขอสรรเสริญพระเจ้ายิ่งใหญ่ <span class="en">(I worship You, almighty God)</span><span class="key"> G</span></a><br />
-<a href="#p523">258. องค์พระวิญญาณโปรดประทับ <span class="en">(Holy Spirit Thou art welcome)</span><span class="key"> G</span></a><br />
-<a href="#p524">259. ข้าอยากรู้จักพระองค์ <span class="en">(I want to know You more)</span><span class="key"> G</span></a><br />
-<a href="#p528">260. โอ้ข้ายกพระนามสูงสุด <span class="en">(Lord, I lift Your name on high)</span><span class="key"> G</span></a><br />
-<a href="#p529">261. กำลังในความรักพระองค์ <span class="en">(The power of Your love)</span><span class="key"> G</span></a><br />
-<a href="#p531">262. ส่องสว่าง <span class="en">(Send the light)</span><span class="key"> G</span></a><br />
-<a href="#p535">263. ทุกวันเวลาข้าอยากอยู่ใกล้ชิดพระองค์<span class="key"> G</span></a><br />
-<a href="#p537">264. ผู้ใดจะเปรียบได้พระเจ้าองค์เดียว <span class="en">(No one but You, Lord)</span><span class="key"> G</span></a><br />
-<a href="#p541">265. เมื่อความมืดมิด <span class="en">(When the darkness)</span><span class="key"> G</span></a><br />
-<a href="#p544">266. ถวายความยิ่งใหญ่แด่พระเจ้า <span class="en">(Ascribe greatness)</span><span class="key"> G</span></a><br />
-<a href="#p546">267. เราประกาศพระนาม <span class="en">(We exalt Your name)</span><span class="key"> G</span></a><br />
-<a href="#p548">268. เจิมด้วยไฟพระวิญญาณ<span class="key"> G</span></a><br />
-<a href="#p550">269. ยามใจเราอ่อนล้า ฟื้นฟูใจเรา <span class="en">(Refresh my heart, Lord)</span><span class="key"> G</span></a><br />
-<a href="#p552">270. เปลี่ยนใจของข้า<span class="key"> G</span></a><br />
-<a href="#p554">271. ฉันกระหายพระองค์<span class="key"> G</span></a><br />
-<a href="#p556">272. โปรดชำระดวงใจของข้า <span class="en">(Create in me a clean heart)</span><span class="key"> G</span></a><br />
-<a href="#p557">273. ทุกครั้งที่ข้าเฝ้าภาวนา <span class="en">(Create in me a clean heart)</span><span class="key"> G</span></a><br />
-<a href="#p559">274. ไม่มีใครเหมือนพระองค์ <span class="en">(There is none like You)</span><span class="key"> G</span></a><br />
-<a href="#p561">275. เพราะพระองค์ทรงอยู่ <span class="en">(Because He lives)</span><span class="key"> G</span></a><br />
-<a href="#p563">276. ส่งการฟื้นฟูลงมา<span class="key"> G</span></a><br />
-<a href="#p564">277. ทรงอุ้มชูค้ำจุน<span class="key"> G</span></a><br />
-<a href="#p566">278. ข้ารักพระองค์ด้วยสิ้นสุดดวงใจ<span class="key"> G</span></a><br />
-<a href="#p568">279. โดยพระโลหิตไหล<span class="key"> G</span></a><br />
-<a href="#p570">280. สิ่งเดียวฉันขอ <span class="en">(One thing I ask)</span><span class="key"> G</span></a><br />
-<a href="#p574">281. ก้าวต่อไป<span class="key"> C</span></a><br />
-<a href="#p577">282. ข้าขอถวายคำสรรเสริญ <span class="en">(I give You all the honour)</span><span class="key"> G</span></a><br />
-<a href="#p583">283. พระเยซู ๆ บริสุทธิ์และรับการเจิม <span class="en">(Holy and anointed one)</span><span class="key"> G</span></a><br />
-<a href="#p585">284. ชั่งปง้น <span class="en">(The potter's hand)</span><span class="key"> G</span></a><br />
-<a href="#p588">285. สุขสบายจิตใจข้า <span class="en">(It is well with my soul)</span><span class="key"> C</span></a><br />
-<a href="#p596">286. พระเจ้าจัดเตรียมหนทาง <span class="en">(God will make a way)</span><span class="key"> G</span></a><br />
-<a href="#p601">287. พระเยซูเราน้อมรับพระองค์ <span class="en">(Jesus, we enthrone You)</span><span class="key"> A</span></a><br />
-<a href="#p603">288. พระองค์ทรงงดงามยิ่งกว่า <span class="en">(You are beautiful beyond description)</span><span class="key"> A</span></a><br />
-<a href="#p606">289. โฮซันนาจอมราชา <span class="en">(Hosanna to the king)</span><span class="key"> A</span></a><br />
-<a href="#p608">291. พระบารมีประกาศพระบารมี <span class="en">(Majesty)</span><span class="key"> A</span></a><br />
-<a href="#p610">292. พระสิริ โอพระสิริ<span class="key"> A</span></a><br />
-<a href="#p612">293. เราบูชาพระนามพระเจ้าพระบิดา<span class="key"> A</span></a><br />
-<a href="#p614">294. แด่พระเจ้าด้วยคำสรรเสริญ <span class="en">(To God be the glory)</span><span class="key"> A</span></a><br />
-<a href="#p616">295. พระบิดาในสวรรค์เรารักพระองค์ <span class="en">(Father in heaven, how I love You)</span><span class="key"> A</span></a><br />
-<a href="#p618">296. เราจะโมทนาพระคุณ <span class="en">(I will give thanks to Thee)</span><span class="key"> A</span></a><br />
-<a href="#p620">297. องค์พระบิดาเราเทิดทูนพระนาม<span class="key"> A</span></a><br />
-<a href="#p622">298. นำข้าใกล้พระองค์ <span class="en">(Draw me close to You)</span><span class="key"> A</span></a><br />
-<a href="#p624">300. องค์พระเจ้าสันติราช<span class="key"> A</span></a><br />
-<a href="#p625">301. ยกมือของท่าน <span class="en">(Lift up your hands)</span><span class="key"> A</span></a><br />
-<a href="#p626">302. เราขอสรรเสริญเทิดทูนพระนาม <span class="en">(And we thank You, Lord)</span><span class="key"> A</span></a><br />
-<a href="#p628">303. ร้องแด่พระเจ้า <span class="en">(Shout to the Lord)</span><span class="key"> A</span></a><br />
-<a href="#p630">304. บริสุทธิ์องค์บริสุทธิ์<span class="key"> A</span></a><br />
-<a href="#p631">305. ชั่วชีวิต<span class="key"> A</span></a><br />
-<a href="#p633">306. แด่พระเจ้าผู้ครองบัลลังก์ <span class="en">(To Him who sits upon the throne)</span><span class="key"> A</span></a><br />
-<a href="#p634">307. พระเจ้าของเราโอ้พระนามช่างงาม<span class="key"> A</span></a><br />
-<a href="#p636">308. เมื่อมีปงญหา <span class="en">(If He carried the weight of the world)</span><span class="key"> A</span></a><br />
-<a href="#p638">309. เป็นคำอธิษฐาน<span class="key"> C</span></a><br />
-<a href="#p639">310. เรากราบนมัสการ <span class="en">(Down at Your feet)</span><span class="key"> A</span></a><br />
-<a href="#p641">311. ร้องแด่พระเจ้า <span class="en">(Shout to the Lord)</span><span class="key"> A</span></a><br />
-<a href="#p643">312. ให้เราสรรเสริญพระเจ้ายิ่งใหญ่<span class="key"> Cm</span></a><br />
-<a href="#p644">313. ให้เราบูชาเพราะพระเจ้าทรงสถิตย์ <span class="en">(Let us adore)</span><span class="key"> Cm</span></a><br />
-<a href="#p647">314. บริสุทธิ์พระเป็นเจ้าผู้ทรงฤทธานุภาพ<span class="key"> Dm</span></a><br />
-<a href="#p648">315. ขอความรักขอฤทธา <span class="en">(More love, more power)</span><span class="key"> Em</span></a><br />
-<a href="#p650">316. ข้ารู้แน่พระองค์ทรงพระชนม์อยู่<span class="key"> Em</span></a><br />
-<a href="#p651">317. จิตวิญญาณข้าร้อง<span class="key"> Em</span></a><br />
-<a href="#p653">318. ให้เราสรรเสริญพระนามของพระเยซู<span class="key"> Em</span></a><br />
-<a href="#p654">319. ทุกวันเวลาข้าสาธุการ<span class="key"> Em</span></a><br />
-<a href="#p656">320. เราขอวิงวอนพี่น้องเอ๋ย<span class="key"> Em</span></a><br />
-<a href="#p658">321. เมื่อพระวิญญาณพระเจ้าสวมทับข้า <span class="en">(When the Spirit of the Lord)</span><span class="key"> Em</span></a><br />
+<a href="#p44">20. เราจะสร้างประชากรเพื่อสรรเสริญ <span class="en">(For I'm building a people)</span><span class="key"> C</span></a><br>
+<a href="#p46">21. เหตุนั้นเมื่อเราได้เป็นคนชอบธรรม<span class="key"> C</span></a><br>
+<a href="#p48">22. ชัยชนะโลกนี้ <span class="en">(We have overcome)</span><span class="key"> C</span></a><br>
+<a href="#p49">23. พระเกียรติ พระสิริ <span class="en">(Blessing and honour)</span><span class="key"> C</span></a><br>
+<a href="#p53">24. เราประกาศว่าแผ่นดินของพระเจ้าอยู่นี่ <span class="en">(We declare that the kingdom of God is here)</span><span class="key"> C</span></a><br>
+<a href="#p56">25. ความรักของพระเจ้าดีกว่าชีวิต <span class="en">(Thy loving kindness)</span><span class="key"> C</span></a><br>
+<a href="#p58">26. ยามเราอยู่ร่วมกัน<span class="key"> C</span></a><br>
+<a href="#p60">27. องค์พระเยซูคริสต์ที่รักของข้า<span class="key"> C</span></a><br>
+<a href="#p62">29. ทางเดียวเยซู <span class="en">(One way, Jesus)</span><span class="key"> B</span></a><br>
+<a href="#p66">30. เมตตาหลั่งลงมา <span class="en">(Mercy is falling)</span><span class="key"> D</span></a><br>
+<a href="#p71">31. องค์พระเจ้าของเรายิ่งใหญ่ <span class="en">(What a mighty God we serve)</span><span class="key"> D</span></a><br>
+<a href="#p72">32. ให้ผู้ที่พระเจ้าทรงไถ่ไว้ร้องว่า <span class="en">(Let the redeemed of the Lord)</span><span class="key"> D</span></a><br>
+<a href="#p73">33. ร้องโฮซันนา <span class="en">(Sing hosanna)</span><span class="key"> D</span></a><br>
+<a href="#p74">34. ไม่ใช่ฤทธิ์ไม่ใช่แรง <span class="en">(Not by might, nor by power)</span><span class="key"> D</span></a><br>
+<a href="#p75">35. ฉันเป็นไท<span class="key"> D</span></a><br>
+<a href="#p76">36. ในพระนามพระเยซู <span class="en">(In the name of Jesus)</span><span class="key"> D</span></a><br>
+<a href="#p77">37. ข้าได้ยินเสียงกองทัพของพระเจ้า <span class="en">(I hear the sound of the army)</span><span class="key"> D</span></a><br>
+<a href="#p78">38. ร้องเพลงถวาย สรรเสริญพระนาม <span class="en">(Sing unto God, sing praises to His name)</span><span class="key"> D</span></a><br>
+<a href="#p80">39. องค์พระเจ้าผู้ทรงสร้างฟ้าสวรรค์ <span class="en">(Ah Lord God)</span><span class="key"> D</span></a><br>
+<a href="#p82">40. พระเจ้าดีตลอดเวลา <span class="en">(God is good, all the time)</span><span class="key"> D</span></a><br>
+<a href="#p86">41. อันทางของคนชอบธรรม <span class="en">(The steps of a good man)</span><span class="key"> D</span></a><br>
+<a href="#p88">42. ดีสักเท่าไหร่<span class="key"> D</span></a><br>
+<a href="#p90">43. เราจะร้อง เราจะร้อง <span class="en">(I will sing, I will sing)</span><span class="key"> D</span></a><br>
+<a href="#p96">44. มาร้องรำ นำเพลง <span class="en">(We will dance on the streets)</span><span class="key"> D</span></a><br>
+<a href="#p100">45. ข้ารับการไถ่ <span class="en">(I've been redeemed)</span><span class="key"> D</span></a><br>
+<a href="#p101">46. ความยินดีในพระเจ้าเป็นกำลังของข้า <span class="en">(The joy of the Lord is my strength)</span><span class="key"> D</span></a><br>
+<a href="#p106">47. เมื่อข้าพระองค์ได้เห็นพระพักตร์ <span class="en">(As for me, I will behold Thy face)</span><span class="key"> D</span></a><br>
+<a href="#p107">48. ครองราชย์องค์พระเยซู <span class="en">(Reign King Jesus, reign)</span><span class="key"> D</span></a><br>
+<a href="#p108">49. ฉันจะร้องเพลงถึงความรักมั่นคง <span class="en">(I will sing of the mercies)</span><span class="key"> D</span></a><br>
+<a href="#p110">50. พระกรุณาและปรานี <span class="en">(Surely goodness and mercy)</span><span class="key"> D</span></a><br>
+<a href="#p111">51. ยังมีสายธารในพระพักตร์พระเจ้า<span class="key"> D</span></a><br>
+<a href="#p114">52. ทรงเปลี่ยนความเศร้าโศก <span class="en">(He turned my mourning into dancing)</span><span class="key"> D</span></a><br>
+<a href="#p116">53. บุคคลผู้ใดกระหาย<span class="key"> D</span></a><br>
+<a href="#p118">54. เราจะเดินในทางของพระเยซู<span class="key"> D</span></a><br>
+<a href="#p120">55. ในทุ่งหญ้าของพระเจ้า<span class="key"> D</span></a><br>
+<a href="#p122">56. รู้สึกไหมถึงภูเขาไหวหวั่น <span class="en">(Did you hear the mountains tremble)</span><span class="key"> D</span></a><br>
+<a href="#p128">57. ไม่มีผู้ใดไม่มีนามใด <span class="en">(No other name)</span><span class="key"> A</span></a><br>
+<a href="#p129">58. องค์พระคริสต์ทรงนำทัพมุ่งไป <span class="en">(For the Lord is marching on)</span><span class="key"> D</span></a><br>
+<a href="#p131">59. สุขที่ไหนจะมาเปรียบปาน<span class="key"> D</span></a><br>
+<a href="#p132">60. จงแสวงหาแผ่นดินของพระเจ้า <span class="en">(Seek ye first the kingdom of God)</span><span class="key"> D</span></a><br>
+<a href="#p133">61. เมื่อได้มองแสงทองที่ส่องสวยงาม<span class="key"> D</span></a><br>
+<a href="#p136">62. โอ! วิถีคนชอบธรรม <span class="en">(O the light of the righteous)</span><span class="key"> E</span></a><br>
+<a href="#p137">63. สาธุการพระนามแด่พระเจ้า <span class="en">(Blessed be the name of the Lord most high)</span><span class="key"> E</span></a><br>
+<a href="#p141">64. อัศจรรย์พระเยซูของเรา <span class="en">(Wonderful, wonderful, Jesus is to me)</span><span class="key"> E</span></a><br>
+<a href="#p142">65. เกลือ แสงสว่าง <span class="en">(Salt and light)</span><span class="key"> E</span></a><br>
+<a href="#p144">66. โรมันสิบหกสิบเก้าว่า<span class="key"> E</span></a><br>
+<a href="#p145">67. ไฟ ไฟ ไฟ<span class="key"> E</span></a><br>
+<a href="#p146">68. เราพบพระเยซูคริสต์<span class="key"> E</span></a><br>
+<a href="#p147">69. มีพระเยซูอยู่ในใจฉัน <span class="en">(With Jesus in my heart I can smile)</span><span class="key"> E</span></a><br>
+<a href="#p149">70. ฉันมีพระเยซูฉันจะไม่หวั่นไหว <span class="en">(We shall not be moved)</span><span class="key"> E</span></a><br>
+<a href="#p151">71. ฉันได้วางใจในพระเจ้า <span class="en">(I just keep trusting the Lord)</span><span class="key"> E</span></a><br>
+<a href="#p153">72. สรรเสริญพระเจ้าผู้รับใช้ของพระองค์ <span class="en">(Come bless the Lord)</span><span class="key"> E</span></a><br>
+<a href="#p154">73. องค์พระเยซูคือผู้ใด <span class="en">(Everybody ought to know)</span><span class="key"> E</span></a><br>
+<a href="#p155">74. โปรดทรงสำแดงในใจข้าเถิด <span class="en">(Open the eyes of my heart)</span><span class="key"> E</span></a><br>
+<a href="#p158">75. ของประทานแห่งพระวิญญาณ<span class="key"> E</span></a><br>
+<a href="#p162">76. ฉันจะร้องถึงความรัก <span class="en">(I will sing of Your love forever)</span><span class="key"> E</span></a><br>
+<a href="#p167">77. ชีวิตอยู่ในพระองค์ <span class="en">(My life is in You, Lord)</span><span class="key"> F</span></a><br>
+<a href="#p168">78. พระเจ้ายิ่งใหญ่และสมควรจะสรรเสริญ <span class="en">(Great is the Lord)</span><span class="key"> F</span></a><br>
+<a href="#p170">79. จุดไฟลุกโชนในใจ <span class="en">(Light the fire again)</span><span class="key"> F</span></a><br>
+<a href="#p173">80. พระคริสต์เจ้าใครเปรียบได้ <span class="en">(Isn't He wonderful)</span><span class="key"> F</span></a><br>
+<a href="#p175">81. ฉันรักคุณด้วยความรักของพระเจ้า <span class="en">(I love you with the love of the Lord)</span><span class="key"> C</span></a><br>
+<a href="#p176">82. แสนยินดี พระเยซู เรายินดี <span class="en">(Celebrate, Jesus celebrate)</span><span class="key"> F</span></a><br>
+<a href="#p177">83. เริ่มให้ถูก<span class="key"> F</span></a><br>
+<a href="#p179">84. ฉันเชื่อว่าสิ่งอัศจรรย์ <span class="en">(I believe in miracles)</span><span class="key"> F</span></a><br>
+<a href="#p180">85. เดินกับพระเยซู <span class="en">(Walking with Jesus)</span><span class="key"> F</span></a><br>
+<a href="#p181">86. ขอพระวิญญาณเทลงมา <span class="en">(There's going to be a great awakening)</span><span class="key"> G</span></a><br>
+<a href="#p187">87. สายน้ำไหลหลาก <span class="en">(Down the mountain the river flows)</span><span class="key"> G</span></a><br>
+<a href="#p193">88. โฮซันนาแด่พระเจ้าสูงสุด <span class="en">(Hosanna in the highest)</span><span class="key"> G</span></a><br>
+<a href="#p195">89. สรรเสริญแด่พระเจ้า <span class="en">(Glory, glory in the highest)</span><span class="key"> G</span></a><br>
+<a href="#p197">90. สรรเสริญพระนามขององค์พระเจ้า<span class="key"> G</span></a><br>
+<a href="#p198">91. จงร้องเพลงสรรเสริญถวายพระเจ้า<span class="key"> G</span></a><br>
+<a href="#p200">92. พระเยซูคือองค์ราชันย์ <span class="en">(You are crowned with many crowns)</span><span class="key"> G</span></a><br>
+<a href="#p201">93. ชนะ ชนะ ชนะ ชั่วนิรันดร์<span class="key"> G</span></a><br>
+<a href="#p202">94. ไม่มีอะไรที่ยากสำหรับพระเจ้า <span class="en">(Nothing is too difficult)</span><span class="key"> G</span></a><br>
+<a href="#p204">95. ข้ายกเสียงขึ้น ด้วยเพลงสรรเสริญ <span class="en">(I lift my voice in song)</span><span class="key"> G</span></a><br>
+<a href="#p206">96. พระเยซูชนะ <span class="en">(Jesus overcame)</span><span class="key"> G</span></a><br>
+<a href="#p208">97. ผู้ที่ทรงไถ่ไว้ของพระเจ้า <span class="en">(Therefore the redeemed)</span><span class="key"> G</span></a><br>
+<a href="#p209">98. ข้าไม่มีชีวิตอยู่ต่อไป <span class="en">(It's no longer I that liveth)</span><span class="key"> G</span></a><br>
+<a href="#p210">99. วันต่อวันฉันเดินไปกับองค์พระเยซู<span class="key"> G</span></a><br>
+<a href="#p211">100. พระเยซูเป็นที่รักของข้า <span class="en">(Jesus, lover of my soul)</span><span class="key"> G</span></a><br>
+<a href="#p213">102. อย่าลืมว่าพระเยซูทอดพระเนตร<span class="key"> G</span></a><br>
+<a href="#p214">103. จงหยั่งลึกลึกลงถึงแก่น<span class="key"> G</span></a><br>
+<a href="#p218">104. ข้ารับชีวิตพระคริสต์ <span class="en">(I'm a new creation, I'm a brand new man)</span><span class="key"> G</span></a><br>
+<a href="#p219">105. ดวงใจข้ารักพระนิเวศน์พระเจ้า<span class="key"> G</span></a><br>
+<a href="#p220">106. โอ้ความรักของพระองค์ <span class="en">(Shine Jesus, shine)</span><span class="key"> G</span></a><br>
+<a href="#p222">108. ฉันคิดถึงคุณ<span class="key"> G</span></a><br>
+<a href="#p224">109. เราเป็นหนึ่งในความรักพระคริสต์ <span class="en">(We are one in the bonds of love)</span><span class="key"> G</span></a><br>
+<a href="#p226">110. พระองค์อยู่เคียง<span class="key"> G</span></a><br>
+<a href="#p227">111. ฮาเลลูยา พระเยซูทรงพระชนม์ <span class="en">(Halleluia, Jesus is alive)</span><span class="key"> A</span></a><br>
+<a href="#p228">112. ขอให้พระเกียรติ <span class="en">(Unto Him be glory in the Church)</span><span class="key"> A</span></a><br>
+<a href="#p229">113. ด้วยสุดใจ<span class="key"> A</span></a><br>
+<a href="#p231">114. ใครลำบากเหน็ดเหนื่อย<span class="key"> A</span></a><br>
+<a href="#p233">115. เราจะร้องสรรเสริญพระนาม <span class="en">(I sing praises to Your name)</span><span class="key"> A</span></a><br>
+<a href="#p236">116. พื้นฟ้าสวรรค์ประกาศพระบารมี <span class="en">(All heaven declares)</span><span class="key"> A</span></a><br>
+<a href="#p238">117. แต่ละวันที่ได้เดินก้าวมา<span class="key"> A</span></a><br>
+<a href="#p241">118. จงมีพลังสู้ทนอย่าหวั่น<span class="key"> A</span></a><br>
+<a href="#p242">119. พระเจ้าของเราอยู่ท่ามกลางพวกเรา <span class="en">(The Lord your God is in your midst)</span><span class="key"> A</span></a><br>
+<a href="#p244">120. ความสุขภายในใจ<span class="key"> C</span></a><br>
+<a href="#p246">121. ลำธาร<span class="key"> A</span></a><br>
+<a href="#p249">123. ร่วมกันในพระเยซู<span class="key"> A</span></a><br>
+<a href="#p253">124. ขอทรงสอน<span class="key"> A</span></a><br>
+<a href="#p255">125. ดั่งดาวิด <span class="en">(As David danced)</span><span class="key"> Am</span></a><br>
+<a href="#p260">126. ข้ายกพระนามพระเจ้าของข้า <span class="en">(I lift Your name high O Lord)</span><span class="key"> A</span></a><br>
+<a href="#p261">127. ใครเปรียบดังพระองค์ <span class="en">(Who is like the Lord)</span><span class="key"> Am</span></a><br>
+<a href="#p264">128. แด่จอมราชานิจนิรันดร์ <span class="en">(Now unto the King eternal)</span><span class="key"> Bm</span></a><br>
+<a href="#p268">129. น้ำพุของพระเจ้าพลุ่งอยู่เสมอ<span class="key"> Dm</span></a><br>
+<a href="#p269">130. ดวงใจของข้าเผาผลาญ <span class="en">(The zeal of God)</span><span class="key"> Dm</span></a><br>
+<a href="#p270">131. โดยพระเจ้าพวกเราจึงมีกำลัง <span class="en">(Through our God)</span><span class="key"> Dm</span></a><br>
+<a href="#p273">132. โอ้อิสราเอลจงรีบตื่นขึ้นเถิด <span class="en">(O Israel)</span><span class="key"> Dm</span></a><br>
+<a href="#p274">133. จงชื่นชมยินดีในพระเป็นเจ้า<span class="key"> Dm</span></a><br>
+<a href="#p278">134. เยโฮวาห์ยีเรห์ <span class="en">(Jehovah Jireh, my provider)</span><span class="key"> Dm</span></a><br>
+<a href="#p280">135. นั่นไม่ใช่ฤทธิ์หรือแรง <span class="en">(It's not by might, nor by power)</span><span class="key"> Dm</span></a><br>
+<a href="#p282">136. ลุกขึ้นชนชาติขององค์พระเจ้า<span class="key"> C</span></a><br>
+<a href="#p284">137. ชื่นชมยินดี <span class="en">(Jubilate, everybody)</span><span class="key"> Dm</span></a><br>
+<a href="#p286">138. โอ้เสียงแห่งความยินดี<span class="key"> C</span></a><br>
+<a href="#p288">139. ชูใจของคุณ <span class="en">(Lift up your heart and magnify)</span><span class="key"> Dm</span></a><br>
+<a href="#p292">140. พระคริสต์เป็นพระเจ้าของเรา<span class="key"> Dm</span></a><br>
+<a href="#p294">141. พระเจ้าดี <span class="en">(God is good, I sing and shout)</span><span class="key"> Em</span></a><br>
+<a href="#p296">142. เราจะสรรเสริญพระองค์ <span class="en">(I will worship the Lord)</span><span class="key"> Em</span></a><br>
+<a href="#p298">143. พระเยซูเป็นพระเจ้า <span class="en">(Jesus Christ is Lord)</span><span class="key"> Em</span></a><br>
+<a href="#p300">144. ดูเถิดพระเจ้าเป็นความรอดของข้า<span class="key"> Em</span></a><br>
+<a href="#p301">145. องค์พระคริสต์ทรงฤทธิ์ใหญ่ยิ่ง <span class="en">(King of kings and Lord of lords)</span><span class="key"> Em</span></a><br>
+<a href="#p302">146. เกิดความยินดี<span class="key"> Em</span></a><br>
+<a href="#p303">147. องค์อธิปไตยพระเจ้าเกรียงไกร <span class="en">(The Spirit of the sovereign Lord)</span><span class="key"> Em</span></a><br>
+<a href="#p310">148. ใครจะขึ้นไปบนภูเขาของพระเจ้า <span class="en">(Who can ascend)</span><span class="key"> Em</span></a><br>
+<a href="#p312">149. ข้าแสวงหาพระองค์ <span class="en">(Lord, I seek after Thee)</span><span class="key"> C</span></a><br>
+<a href="#p314">150. พระบิดาเรารัก <span class="en">(Father, I love You)</span><span class="key"> C</span></a><br>
+<a href="#p317">151. พระนามพระเยซู <span class="en">(The name of Jesus)</span><span class="key"> C</span></a><br>
+<a href="#p318">152. ข้าเงยหน้ามองขึ้น <span class="en">(I lift my eyes up)</span><span class="key"> C</span></a><br>
+<a href="#p320">153. เข้าเฝ้าที่พระพักตร์พระเจ้า <span class="en">(Into Your presence we come)</span><span class="key"> C</span></a><br>
+<a href="#p321">154. มองพระพักตร์องค์พระเยซู <span class="en">(Turn your eyes upon Jesus)</span><span class="key"> C</span></a><br>
+<a href="#p322">155. พระวิญญาณของพระเจ้า<span class="key"> C</span></a><br>
+<a href="#p324">156. โปรดให้ฉันใกล้พระองค์<span class="key"> C</span></a><br>
+<a href="#p325">157. อิมมานูเอล <span class="en">(Emmanuel)</span><span class="key"> C</span></a><br>
+<a href="#p326">158. บริสุทธิ์ บริสุทธิ์ บริสุทธิ์ <span class="en">(Holy, holy, holy is the Lord)</span><span class="key"> C</span></a><br>
+<a href="#p328">159. ในเวลาของพระคริสต์ <span class="en">(In His time)</span><span class="key"> C</span></a><br>
+<a href="#p330">160. โปรดประทาน การฟื้นใจ <span class="en">(I cast all my cares)</span><span class="key"> C</span></a><br>
+<a href="#p331">161. ท่ามกลางภาระหนักเราร้องเพลง <span class="en">(In moments like these)</span><span class="key"> C</span></a><br>
+<a href="#p333">162. ฉันได้ตัดสินใจ <span class="en">(I have decided to follow Jesus)</span><span class="key"> C</span></a><br>
+<a href="#p334">163. เวลานี้เราจะถ่อมตัวลง<span class="key"> C</span></a><br>
+<a href="#p338">164. เปลี่ยนแปลงชีวิตข้า <span class="en">(Change my heart O God)</span><span class="key"> C</span></a><br>
+<a href="#p339">165. โลหิตพระคริสต์ทรงชำระข้า <span class="en">(It's Your blood that cleanses)</span><span class="key"> C</span></a><br>
+<a href="#p340">166. ความรักยิ่งใหญ่เรารับจากพระบิดา <span class="en">(I have the greatest love)</span><span class="key"> C</span></a><br>
+<a href="#p342">167. ที่บนกางเขน<span class="key"> C</span></a><br>
+<a href="#p344">168. สรรเสริญ สดุดี จงมีแด่พระเจ้า<span class="key"> C</span></a><br>
+<a href="#p345">169. พระบิดาผู้ไม่ทรงเปลี่ยนแปลง <span class="en">(Faithful One)</span><span class="key"> C</span></a><br>
+<a href="#p347">170. เราคืออัลฟาและโอเมกา <span class="en">(Alpha and Omega)</span><span class="key"> C</span></a><br>
+<a href="#p348">171. เพราะพระองค์นั้นทรงเปี่ยมรัก<span class="key"> C</span></a><br>
+<a href="#p351">172. เพื่อน<span class="key"> C</span></a><br>
+<a href="#p353">173. ปรารถนาพระองค์ <span class="en">(Hungry I come to You)</span><span class="key"> C</span></a><br>
+<a href="#p356">174. โปรดให้เข้าใกล้พระองค์<span class="key"> C</span></a><br>
+<a href="#p358">175. ถวายกายใจ<span class="key"> C</span></a><br>
+<a href="#p360">176. ขอบพระคุณพระเจ้า<span class="key"> C</span></a><br>
+<a href="#p366">177. พระเยซูผู้สมควรสรรเสริญ<span class="key"> D</span></a><br>
+<a href="#p370">178. พระเยซูโปรดฟื้นฟู<span class="key"> D</span></a><br>
+<a href="#p372">179. มีพระเยซู<span class="key"> D</span></a><br>
+<a href="#p374">180. แต่ข้ารู้จักพระองค์ <span class="en">(I know Whom I have believed)</span><span class="key"> D</span></a><br>
+<a href="#p378">181. ให้เราเข้าในวิหารนี้ <span class="en">(We have come into this place)</span><span class="key"> D</span></a><br>
+<a href="#p380">182. ให้เราสรรเสริญพระนาม ยะโฮวาห์ <span class="en">(Lord, I worship You)</span><span class="key"> D</span></a><br>
+<a href="#p382">183. เขาจะบินขึ้น<span class="key"> D</span></a><br>
+<a href="#p384">184. วิญญาณข้าแสวงหาพระเจ้า <span class="en">(As the deer pants)</span><span class="key"> D</span></a><br>
+<a href="#p385">185. เมื่อพวกเราชุมนุมกัน <span class="en">(As we gather)</span><span class="key"> D</span></a><br>
+<a href="#p386">186. เยชูขอทรงเป็นศูนย์กลาง <span class="en">(Jesus, be the centre)</span><span class="key"> D</span></a><br>
+<a href="#p389">187. น้ำแห่งชีวิต<span class="key"> D</span></a><br>
+<a href="#p391">188. ข้าจะสรรเสริญองค์พระบิดา<span class="key"> D</span></a><br>
+<a href="#p392">189. พระเจ้าทรงสัมผัสฉันวันนี้<span class="key"> D</span></a><br>
+<a href="#p396">190. พระเยซูพระองค์ทรงเป็นพระผู้เป็นเจ้า<span class="key"> D</span></a><br>
+<a href="#p397">191. สันติสุขของพระคริสต์ <span class="en">(My peace I give unto you)</span><span class="key"> D</span></a><br>
+<a href="#p400">192. ขอพระเจ้าสดับคำร้องวิงวอนของข้า <span class="en">(Hear my cry O Lord)</span><span class="key"> D</span></a><br>
+<a href="#p404">194. พระบิดาข้ารักจะอยู่<span class="key"> D</span></a><br>
+<a href="#p406">195. เปิดตาข้า <span class="en">(Fill my eyes, o my God)</span><span class="key"> D</span></a><br>
+<a href="#p407">196. ทรงนำข้าผ่านลานชั้นนอก <span class="en">(Take me in)</span><span class="key"> Em</span></a><br>
+<a href="#p410">197. จงยอพระเกียรติพระเจ้า <span class="en">(Exalt the Lord our God)</span><span class="key"> D</span></a><br>
+<a href="#p411">198. โปรดเปิดดวงตา <span class="en">(Open my eyes)</span><span class="key"> D</span></a><br>
+<a href="#p412">199. ด้วยมือที่ข้าชูขึ้น <span class="en">(With my hands lifted up)</span><span class="key"> D</span></a><br>
+<a href="#p413">200. สรรเสริญนามพระเยซู <span class="en">(Praise the name of Jesus)</span><span class="key"> D</span></a><br>
+<a href="#p414">201. เป้าหมายสูงสุดในชีวิตฉัน <span class="en">(The greatest thing in all of my life)</span><span class="key"> D</span></a><br>
+<a href="#p415">202. คำสรรเสริญล้นจากวิญญาณ <span class="en">(His praise fills the temple)</span><span class="key"> D</span></a><br>
+<a href="#p416">203. นี่คือเวลาเราบูชาพระบิดา <span class="en">(Now is the time)</span><span class="key"> D</span></a><br>
+<a href="#p417">204. เมื่อรับการสวมทับ <span class="en">(When I feel the touch of Your hand)</span><span class="key"> D</span></a><br>
+<a href="#p418">205. พระองค์เป็นที่กำบัง <span class="en">(You are my hiding place)</span><span class="key"> D</span></a><br>
+<a href="#p419">206. ล้ำเลิศพระองค์ล้ำเลิศ <span class="en">(Worthy, You are worthy)</span><span class="key"> </span></a><br>
+<a href="#p420">207. พระเยซูบุตรพระเจ้า <span class="en">(You are my all in all)</span><span class="key"> D</span></a><br>
+<a href="#p425">208. เชิญพระวิญญาณ <span class="en">(O let the Son of God enfold you)</span><span class="key"> D</span></a><br>
+<a href="#p429">209. เชิญองค์พระวิญญาณโปรดเจิมข้า <span class="en">(Come Holy Spirit)</span><span class="key"> D</span></a><br>
+<a href="#p430">210. ขอบคุณพระเยซู <span class="en">(Thank You Lord)</span><span class="key"> D</span></a><br>
+<a href="#p431">211. อีกครั้ง <span class="en">(Once again)</span><span class="key"> D</span></a><br>
+<a href="#p434">212. สาธุการพระนามพระเยซู <span class="en">(Blessed be the name of the Lord)</span><span class="key"> D</span></a><br>
+<a href="#p435">213. รักในพระคุณ<span class="key"> D</span></a><br>
+<a href="#p437">214. โปรดเจิมใจฉันให้ร้อนด้วยไฟ<span class="key"> D</span></a><br>
+<a href="#p439">215. เรายืนอยู่จำเพาะพระพักตร์ <span class="en">(We are standing on holy ground)</span><span class="key"> D</span></a><br>
+<a href="#p440">216. ชำระใจของข้า <span class="en">(Purify my heart)</span><span class="key"> D</span></a><br>
+<a href="#p444">217. ขอให้คำจากปากของข้า <span class="en">(Let the words of my mouth)</span><span class="key"> D</span></a><br>
+<a href="#p446">218. ความรักมั่นคง <span class="en">(The steadfast love of the Lord)</span><span class="key"> D</span></a><br>
+<a href="#p447">219. งามจริงพระพักตร์พระเจ้า <span class="en">(O Lord, You're beautiful)</span><span class="key"> D</span></a><br>
+<a href="#p450">220. เมื่อมองดูความบริสุทธิ์ของพระองค์ <span class="en">(When I look into Your holiness)</span><span class="key"> D</span></a><br>
+<a href="#p453">221. เชิญมาพระวิญญาณเติมชีวิต <span class="en">(Come Lord, come reign)</span><span class="key"> D</span></a><br>
+<a href="#p454">222. พระเจ้าผู้รักษาเจ้า <span class="en">(I am the God that healeth thee)</span><span class="key"> D</span></a><br>
+<a href="#p456">223. ขอพระวิญญาณทรงโปรดประทาน<span class="key"> D</span></a><br>
+<a href="#p457">224. 178 ข้าเชื่อในพระเยซู <span class="en">(I believe in Jesus)</span><span class="key"> D</span></a><br>
+<a href="#p458">225. ผู้ทรงสิรินั้นคือผู้ใด<span class="key"> C</span></a><br>
+<a href="#p459">226. เรานมัสการ<span class="key"> D</span></a><br>
+<a href="#p461">227. ขอโปรดเตรียมเรา <span class="en">(Lord, prepare me)</span><span class="key"> D</span></a><br>
+<a href="#p462">228. นิมิต<span class="key"> D</span></a><br>
+<a href="#p464">229. มีความเข้าใจกันในพวกเรา <span class="en">(There's a quiet understanding)</span><span class="key"> D</span></a><br>
+<a href="#p466">230. จิตใจฉันอาลัย<span class="key"> D</span></a><br>
+<a href="#p468">231. จะเป็นดั่งแสง<span class="key"> D</span></a><br>
+<a href="#p472">232. ในโลกนี้มีคนมากมาย<span class="key"> D</span></a><br>
+<a href="#p473">233. พรุ่งนี้เราจะได้พบอะไร<span class="key"> D</span></a><br>
+<a href="#p475">235. ข้ากราบกรานตรงที่พระบาท <span class="en">(We fall down)</span><span class="key"> E</span></a><br>
+<a href="#p476">236. อ้อมแขนอันอุ่นใจ <span class="en">(Arms of love)</span><span class="key"> E</span></a><br>
+<a href="#p478">237. ขอบพระคุณพระองค์ทรงเมตตา <span class="en">(I want to thank You for Your goodness)</span><span class="key"> E</span></a><br>
+<a href="#p480">238. พระองค์โอ้พระองค์ทรงสมควร <span class="en">(Worthy, o worthy are You)</span><span class="key"> E</span></a><br>
+<a href="#p482">239. สรรเสริญและโมทนา<span class="key"> E</span></a><br>
+<a href="#p483">240. เชิญพระเยซูอยู่ในใจ <span class="en">(Into my heart)</span><span class="key"> E</span></a><br>
+<a href="#p484">241. โปรดทรงอวยพรประเทศไทย<span class="key"> E</span></a><br>
+<a href="#p488">242. พระศิลา<span class="key"> E</span></a><br>
+<a href="#p491">243. ข้ารักพระองค์ ข้าจึงขอบูชา <span class="en">(I love You, Lord)</span><span class="key"> F</span></a><br>
+<a href="#p492">244. สาธุการแด่พระเจ้า <span class="en">(Bless the Lord, o my soul)</span><span class="key"> F</span></a><br>
+<a href="#p493">245. ข้ามอบชีวิต<span class="key"> F</span></a><br>
+<a href="#p497">246. พระองค์ทรงสมควร<span class="key"> F</span></a><br>
+<a href="#p501">247. โมทนาพระคุณพระเจ้า <span class="en">(Give thanks with a grateful heart)</span><span class="key"> F</span></a><br>
+<a href="#p503">248. พระเยซูพระนามเหนือนามใด <span class="en">(Jesus, name above all names)</span><span class="key"> F</span></a><br>
+<a href="#p505">249. ข้ายกย่องพระองค์ <span class="en">(I exalt Thee)</span><span class="key"> F</span></a><br>
+<a href="#p507">250. พระองค์ผู้ทรงรักษาให้หาย<span class="key"> F</span></a><br>
+<a href="#p511">251. ความรักพระองค์ใหญ่หลวง <span class="en">(Your steadfast love reaches to the heavens)</span><span class="key"> F</span></a><br>
+<a href="#p513">252. พระนามยิ่งใหญ่ประเสริฐ <span class="en">(His name is wonderful)</span><span class="key"> F</span></a><br>
+<a href="#p515">253. ให้เราได้รักพระองค์ด้วยสิ้นสุดใจ<span class="key"> G</span></a><br>
+<a href="#p517">254. ประทับอยู่ท่ามกลางเรา<span class="key"> G</span></a><br>
+<a href="#p519">255. พระคริสต์ยื่นพระหัตถ์ออกมาช่วยข้า<span class="key"> G</span></a><br>
+<a href="#p520">256. พระนามดุจน้ำมันชโลมข้า <span class="en">(Your name is as ointment)</span><span class="key"> G</span></a><br>
+<a href="#p521">257. ข้าขอสรรเสริญพระเจ้ายิ่งใหญ่ <span class="en">(I worship You, almighty God)</span><span class="key"> G</span></a><br>
+<a href="#p523">258. องค์พระวิญญาณโปรดประทับ <span class="en">(Holy Spirit Thou art welcome)</span><span class="key"> G</span></a><br>
+<a href="#p524">259. ข้าอยากรู้จักพระองค์ <span class="en">(I want to know You more)</span><span class="key"> G</span></a><br>
+<a href="#p528">260. โอ้ข้ายกพระนามสูงสุด <span class="en">(Lord, I lift Your name on high)</span><span class="key"> G</span></a><br>
+<a href="#p529">261. กำลังในความรักพระองค์ <span class="en">(The power of Your love)</span><span class="key"> G</span></a><br>
+<a href="#p531">262. ส่องสว่าง <span class="en">(Send the light)</span><span class="key"> G</span></a><br>
+<a href="#p535">263. ทุกวันเวลาข้าอยากอยู่ใกล้ชิดพระองค์<span class="key"> G</span></a><br>
+<a href="#p537">264. ผู้ใดจะเปรียบได้พระเจ้าองค์เดียว <span class="en">(No one but You, Lord)</span><span class="key"> G</span></a><br>
+<a href="#p541">265. เมื่อความมืดมิด <span class="en">(When the darkness)</span><span class="key"> G</span></a><br>
+<a href="#p544">266. ถวายความยิ่งใหญ่แด่พระเจ้า <span class="en">(Ascribe greatness)</span><span class="key"> G</span></a><br>
+<a href="#p546">267. เราประกาศพระนาม <span class="en">(We exalt Your name)</span><span class="key"> G</span></a><br>
+<a href="#p548">268. เจิมด้วยไฟพระวิญญาณ<span class="key"> G</span></a><br>
+<a href="#p550">269. ยามใจเราอ่อนล้า ฟื้นฟูใจเรา <span class="en">(Refresh my heart, Lord)</span><span class="key"> G</span></a><br>
+<a href="#p552">270. เปลี่ยนใจของข้า<span class="key"> G</span></a><br>
+<a href="#p554">271. ฉันกระหายพระองค์<span class="key"> G</span></a><br>
+<a href="#p556">272. โปรดชำระดวงใจของข้า <span class="en">(Create in me a clean heart)</span><span class="key"> G</span></a><br>
+<a href="#p557">273. ทุกครั้งที่ข้าเฝ้าภาวนา <span class="en">(Create in me a clean heart)</span><span class="key"> G</span></a><br>
+<a href="#p559">274. ไม่มีใครเหมือนพระองค์ <span class="en">(There is none like You)</span><span class="key"> G</span></a><br>
+<a href="#p561">275. เพราะพระองค์ทรงอยู่ <span class="en">(Because He lives)</span><span class="key"> G</span></a><br>
+<a href="#p563">276. ส่งการฟื้นฟูลงมา<span class="key"> G</span></a><br>
+<a href="#p564">277. ทรงอุ้มชูค้ำจุน<span class="key"> G</span></a><br>
+<a href="#p566">278. ข้ารักพระองค์ด้วยสิ้นสุดดวงใจ<span class="key"> G</span></a><br>
+<a href="#p568">279. โดยพระโลหิตไหล<span class="key"> G</span></a><br>
+<a href="#p570">280. สิ่งเดียวฉันขอ <span class="en">(One thing I ask)</span><span class="key"> G</span></a><br>
+<a href="#p574">281. ก้าวต่อไป<span class="key"> C</span></a><br>
+<a href="#p577">282. ข้าขอถวายคำสรรเสริญ <span class="en">(I give You all the honour)</span><span class="key"> G</span></a><br>
+<a href="#p583">283. พระเยซู ๆ บริสุทธิ์และรับการเจิม <span class="en">(Holy and anointed one)</span><span class="key"> G</span></a><br>
+<a href="#p585">284. ชั่งปง้น <span class="en">(The potter's hand)</span><span class="key"> G</span></a><br>
+<a href="#p588">285. สุขสบายจิตใจข้า <span class="en">(It is well with my soul)</span><span class="key"> C</span></a><br>
+<a href="#p596">286. พระเจ้าจัดเตรียมหนทาง <span class="en">(God will make a way)</span><span class="key"> G</span></a><br>
+<a href="#p601">287. พระเยซูเราน้อมรับพระองค์ <span class="en">(Jesus, we enthrone You)</span><span class="key"> A</span></a><br>
+<a href="#p603">288. พระองค์ทรงงดงามยิ่งกว่า <span class="en">(You are beautiful beyond description)</span><span class="key"> A</span></a><br>
+<a href="#p606">289. โฮซันนาจอมราชา <span class="en">(Hosanna to the king)</span><span class="key"> A</span></a><br>
+<a href="#p608">291. พระบารมีประกาศพระบารมี <span class="en">(Majesty)</span><span class="key"> A</span></a><br>
+<a href="#p610">292. พระสิริ โอพระสิริ<span class="key"> A</span></a><br>
+<a href="#p612">293. เราบูชาพระนามพระเจ้าพระบิดา<span class="key"> A</span></a><br>
+<a href="#p614">294. แด่พระเจ้าด้วยคำสรรเสริญ <span class="en">(To God be the glory)</span><span class="key"> A</span></a><br>
+<a href="#p616">295. พระบิดาในสวรรค์เรารักพระองค์ <span class="en">(Father in heaven, how I love You)</span><span class="key"> A</span></a><br>
+<a href="#p618">296. เราจะโมทนาพระคุณ <span class="en">(I will give thanks to Thee)</span><span class="key"> A</span></a><br>
+<a href="#p620">297. องค์พระบิดาเราเทิดทูนพระนาม<span class="key"> A</span></a><br>
+<a href="#p622">298. นำข้าใกล้พระองค์ <span class="en">(Draw me close to You)</span><span class="key"> A</span></a><br>
+<a href="#p624">300. องค์พระเจ้าสันติราช<span class="key"> A</span></a><br>
+<a href="#p625">301. ยกมือของท่าน <span class="en">(Lift up your hands)</span><span class="key"> A</span></a><br>
+<a href="#p626">302. เราขอสรรเสริญเทิดทูนพระนาม <span class="en">(And we thank You, Lord)</span><span class="key"> A</span></a><br>
+<a href="#p628">303. ร้องแด่พระเจ้า <span class="en">(Shout to the Lord)</span><span class="key"> A</span></a><br>
+<a href="#p630">304. บริสุทธิ์องค์บริสุทธิ์<span class="key"> A</span></a><br>
+<a href="#p631">305. ชั่วชีวิต<span class="key"> A</span></a><br>
+<a href="#p633">306. แด่พระเจ้าผู้ครองบัลลังก์ <span class="en">(To Him who sits upon the throne)</span><span class="key"> A</span></a><br>
+<a href="#p634">307. พระเจ้าของเราโอ้พระนามช่างงาม<span class="key"> A</span></a><br>
+<a href="#p636">308. เมื่อมีปงญหา <span class="en">(If He carried the weight of the world)</span><span class="key"> A</span></a><br>
+<a href="#p638">309. เป็นคำอธิษฐาน<span class="key"> C</span></a><br>
+<a href="#p639">310. เรากราบนมัสการ <span class="en">(Down at Your feet)</span><span class="key"> A</span></a><br>
+<a href="#p641">311. ร้องแด่พระเจ้า <span class="en">(Shout to the Lord)</span><span class="key"> A</span></a><br>
+<a href="#p643">312. ให้เราสรรเสริญพระเจ้ายิ่งใหญ่<span class="key"> Cm</span></a><br>
+<a href="#p644">313. ให้เราบูชาเพราะพระเจ้าทรงสถิตย์ <span class="en">(Let us adore)</span><span class="key"> Cm</span></a><br>
+<a href="#p647">314. บริสุทธิ์พระเป็นเจ้าผู้ทรงฤทธานุภาพ<span class="key"> Dm</span></a><br>
+<a href="#p648">315. ขอความรักขอฤทธา <span class="en">(More love, more power)</span><span class="key"> Em</span></a><br>
+<a href="#p650">316. ข้ารู้แน่พระองค์ทรงพระชนม์อยู่<span class="key"> Em</span></a><br>
+<a href="#p651">317. จิตวิญญาณข้าร้อง<span class="key"> Em</span></a><br>
+<a href="#p653">318. ให้เราสรรเสริญพระนามของพระเยซู<span class="key"> Em</span></a><br>
+<a href="#p654">319. ทุกวันเวลาข้าสาธุการ<span class="key"> Em</span></a><br>
+<a href="#p656">320. เราขอวิงวอนพี่น้องเอ๋ย<span class="key"> Em</span></a><br>
+<a href="#p658">321. เมื่อพระวิญญาณพระเจ้าสวมทับข้า <span class="en">(When the Spirit of the Lord)</span><span class="key"> Em</span></a><br>
 <h3>เพลงยาว 322-475</h3>
-<a href="#p659">322. จงวันทาพระองค์<span class="key"> C</span></a><br />
-<a href="#p663">323. เราเป็นหนึ่งเดียวกัน <span class="en">(We shall be as one)</span><span class="key"> C</span></a><br />
-<a href="#p665">324. อภัยเสมอ<span class="key"> C</span></a><br />
-<a href="#p668">325. รีบนำวิญญาณ<span class="key"> C</span></a><br />
-<a href="#p674">326. พระผู้เล้าโลมลงมา <span class="en">(The comforter has come)</span><span class="key"> C</span></a><br />
-<a href="#p680">327. มีธารน้ำพุเต็มด้วยโลหิต <span class="en">(There is a fountain filled with blood)</span><span class="key"> C</span></a><br />
-<a href="#p684">328. พระองค์สถิตใกล้ชิดกับเรา <span class="en">(God with us)</span><span class="key"> C</span></a><br />
-<a href="#p688">329. พระเยซูทรงห่วงข้า <span class="en">(Does Jesus care)</span><span class="key"> C</span></a><br />
-<a href="#p694">330. พระเยซูพระนามงดงาม <span class="en">(Jesus, what a beautiful name)</span><span class="key"> C</span></a><br />
-<a href="#p698">331. ที่ไม้กางเขน <span class="en">(At Calvary)</span><span class="key"> C</span></a><br />
-<a href="#p704">332. พระเยซูทรงเป็นขึ้นแล้ว <span class="en">(Christ arose)</span><span class="key"> C</span></a><br />
-<a href="#p710">333. สรรพสิ่งเป็นได้ <span class="en">(All things are possible)</span><span class="key"> C</span></a><br />
-<a href="#p714">334. สง่างาม <span class="en">(It is glory just to walk)</span><span class="key"> C</span></a><br />
-<a href="#p720">335. พักพิงในพระเจ้า<span class="key"> C</span></a><br />
-<a href="#p724">336. พระเจ้าทรงเป็นผู้เลี้ยงที่รัก<span class="key"> C</span></a><br />
-<a href="#p730">337. คำประเสริฐศักดิ์สิทธิ์<span class="key"> C</span></a><br />
-<a href="#p733">338. ผู้พิชิตความตาย<span class="key"> C</span></a><br />
-<a href="#p736">339. การถวายเป็นพระคุณหนุนนำเนื่อง<span class="key"> C</span></a><br />
-<a href="#p744">340. เราต้องเดินกับพระองค์ทุกวันเวลา<span class="key"> C</span></a><br />
-<a href="#p750">341. เมื่อท่านมีปงญหาใดเกี่ยวกับพระเยซู<span class="key"> C</span></a><br />
-<a href="#p752">342. ขอน้อมเกล้าแด่พระเจ้า<span class="key"> C</span></a><br />
-<a href="#p753">343. ข้าจะเงยตาดูภูเขา<span class="key"> C</span></a><br />
-<a href="#p756">344. ขอพระเยซูโปรดนำหน้า <span class="en">(Lead me, saviour)</span><span class="key"> C</span></a><br />
-<a href="#p762">345. ข้าต้องการพระเยซูยิ่งกว่าเพชร <span class="en">(I'd rather have Jesus)</span><span class="key"> C</span></a><br />
-<a href="#p768">346. รักพระเยซู<span class="key"> C</span></a><br />
-<a href="#p770">347. สิ้นกระแสกรรม ชีวิตวนเวียน<span class="key"> C</span></a><br />
-<a href="#p778">348. จงสรรเสริญพระเจ้าเถิด<span class="key"> D</span></a><br />
-<a href="#p781">349. ทางชีวิต<span class="key"> D</span></a><br />
-<a href="#p784">350. ขอพระพรจากเบื้องบนลงมา <span class="en">(Come Thou fount)</span><span class="key"> D</span></a><br />
-<a href="#p788">351. อันพระคุณความการุณย์<span class="key"> D</span></a><br />
-<a href="#p793">352. ความรักจริงทุกสิ่งมั่นคง<span class="key"> D</span></a><br />
-<a href="#p797">353. พระเจ้าทรงรักเราที่สุด<span class="key"> D</span></a><br />
-<a href="#p803">354. รากฐานของคริสตจักรแท้ <span class="en">(The Church's one foundation)</span><span class="key"> D</span></a><br />
-<a href="#p807">355. ท่านค้นหาสุขสำราญ <span class="en">(Is your all on the altar?)</span><span class="key"> D</span></a><br />
-<a href="#p813">356. เราทั่วโลกยืนใต้กางเขน<span class="key"> D</span></a><br />
-<a href="#p817">357. สุขใจในพระคริสต์<span class="key"> D</span></a><br />
-<a href="#p821">358. ยุทธภัณฑ์คริสเตียน<span class="key"> D</span></a><br />
-<a href="#p825">359. เราจะรักกันได้อย่างไร<span class="key"> D</span></a><br />
-<a href="#p829">360. สรรเสริญผู้เป็นเจ้าทรงเดชา <span class="en">(Holy, holy, holy, Lord God almighty)</span><span class="key"> D</span></a><br />
-<a href="#p833">361. นับพระพร <span class="en">(Count your blessings)</span><span class="key"> D</span></a><br />
-<a href="#p839">362. นิ่งเถิดดวงใจ <span class="en">(Be still my soul)</span><span class="key"> D</span></a><br />
-<a href="#p842">363. ขอรับใช้ <span class="en">(Take our bread)</span><span class="key"> D</span></a><br />
-<a href="#p846">364. มีใครไหม<span class="key"> D</span></a><br />
-<a href="#p852">365. ข้าขอมอบถวาย <span class="en">(I surrender all)</span><span class="key"> D</span></a><br />
-<a href="#p856">366. พระเยซูผู้งามเลิศ <span class="en">(Fairest Lord Jesus)</span><span class="key"> D</span></a><br />
-<a href="#p859">367. องค์พระเยซูทรงครองโลกา <span class="en">(Jesus shall reign)</span><span class="key"> D</span></a><br />
-<a href="#p864">368. พระคริสต์เป็นเจ้าชีวิตของข้า <span class="en">(Lead me to Calvary)</span><span class="key"> D</span></a><br />
-<a href="#p872">369. เมื่อข้าเพ่งดูกางเขน <span class="en">(When I survey)</span><span class="key"> D</span></a><br />
-<a href="#p876">370. ได้ยินเสียงของพระเจ้า <span class="en">(I am coming Lord)</span><span class="key"> D</span></a><br />
-<a href="#p884">371. เมื่อผ่านโลกนี้<span class="key"> D</span></a><br />
-<a href="#p888">372. ขอพระเยซูทรงนำพาเรา <span class="en">(Saviour, like a shepherd lead me)</span><span class="key"> D</span></a><br />
-<a href="#p891">373. ที่กางเขนๆ ข้าแลเห็น <span class="en">(At the cross, at the cross)</span><span class="key"> D</span></a><br />
-<a href="#p897">374. ไม่มีกลางคืนอีกเลย <span class="en">(No night there)</span><span class="key"> D</span></a><br />
-<a href="#p905">375. โลกนี้พระเจ้าประทาน <span class="en">(My Father's world)</span><span class="key"> E</span></a><br />
-<a href="#p908">376. จงชื่นชมยินดีในพระเจ้าทุกเวลา<span class="key"> E</span></a><br />
-<a href="#p912">377. อยู่เพื่อพระคริสต์ <span class="en">(For me to live is Christ)</span><span class="key"> E</span></a><br />
-<a href="#p917">378. เหตุไรท่านท้อถอยใจเศร้าหมองหรือ <span class="en">(There's always darkness before the dawn)</span><span class="key"> E</span></a><br />
-<a href="#p921">379. พระเยซูเป็นคำตอบ <span class="en">(Jesus is the answer)</span><span class="key"> E</span></a><br />
-<a href="#p926">380. พระเยโฮวาห์เป็นผู้ทรงบำรุง<span class="key"> E</span></a><br />
-<a href="#p931">381. ไม่มีหว่างเขามืดเมื่อพระเยซูมา <span class="en">(There'll be no dark valley)</span><span class="key"> F</span></a><br />
-<a href="#p941">382. ฉันต้องการพระองค์ <span class="en">(I want to be where You are)</span><span class="key"> F</span></a><br />
-<a href="#p947">383. ฝากใจไปด้วยกัน<span class="key"> F</span></a><br />
-<a href="#p953">384. มีสหายเลิศคือพระเยซู <span class="en">(What a friend we have in Jesus)</span><span class="key"> F</span></a><br />
-<a href="#p956">385. วันนี้เป็นวันอันเปรมปรีดิ์ <span class="en">(O day of rest and gladness)</span><span class="key"> F</span></a><br />
-<a href="#p959">386. แสนสุขสันต์วันประชุมนี้<span class="key"> F</span></a><br />
-<a href="#p962">387. องค์พระเยซูเจ้าทรงปกเกล้า<span class="key"> F</span></a><br />
-<a href="#p966">388. อาการของพระเจ้านั้น<span class="key"> F</span></a><br />
-<a href="#p968">389. วันนี้อันเป็นวันดี<span class="key"> F</span></a><br />
-<a href="#p971">390. รอดอยู่ในหัตถ์พระเยซู <span class="en">(Safe in the arms of Jesus)</span><span class="key"> F</span></a><br />
-<a href="#p977">391. ถ้าเราเดินตามพระเจ้า <span class="en">(Trust and obey)</span><span class="key"> F</span></a><br />
-<a href="#p985">392. ขอสวมทับทรงชำระใจ <span class="en">(Fill me now)</span><span class="key"> F</span></a><br />
-<a href="#p993">393. พระวิญญาณประทานพระพร<span class="key"> F</span></a><br />
-<a href="#p999">394. ภูเขาแห่งพระคุณ<span class="key"> F</span></a><br />
-<a href="#p1002">395. เช้าค่ำย่ำสนธยา<span class="key"> F</span></a><br />
-<a href="#p1005">396. ข้าเจ้าบรรเลงเพลงมหาชัย<span class="key"> F</span></a><br />
-<a href="#p1009">397. พระวิญญาณผู้ทรงพระคุณ<span class="key"> F</span></a><br />
-<a href="#p1015">398. โปรดอภัยให้ข้า<span class="key"> F</span></a><br />
-<a href="#p1021">399. เติบโตร่วมกัน<span class="key"> F</span></a><br />
-<a href="#p1027">400. เชิญร่วมใจนมัสการ<span class="key"> G</span></a><br />
-<a href="#p1029">401. ทางชีวีข้านี้ ดำเนิน<span class="key"> G</span></a><br />
-<a href="#p1031">402. หากจะรักจงรักอย่างสุดใจ<span class="key"> G</span></a><br />
-<a href="#p1039">403. ความสุขยืนยงคงมาสู่ผู้ชอบธรรม<span class="key"> G</span></a><br />
-<a href="#p1043">404. ขอพระองค์ทรงช่วย<span class="key"> G</span></a><br />
-<a href="#p1047">405. ข้าต้องไปฟากข้างโน้น <span class="en">(To the regions beyond)</span><span class="key"> G</span></a><br />
-<a href="#p1053">406. เชิญมาเชิญมาอย่าช้า<span class="key"> G</span></a><br />
-<a href="#p1060">407. เราคริสเตียน<span class="key"> C</span></a><br />
-<a href="#p1064">408. อย่าอวดตนว่าเป็นคนดีที่สุดแล้ว<span class="key"> G</span></a><br />
-<a href="#p1067">409. ฟงนฝ่าบุกไปหนใดเราไปทุกแห่ง<span class="key"> G</span></a><br />
-<a href="#p1071">410. พระเยซูผู้ที่ข้าบูชา <span class="en">(Close to Thee)</span><span class="key"> G</span></a><br />
-<a href="#p1074">411. เมืองบรมสุข<span class="key"> G</span></a><br />
-<a href="#p1078">412. เชิญเชิญอย่าได้ช้า<span class="key"> G</span></a><br />
-<a href="#p1087">413. พระเยซูผู้ดีเลิศ<span class="key"> G</span></a><br />
-<a href="#p1091">414. พระสิริทรงประทับท่ามกลางเรา <span class="en">(Let Your glory fall)</span><span class="key"> G</span></a><br />
-<a href="#p1097">415. ส่งฝนมา <span class="en">(Let it rain)</span><span class="key"> G</span></a><br />
-<a href="#p1103">416. ข้าขอถวายเกียรติแด่พระเจ้า <span class="en">(To God be the glory)</span><span class="key"> G</span></a><br />
-<a href="#p1109">417. ผู้เป็น <span class="en">(He lives, He lives)</span><span class="key"> G</span></a><br />
-<a href="#p1115">418. พระเยซูเป็นร่มเย็นของข้า <span class="en">(Jesus is all the world to me)</span><span class="key"> G</span></a><br />
-<a href="#p1119">419. ขอพระองค์เจ้าทรงตรวจจิตใจ <span class="en">(Cleanse me)</span><span class="key"> G</span></a><br />
-<a href="#p1123">420. เราขอสั่งทำลายกำแพง <span class="en">(Break dividing walls)</span><span class="key"> G</span></a><br />
-<a href="#p1126">421. พระคุณพระเจ้านั้นแสนชื่นใจ <span class="en">(Amazing grace)</span><span class="key"> G</span></a><br />
-<a href="#p1131">422. ครั้นเมื่อเป่าแตร <span class="en">(When the roll is called up yonder)</span><span class="key"> G</span></a><br />
-<a href="#p1137">423. ไม่มีใคร <span class="en">(There's not a friend like the lowly Jesus)</span><span class="key"> G</span></a><br />
-<a href="#p1145">424. ข้าอ่อนแรงพระองค์ทรงฤทธิ์ <span class="en">(I am weak but Thou art strong)</span><span class="key"> G</span></a><br />
-<a href="#p1151">425. มีสถานอันงดงามเลิศนักหนา <span class="en">(In the sweet by and by)</span><span class="key"> G</span></a><br />
-<a href="#p1157">426. เพราะบาปของข้า<span class="key"> A</span></a><br />
-<a href="#p1162">427. พระเยซูทรงรักเรา<span class="key"> A</span></a><br />
-<a href="#p1166">428. ไม่ทราบชื่อผู้แต่งเพลงไทย <span class="en">(My God is real)</span><span class="key"> A</span></a><br />
-<a href="#p1170">429. พระเจ้ายิ่งใหญ่ <span class="en">(How great Thou art)</span><span class="key"> A</span></a><br />
-<a href="#p1176">430. ข้ายึดมั่นในคำสัญญา <span class="en">(Standing on the promises)</span><span class="key"> A</span></a><br />
-<a href="#p1182">431. ไม้กางเขนโบราณ <span class="en">(The old rugged cross)</span><span class="key"> A</span></a><br />
-<a href="#p1190">432. ได้ล้างด้วยโลหิตพระเยซู <span class="en">(Are you washed in the blood)</span><span class="key"> A</span></a><br />
-<a href="#p1196">433. ทหารของพระเยซูเจ้า <span class="en">(Stand up for Jesus)</span><span class="key"> A</span></a><br />
-<a href="#p1200">434. ท่านอยากจะพ้นจากความบาปหรือ <span class="en">(There is power in the blood)</span><span class="key"> A</span></a><br />
-<a href="#p1206">435. เพราะพระเจ้าเป็นความรัก<span class="key"> A</span></a><br />
-<a href="#p1214">436. สาธุสรรเสริญพระเจ้าผู้ทรงเดชา<span class="key"> A</span></a><br />
-<a href="#p1222">437. โอ้ว่าความรัก<span class="key"> A</span></a><br />
-<a href="#p1227">438. เชิญท่านทั้งหลาย<span class="key"> A</span></a><br />
-<a href="#p1231">439. วันเอ๋ยวันเวลา<span class="key"> A</span></a><br />
-<a href="#p1235">440. โอ้พระเยซูผู้ทรงรับทุกข์ทน<span class="key"> A</span></a><br />
-<a href="#p1238">441. ไม้กางเขน<span class="key"> A</span></a><br />
-<a href="#p1242">442. ยกย่องพระคำ<span class="key"> A</span></a><br />
-<a href="#p1246">443. วันนี้เป็นวันสันติสุข<span class="key"> A</span></a><br />
-<a href="#p1250">444. จงเฝ้าวอนอธิษฐาน<span class="key"> Am</span></a><br />
-<a href="#p1253">446. เพลงเชิญไปสวรรค์<span class="key"> Am</span></a><br />
-<a href="#p1262">447. โอพระบิดาข้าพระองค์ขอบพระคุณ<span class="key"> Em</span></a><br />
-<a href="#p1266">448. บนไม้กางเขน<span class="key"> Am</span></a><br />
-<a href="#p1272">449. อย่าเบื่อหน่ายในการทำดี<span class="key"> Bm</span></a><br />
-<a href="#p1275">450. มาเรามาบรรเลง<span class="key"> Bm</span></a><br />
-<a href="#p1282">451. จิตข้าวันทาด้วยใจสัจจา<span class="key"> Bm</span></a><br />
-<a href="#p1286">452. ลืมพระเจ้าไม่ลง<span class="key"> Bm</span></a><br />
-<a href="#p1291">453. ใกล้จะสิ้นยุค<span class="key"> Bm</span></a><br />
-<a href="#p1295">454. เพลงยามรุ่งอรุณ<span class="key"> Bm</span></a><br />
-<a href="#p1299">456. ฉันอยู่กับพระเยซู<span class="key"> Bm</span></a><br />
-<a href="#p1302">457. ร้องฮาเลลูยาแด่พระเจ้า <span class="en">(Sing halleluia to the Lord)</span><span class="key"> Bm</span></a><br />
-<a href="#p1307">458. จิตวิญญาณข้าเอ๋ย<span class="key"> Cm</span></a><br />
-<a href="#p1309">459. เตือนความหลัง<span class="key"> Dm</span></a><br />
-<a href="#p1313">460. โอ้เมืองสวรรค์นั้นงามวิไล<span class="key"> Dm</span></a><br />
-<a href="#p1317">461. พระเจ้าสูงสุด<span class="key"> Dm</span></a><br />
-<a href="#p1321">462. ขอบพระคุณพระบิดา<span class="key"> Dm</span></a><br />
-<a href="#p1325">463. ขอบพระคุณพระเจ้า<span class="key"> Dm</span></a><br />
-<a href="#p1333">464. ชีวิตเราพระเจ้าทรงสร้าง<span class="key"> Dm</span></a><br />
-<a href="#p1337">465. แสนปิติยินดี<span class="key"> Dm</span></a><br />
-<a href="#p1343">466. โอ้พระบิดาในมหาสวรรค์<span class="key"> Dm</span></a><br />
-<a href="#p1351">467. เปรียบดังสายธารที่ไหลหลั่งมา<span class="key"> Dm</span></a><br />
-<a href="#p1354">468. เชิญผู้ที่ลำบาก<span class="key"> Dm</span></a><br />
-<a href="#p1358">469. คำอ้อนวอน<span class="key"> Em</span></a><br />
-<a href="#p1362">470. เจ็ดสิบครั้งคูณด้วยเจ็ด<span class="key"> Em</span></a><br />
-<a href="#p1369">471. เชิญทุกท่านทั้งหญิงทั้งชาย<span class="key"> Em</span></a><br />
-<a href="#p1377">472. ขอวางใจในพระองค์<span class="key"> Em</span></a><br />
-<a href="#p1380">473. เปิดใจ<span class="key"> Em</span></a><br />
-<a href="#p1386">474. เชิญสรรเสริญพระเจ้า<span class="key"> C</span></a><br />
-<a href="#p1393">475. เชิญเถิดพี่น้องชาวไทย<span class="key"> A</span></a><br />
+<a href="#p659">322. จงวันทาพระองค์<span class="key"> C</span></a><br>
+<a href="#p663">323. เราเป็นหนึ่งเดียวกัน <span class="en">(We shall be as one)</span><span class="key"> C</span></a><br>
+<a href="#p665">324. อภัยเสมอ<span class="key"> C</span></a><br>
+<a href="#p668">325. รีบนำวิญญาณ<span class="key"> C</span></a><br>
+<a href="#p674">326. พระผู้เล้าโลมลงมา <span class="en">(The comforter has come)</span><span class="key"> C</span></a><br>
+<a href="#p680">327. มีธารน้ำพุเต็มด้วยโลหิต <span class="en">(There is a fountain filled with blood)</span><span class="key"> C</span></a><br>
+<a href="#p684">328. พระองค์สถิตใกล้ชิดกับเรา <span class="en">(God with us)</span><span class="key"> C</span></a><br>
+<a href="#p688">329. พระเยซูทรงห่วงข้า <span class="en">(Does Jesus care)</span><span class="key"> C</span></a><br>
+<a href="#p694">330. พระเยซูพระนามงดงาม <span class="en">(Jesus, what a beautiful name)</span><span class="key"> C</span></a><br>
+<a href="#p698">331. ที่ไม้กางเขน <span class="en">(At Calvary)</span><span class="key"> C</span></a><br>
+<a href="#p704">332. พระเยซูทรงเป็นขึ้นแล้ว <span class="en">(Christ arose)</span><span class="key"> C</span></a><br>
+<a href="#p710">333. สรรพสิ่งเป็นได้ <span class="en">(All things are possible)</span><span class="key"> C</span></a><br>
+<a href="#p714">334. สง่างาม <span class="en">(It is glory just to walk)</span><span class="key"> C</span></a><br>
+<a href="#p720">335. พักพิงในพระเจ้า<span class="key"> C</span></a><br>
+<a href="#p724">336. พระเจ้าทรงเป็นผู้เลี้ยงที่รัก<span class="key"> C</span></a><br>
+<a href="#p730">337. คำประเสริฐศักดิ์สิทธิ์<span class="key"> C</span></a><br>
+<a href="#p733">338. ผู้พิชิตความตาย<span class="key"> C</span></a><br>
+<a href="#p736">339. การถวายเป็นพระคุณหนุนนำเนื่อง<span class="key"> C</span></a><br>
+<a href="#p744">340. เราต้องเดินกับพระองค์ทุกวันเวลา<span class="key"> C</span></a><br>
+<a href="#p750">341. เมื่อท่านมีปงญหาใดเกี่ยวกับพระเยซู<span class="key"> C</span></a><br>
+<a href="#p752">342. ขอน้อมเกล้าแด่พระเจ้า<span class="key"> C</span></a><br>
+<a href="#p753">343. ข้าจะเงยตาดูภูเขา<span class="key"> C</span></a><br>
+<a href="#p756">344. ขอพระเยซูโปรดนำหน้า <span class="en">(Lead me, saviour)</span><span class="key"> C</span></a><br>
+<a href="#p762">345. ข้าต้องการพระเยซูยิ่งกว่าเพชร <span class="en">(I'd rather have Jesus)</span><span class="key"> C</span></a><br>
+<a href="#p768">346. รักพระเยซู<span class="key"> C</span></a><br>
+<a href="#p770">347. สิ้นกระแสกรรม ชีวิตวนเวียน<span class="key"> C</span></a><br>
+<a href="#p778">348. จงสรรเสริญพระเจ้าเถิด<span class="key"> D</span></a><br>
+<a href="#p781">349. ทางชีวิต<span class="key"> D</span></a><br>
+<a href="#p784">350. ขอพระพรจากเบื้องบนลงมา <span class="en">(Come Thou fount)</span><span class="key"> D</span></a><br>
+<a href="#p788">351. อันพระคุณความการุณย์<span class="key"> D</span></a><br>
+<a href="#p793">352. ความรักจริงทุกสิ่งมั่นคง<span class="key"> D</span></a><br>
+<a href="#p797">353. พระเจ้าทรงรักเราที่สุด<span class="key"> D</span></a><br>
+<a href="#p803">354. รากฐานของคริสตจักรแท้ <span class="en">(The Church's one foundation)</span><span class="key"> D</span></a><br>
+<a href="#p807">355. ท่านค้นหาสุขสำราญ <span class="en">(Is your all on the altar?)</span><span class="key"> D</span></a><br>
+<a href="#p813">356. เราทั่วโลกยืนใต้กางเขน<span class="key"> D</span></a><br>
+<a href="#p817">357. สุขใจในพระคริสต์<span class="key"> D</span></a><br>
+<a href="#p821">358. ยุทธภัณฑ์คริสเตียน<span class="key"> D</span></a><br>
+<a href="#p825">359. เราจะรักกันได้อย่างไร<span class="key"> D</span></a><br>
+<a href="#p829">360. สรรเสริญผู้เป็นเจ้าทรงเดชา <span class="en">(Holy, holy, holy, Lord God almighty)</span><span class="key"> D</span></a><br>
+<a href="#p833">361. นับพระพร <span class="en">(Count your blessings)</span><span class="key"> D</span></a><br>
+<a href="#p839">362. นิ่งเถิดดวงใจ <span class="en">(Be still my soul)</span><span class="key"> D</span></a><br>
+<a href="#p842">363. ขอรับใช้ <span class="en">(Take our bread)</span><span class="key"> D</span></a><br>
+<a href="#p846">364. มีใครไหม<span class="key"> D</span></a><br>
+<a href="#p852">365. ข้าขอมอบถวาย <span class="en">(I surrender all)</span><span class="key"> D</span></a><br>
+<a href="#p856">366. พระเยซูผู้งามเลิศ <span class="en">(Fairest Lord Jesus)</span><span class="key"> D</span></a><br>
+<a href="#p859">367. องค์พระเยซูทรงครองโลกา <span class="en">(Jesus shall reign)</span><span class="key"> D</span></a><br>
+<a href="#p864">368. พระคริสต์เป็นเจ้าชีวิตของข้า <span class="en">(Lead me to Calvary)</span><span class="key"> D</span></a><br>
+<a href="#p872">369. เมื่อข้าเพ่งดูกางเขน <span class="en">(When I survey)</span><span class="key"> D</span></a><br>
+<a href="#p876">370. ได้ยินเสียงของพระเจ้า <span class="en">(I am coming Lord)</span><span class="key"> D</span></a><br>
+<a href="#p884">371. เมื่อผ่านโลกนี้<span class="key"> D</span></a><br>
+<a href="#p888">372. ขอพระเยซูทรงนำพาเรา <span class="en">(Saviour, like a shepherd lead me)</span><span class="key"> D</span></a><br>
+<a href="#p891">373. ที่กางเขนๆ ข้าแลเห็น <span class="en">(At the cross, at the cross)</span><span class="key"> D</span></a><br>
+<a href="#p897">374. ไม่มีกลางคืนอีกเลย <span class="en">(No night there)</span><span class="key"> D</span></a><br>
+<a href="#p905">375. โลกนี้พระเจ้าประทาน <span class="en">(My Father's world)</span><span class="key"> E</span></a><br>
+<a href="#p908">376. จงชื่นชมยินดีในพระเจ้าทุกเวลา<span class="key"> E</span></a><br>
+<a href="#p912">377. อยู่เพื่อพระคริสต์ <span class="en">(For me to live is Christ)</span><span class="key"> E</span></a><br>
+<a href="#p917">378. เหตุไรท่านท้อถอยใจเศร้าหมองหรือ <span class="en">(There's always darkness before the dawn)</span><span class="key"> E</span></a><br>
+<a href="#p921">379. พระเยซูเป็นคำตอบ <span class="en">(Jesus is the answer)</span><span class="key"> E</span></a><br>
+<a href="#p926">380. พระเยโฮวาห์เป็นผู้ทรงบำรุง<span class="key"> E</span></a><br>
+<a href="#p931">381. ไม่มีหว่างเขามืดเมื่อพระเยซูมา <span class="en">(There'll be no dark valley)</span><span class="key"> F</span></a><br>
+<a href="#p941">382. ฉันต้องการพระองค์ <span class="en">(I want to be where You are)</span><span class="key"> F</span></a><br>
+<a href="#p947">383. ฝากใจไปด้วยกัน<span class="key"> F</span></a><br>
+<a href="#p953">384. มีสหายเลิศคือพระเยซู <span class="en">(What a friend we have in Jesus)</span><span class="key"> F</span></a><br>
+<a href="#p956">385. วันนี้เป็นวันอันเปรมปรีดิ์ <span class="en">(O day of rest and gladness)</span><span class="key"> F</span></a><br>
+<a href="#p959">386. แสนสุขสันต์วันประชุมนี้<span class="key"> F</span></a><br>
+<a href="#p962">387. องค์พระเยซูเจ้าทรงปกเกล้า<span class="key"> F</span></a><br>
+<a href="#p966">388. อาการของพระเจ้านั้น<span class="key"> F</span></a><br>
+<a href="#p968">389. วันนี้อันเป็นวันดี<span class="key"> F</span></a><br>
+<a href="#p971">390. รอดอยู่ในหัตถ์พระเยซู <span class="en">(Safe in the arms of Jesus)</span><span class="key"> F</span></a><br>
+<a href="#p977">391. ถ้าเราเดินตามพระเจ้า <span class="en">(Trust and obey)</span><span class="key"> F</span></a><br>
+<a href="#p985">392. ขอสวมทับทรงชำระใจ <span class="en">(Fill me now)</span><span class="key"> F</span></a><br>
+<a href="#p993">393. พระวิญญาณประทานพระพร<span class="key"> F</span></a><br>
+<a href="#p999">394. ภูเขาแห่งพระคุณ<span class="key"> F</span></a><br>
+<a href="#p1002">395. เช้าค่ำย่ำสนธยา<span class="key"> F</span></a><br>
+<a href="#p1005">396. ข้าเจ้าบรรเลงเพลงมหาชัย<span class="key"> F</span></a><br>
+<a href="#p1009">397. พระวิญญาณผู้ทรงพระคุณ<span class="key"> F</span></a><br>
+<a href="#p1015">398. โปรดอภัยให้ข้า<span class="key"> F</span></a><br>
+<a href="#p1021">399. เติบโตร่วมกัน<span class="key"> F</span></a><br>
+<a href="#p1027">400. เชิญร่วมใจนมัสการ<span class="key"> G</span></a><br>
+<a href="#p1029">401. ทางชีวีข้านี้ ดำเนิน<span class="key"> G</span></a><br>
+<a href="#p1031">402. หากจะรักจงรักอย่างสุดใจ<span class="key"> G</span></a><br>
+<a href="#p1039">403. ความสุขยืนยงคงมาสู่ผู้ชอบธรรม<span class="key"> G</span></a><br>
+<a href="#p1043">404. ขอพระองค์ทรงช่วย<span class="key"> G</span></a><br>
+<a href="#p1047">405. ข้าต้องไปฟากข้างโน้น <span class="en">(To the regions beyond)</span><span class="key"> G</span></a><br>
+<a href="#p1053">406. เชิญมาเชิญมาอย่าช้า<span class="key"> G</span></a><br>
+<a href="#p1060">407. เราคริสเตียน<span class="key"> C</span></a><br>
+<a href="#p1064">408. อย่าอวดตนว่าเป็นคนดีที่สุดแล้ว<span class="key"> G</span></a><br>
+<a href="#p1067">409. ฟงนฝ่าบุกไปหนใดเราไปทุกแห่ง<span class="key"> G</span></a><br>
+<a href="#p1071">410. พระเยซูผู้ที่ข้าบูชา <span class="en">(Close to Thee)</span><span class="key"> G</span></a><br>
+<a href="#p1074">411. เมืองบรมสุข<span class="key"> G</span></a><br>
+<a href="#p1078">412. เชิญเชิญอย่าได้ช้า<span class="key"> G</span></a><br>
+<a href="#p1087">413. พระเยซูผู้ดีเลิศ<span class="key"> G</span></a><br>
+<a href="#p1091">414. พระสิริทรงประทับท่ามกลางเรา <span class="en">(Let Your glory fall)</span><span class="key"> G</span></a><br>
+<a href="#p1097">415. ส่งฝนมา <span class="en">(Let it rain)</span><span class="key"> G</span></a><br>
+<a href="#p1103">416. ข้าขอถวายเกียรติแด่พระเจ้า <span class="en">(To God be the glory)</span><span class="key"> G</span></a><br>
+<a href="#p1109">417. ผู้เป็น <span class="en">(He lives, He lives)</span><span class="key"> G</span></a><br>
+<a href="#p1115">418. พระเยซูเป็นร่มเย็นของข้า <span class="en">(Jesus is all the world to me)</span><span class="key"> G</span></a><br>
+<a href="#p1119">419. ขอพระองค์เจ้าทรงตรวจจิตใจ <span class="en">(Cleanse me)</span><span class="key"> G</span></a><br>
+<a href="#p1123">420. เราขอสั่งทำลายกำแพง <span class="en">(Break dividing walls)</span><span class="key"> G</span></a><br>
+<a href="#p1126">421. พระคุณพระเจ้านั้นแสนชื่นใจ <span class="en">(Amazing grace)</span><span class="key"> G</span></a><br>
+<a href="#p1131">422. ครั้นเมื่อเป่าแตร <span class="en">(When the roll is called up yonder)</span><span class="key"> G</span></a><br>
+<a href="#p1137">423. ไม่มีใคร <span class="en">(There's not a friend like the lowly Jesus)</span><span class="key"> G</span></a><br>
+<a href="#p1145">424. ข้าอ่อนแรงพระองค์ทรงฤทธิ์ <span class="en">(I am weak but Thou art strong)</span><span class="key"> G</span></a><br>
+<a href="#p1151">425. มีสถานอันงดงามเลิศนักหนา <span class="en">(In the sweet by and by)</span><span class="key"> G</span></a><br>
+<a href="#p1157">426. เพราะบาปของข้า<span class="key"> A</span></a><br>
+<a href="#p1162">427. พระเยซูทรงรักเรา<span class="key"> A</span></a><br>
+<a href="#p1166">428. ไม่ทราบชื่อผู้แต่งเพลงไทย <span class="en">(My God is real)</span><span class="key"> A</span></a><br>
+<a href="#p1170">429. พระเจ้ายิ่งใหญ่ <span class="en">(How great Thou art)</span><span class="key"> A</span></a><br>
+<a href="#p1176">430. ข้ายึดมั่นในคำสัญญา <span class="en">(Standing on the promises)</span><span class="key"> A</span></a><br>
+<a href="#p1182">431. ไม้กางเขนโบราณ <span class="en">(The old rugged cross)</span><span class="key"> A</span></a><br>
+<a href="#p1190">432. ได้ล้างด้วยโลหิตพระเยซู <span class="en">(Are you washed in the blood)</span><span class="key"> A</span></a><br>
+<a href="#p1196">433. ทหารของพระเยซูเจ้า <span class="en">(Stand up for Jesus)</span><span class="key"> A</span></a><br>
+<a href="#p1200">434. ท่านอยากจะพ้นจากความบาปหรือ <span class="en">(There is power in the blood)</span><span class="key"> A</span></a><br>
+<a href="#p1206">435. เพราะพระเจ้าเป็นความรัก<span class="key"> A</span></a><br>
+<a href="#p1214">436. สาธุสรรเสริญพระเจ้าผู้ทรงเดชา<span class="key"> A</span></a><br>
+<a href="#p1222">437. โอ้ว่าความรัก<span class="key"> A</span></a><br>
+<a href="#p1227">438. เชิญท่านทั้งหลาย<span class="key"> A</span></a><br>
+<a href="#p1231">439. วันเอ๋ยวันเวลา<span class="key"> A</span></a><br>
+<a href="#p1235">440. โอ้พระเยซูผู้ทรงรับทุกข์ทน<span class="key"> A</span></a><br>
+<a href="#p1238">441. ไม้กางเขน<span class="key"> A</span></a><br>
+<a href="#p1242">442. ยกย่องพระคำ<span class="key"> A</span></a><br>
+<a href="#p1246">443. วันนี้เป็นวันสันติสุข<span class="key"> A</span></a><br>
+<a href="#p1250">444. จงเฝ้าวอนอธิษฐาน<span class="key"> Am</span></a><br>
+<a href="#p1253">446. เพลงเชิญไปสวรรค์<span class="key"> Am</span></a><br>
+<a href="#p1262">447. โอพระบิดาข้าพระองค์ขอบพระคุณ<span class="key"> Em</span></a><br>
+<a href="#p1266">448. บนไม้กางเขน<span class="key"> Am</span></a><br>
+<a href="#p1272">449. อย่าเบื่อหน่ายในการทำดี<span class="key"> Bm</span></a><br>
+<a href="#p1275">450. มาเรามาบรรเลง<span class="key"> Bm</span></a><br>
+<a href="#p1282">451. จิตข้าวันทาด้วยใจสัจจา<span class="key"> Bm</span></a><br>
+<a href="#p1286">452. ลืมพระเจ้าไม่ลง<span class="key"> Bm</span></a><br>
+<a href="#p1291">453. ใกล้จะสิ้นยุค<span class="key"> Bm</span></a><br>
+<a href="#p1295">454. เพลงยามรุ่งอรุณ<span class="key"> Bm</span></a><br>
+<a href="#p1299">456. ฉันอยู่กับพระเยซู<span class="key"> Bm</span></a><br>
+<a href="#p1302">457. ร้องฮาเลลูยาแด่พระเจ้า <span class="en">(Sing halleluia to the Lord)</span><span class="key"> Bm</span></a><br>
+<a href="#p1307">458. จิตวิญญาณข้าเอ๋ย<span class="key"> Cm</span></a><br>
+<a href="#p1309">459. เตือนความหลัง<span class="key"> Dm</span></a><br>
+<a href="#p1313">460. โอ้เมืองสวรรค์นั้นงามวิไล<span class="key"> Dm</span></a><br>
+<a href="#p1317">461. พระเจ้าสูงสุด<span class="key"> Dm</span></a><br>
+<a href="#p1321">462. ขอบพระคุณพระบิดา<span class="key"> Dm</span></a><br>
+<a href="#p1325">463. ขอบพระคุณพระเจ้า<span class="key"> Dm</span></a><br>
+<a href="#p1333">464. ชีวิตเราพระเจ้าทรงสร้าง<span class="key"> Dm</span></a><br>
+<a href="#p1337">465. แสนปิติยินดี<span class="key"> Dm</span></a><br>
+<a href="#p1343">466. โอ้พระบิดาในมหาสวรรค์<span class="key"> Dm</span></a><br>
+<a href="#p1351">467. เปรียบดังสายธารที่ไหลหลั่งมา<span class="key"> Dm</span></a><br>
+<a href="#p1354">468. เชิญผู้ที่ลำบาก<span class="key"> Dm</span></a><br>
+<a href="#p1358">469. คำอ้อนวอน<span class="key"> Em</span></a><br>
+<a href="#p1362">470. เจ็ดสิบครั้งคูณด้วยเจ็ด<span class="key"> Em</span></a><br>
+<a href="#p1369">471. เชิญทุกท่านทั้งหญิงทั้งชาย<span class="key"> Em</span></a><br>
+<a href="#p1377">472. ขอวางใจในพระองค์<span class="key"> Em</span></a><br>
+<a href="#p1380">473. เปิดใจ<span class="key"> Em</span></a><br>
+<a href="#p1386">474. เชิญสรรเสริญพระเจ้า<span class="key"> C</span></a><br>
+<a href="#p1393">475. เชิญเถิดพี่น้องชาวไทย<span class="key"> A</span></a><br>
 <h3>เทศการคริสต์มาส 476-495</h3>
-<a href="#p1397">476. ยามราตรีศรีหรรษา <span class="en">(Silent night, holy night)</span><span class="key"> A</span></a><br />
-<a href="#p1401">477. เมื่อคืนวันนั้น <span class="en">(O holy night)</span><span class="key"> C</span></a><br />
-<a href="#p1407">478. ฟังเสียงเพลงทูตสวรรค์วันนี้<span class="key"> C</span></a><br />
-<a href="#p1409">479A. คริสต์มาสเป็นเวลา <span class="en">(Christmas is a time to love)</span><span class="key"> C</span></a><br />
-<a href="#p1412">479B. วันยิ่งใหญ่<span class="key"> C</span></a><br />
-<a href="#p1416">480. ชาวโลกทั้งหลายชื่นใจยินดี <span class="en">(Joy to the world)</span><span class="key"> D</span></a><br />
-<a href="#p1420">481. ดาวจากสวรรค์<span class="key"> D</span></a><br />
-<a href="#p1425">482. สรรเสริญพระผู้ไถ่<span class="key"> D</span></a><br />
-<a href="#p1430">483. ความสุขวันคริสต์มาส<span class="key"> D</span></a><br />
-<a href="#p1433">484. วันคริสต์มาสเปรมปรีดิ์<span class="key"> D</span></a><br />
-<a href="#p1435">485A. จงมีสันติสุข<span class="key"> D</span></a><br />
-<a href="#p1439">485B. คริสต์มาสหรรษา<span class="key"> F</span></a><br />
-<a href="#p1443">486. วันเปรมปรีดิ์ราตรีสุขแสนหรรษา<span class="key"> F</span></a><br />
-<a href="#p1448">487. จงฟังเพลงแห่งทูตสวรรค์ <span class="en">(Hark the herald angels sing)</span><span class="key"> F</span></a><br />
-<a href="#p1454">488A. จงต้อนรับพระเยซู เข้ามาอยู่ในใจ<span class="key"> G</span></a><br />
-<a href="#p1456">488B. พระสัญญา<span class="key"> Bm</span></a><br />
-<a href="#p1460">489. โอองค์พระเยซู<span class="key"> D</span></a><br />
-<a href="#p1464">490. ขอเชิญท่านผู้วางใจ <span class="en">(O come, all ye faithful)</span><span class="key"> G</span></a><br />
-<a href="#p1472">491. ชื่นใจในวันคริสต์มาส<span class="key"> G</span></a><br />
-<a href="#p1476">492A. พระเจ้ารักเราเสด็จเข้ามาเกิด<span class="key"> Dm</span></a><br />
-<a href="#p1480">492B. พระเยซูเสด็จมา<span class="key"> Dm</span></a><br />
-<a href="#p1487">493. วันคริสต์มาสทั่วโลกทุกชาติชื่นชมยินดี<span class="key"> Em</span></a><br />
-<a href="#p1492">494. เปี่ยมรักจนเต็มล้น<span class="key"> Em</span></a><br />
-<a href="#p1496">495A. วันสำราญทั่วโลกา<span class="key"> F#m</span></a><br />
-<a href="#p1504">495B. แสงสว่างแห่งพระคริสต์<span class="key"> Em</span></a><br />
+<a href="#p1397">476. ยามราตรีศรีหรรษา <span class="en">(Silent night, holy night)</span><span class="key"> A</span></a><br>
+<a href="#p1401">477. เมื่อคืนวันนั้น <span class="en">(O holy night)</span><span class="key"> C</span></a><br>
+<a href="#p1407">478. ฟังเสียงเพลงทูตสวรรค์วันนี้<span class="key"> C</span></a><br>
+<a href="#p1409">479A. คริสต์มาสเป็นเวลา <span class="en">(Christmas is a time to love)</span><span class="key"> C</span></a><br>
+<a href="#p1412">479B. วันยิ่งใหญ่<span class="key"> C</span></a><br>
+<a href="#p1416">480. ชาวโลกทั้งหลายชื่นใจยินดี <span class="en">(Joy to the world)</span><span class="key"> D</span></a><br>
+<a href="#p1420">481. ดาวจากสวรรค์<span class="key"> D</span></a><br>
+<a href="#p1425">482. สรรเสริญพระผู้ไถ่<span class="key"> D</span></a><br>
+<a href="#p1430">483. ความสุขวันคริสต์มาส<span class="key"> D</span></a><br>
+<a href="#p1433">484. วันคริสต์มาสเปรมปรีดิ์<span class="key"> D</span></a><br>
+<a href="#p1435">485A. จงมีสันติสุข<span class="key"> D</span></a><br>
+<a href="#p1439">485B. คริสต์มาสหรรษา<span class="key"> F</span></a><br>
+<a href="#p1443">486. วันเปรมปรีดิ์ราตรีสุขแสนหรรษา<span class="key"> F</span></a><br>
+<a href="#p1448">487. จงฟังเพลงแห่งทูตสวรรค์ <span class="en">(Hark the herald angels sing)</span><span class="key"> F</span></a><br>
+<a href="#p1454">488A. จงต้อนรับพระเยซู เข้ามาอยู่ในใจ<span class="key"> G</span></a><br>
+<a href="#p1456">488B. พระสัญญา<span class="key"> Bm</span></a><br>
+<a href="#p1460">489. โอองค์พระเยซู<span class="key"> D</span></a><br>
+<a href="#p1464">490. ขอเชิญท่านผู้วางใจ <span class="en">(O come, all ye faithful)</span><span class="key"> G</span></a><br>
+<a href="#p1472">491. ชื่นใจในวันคริสต์มาส<span class="key"> G</span></a><br>
+<a href="#p1476">492A. พระเจ้ารักเราเสด็จเข้ามาเกิด<span class="key"> Dm</span></a><br>
+<a href="#p1480">492B. พระเยซูเสด็จมา<span class="key"> Dm</span></a><br>
+<a href="#p1487">493. วันคริสต์มาสทั่วโลกทุกชาติชื่นชมยินดี<span class="key"> Em</span></a><br>
+<a href="#p1492">494. เปี่ยมรักจนเต็มล้น<span class="key"> Em</span></a><br>
+<a href="#p1496">495A. วันสำราญทั่วโลกา<span class="key"> F#m</span></a><br>
+<a href="#p1504">495B. แสงสว่างแห่งพระคริสต์<span class="key"> Em</span></a><br>
 <h3>พิธีบัพติศมา 496-497</h3>
-<a href="#p1508">496. โอ้พระบิดาข้าเห็นทางแล้ว<span class="key"> C</span></a><br />
-<a href="#p1512">497. พิธีบัพติศมา<span class="key"> D</span></a><br />
+<a href="#p1508">496. โอ้พระบิดาข้าเห็นทางแล้ว<span class="key"> C</span></a><br>
+<a href="#p1512">497. พิธีบัพติศมา<span class="key"> D</span></a><br>
 <h3>พิธีสมรส 498-503</h3>
-<a href="#p1514">498. ครอบครัวเรามีพระเจ้าเป็นใหญ่<span class="key"> D</span></a><br />
-<a href="#p1517">499. คำว่ารักแท้จริงไม่มีมลาย<span class="key"> G</span></a><br />
-<a href="#p1519">500. เนื้อคู่พระเจ้าสร้าง<span class="key"> G</span></a><br />
-<a href="#p1525">501. จิตใจเบิกบานในวันแต่งงาน<span class="key"> G</span></a><br />
-<a href="#p1531">502. จิตใจสำราญถึงวันแต่งงาน<span class="key"> G</span></a><br />
-<a href="#p1535">503. รักคือคำนี้<span class="key"> C</span></a><br />
+<a href="#p1514">498. ครอบครัวเรามีพระเจ้าเป็นใหญ่<span class="key"> D</span></a><br>
+<a href="#p1517">499. คำว่ารักแท้จริงไม่มีมลาย<span class="key"> G</span></a><br>
+<a href="#p1519">500. เนื้อคู่พระเจ้าสร้าง<span class="key"> G</span></a><br>
+<a href="#p1525">501. จิตใจเบิกบานในวันแต่งงาน<span class="key"> G</span></a><br>
+<a href="#p1531">502. จิตใจสำราญถึงวันแต่งงาน<span class="key"> G</span></a><br>
+<a href="#p1535">503. รักคือคำนี้<span class="key"> C</span></a><br>
 <h3>เพลงใหม่ 504-636</h3>
-<a href="#p1541">504. เมื่อข้าร้อง<span class="key"> D</span></a><br />
-<a href="#p1545">505. เวลาของเอลียาห์ <span class="en">(These are the days of Elijah)</span><span class="key"> A</span></a><br />
-<a href="#p1551">506. เหนือโลกา<span class="key"> A</span></a><br />
-<a href="#p1555">507. ใคร<span class="key"> A</span></a><br />
-<a href="#p1559">508. ใจฉันรู้<span class="key"> A</span></a><br />
-<a href="#p1563">509. ได้ยินพระสุรเสียง<span class="key"> A</span></a><br />
-<a href="#p1567">510. ข้าได้มองเห็น<span class="key"> A</span></a><br />
-<a href="#p1571">511. ฉันจะเปลี่ยนความเศร้าโศก <span class="en">(I'm trading my sorrows)</span><span class="key"> A</span></a><br />
-<a href="#p1577">512. บนบัลลังก์<span class="key"> A</span></a><br />
-<a href="#p1580">513. สาธุการพระนามในแผ่นดิน <span class="en">(Blessed be Your name)</span><span class="key"> A</span></a><br />
-<a href="#p1588">514. องค์สูงสุด <span class="en">(Above all powers)</span><span class="key"> A</span></a><br />
-<a href="#p1591">515. ส่งการฟื้นฟู<span class="key"> A</span></a><br />
-<a href="#p1594">516. ถึงกระนั้น<span class="key"> Am</span></a><br />
-<a href="#p1599">517. ไม่เคยลืมที่ได้ตัดสินใจ<span class="key"> A</span></a><br />
-<a href="#p1602">518. หัวใจผู้รับใช้<span class="key"> Am</span></a><br />
-<a href="#p1608">520. องค์พระบารมี <span class="en">(King of Majesty)</span><span class="key"> B</span></a><br />
-<a href="#p1612">521. จงมีความเชือในพระองค์<span class="key"> Bm</span></a><br />
-<a href="#p1615">522. ราชาแห่งดวงใจ<span class="key"> Bb</span></a><br />
-<a href="#p1617">523. บ่มีผู้ใดจะเปรียบปานพระเจ้า<span class="key"> Bm</span></a><br />
-<a href="#p1623">524. ได้ยินบ่เน้อ<span class="key"> Bm</span></a><br />
-<a href="#p1626">525. เจ้าสาว<span class="key"> C</span></a><br />
-<a href="#p1628">526. เพราะทรงเรียกข้า<span class="key"> C</span></a><br />
-<a href="#p1632">527. เพลงถวายตัว<span class="key"> C</span></a><br />
-<a href="#p1634">528. เรามาเต้นรำ <span class="en">(Hear our praises)</span><span class="key"> C</span></a><br />
-<a href="#p1637">529. โมทนาขอบพระคุณ<span class="key"> C</span></a><br />
-<a href="#p1640">530. กล่าวคำว่ารัก<span class="key"> C</span></a><br />
-<a href="#p1644">531. ผู้ที่เหน็ดเหนื่อยอยู่ ผู้ที่อ่อนล้า<span class="key"> C</span></a><br />
-<a href="#p1647">532. เมตตาชื่นใจ<span class="key"> C</span></a><br />
-<a href="#p1651">533. พระเจ้าทรงครอบครอง <span class="en">(Lord, reign in me)</span><span class="key"> C</span></a><br />
-<a href="#p1654">534. พระเจ้าทรงยิ่งใหญ่ <span class="en">(How great is our God)</span><span class="key"> G</span></a><br />
-<a href="#p1659">535. รักของพระองค์<span class="key"> C</span></a><br />
-<a href="#p1662">536. อยู่บนกางเขน<span class="key"> C</span></a><br />
-<a href="#p1665">537. เปลี่ยน<span class="key"> A</span></a><br />
-<a href="#p1668">538. เยซูพระเจ้ายิ่งใหญ่<span class="key"> Cm</span></a><br />
-<a href="#p1673">539. หัวใจการนมัสการ <span class="en">(The heart of worship)</span><span class="key"> D</span></a><br />
-<a href="#p1679">540. เรามาเพื่อร้องเพลงนมัสการ<span class="key"> D</span></a><br />
-<a href="#p1683">541. พระเจ้าของทุกสิ่ง<span class="key"> D</span></a><br />
-<a href="#p1687">542. โปรดเทการเจิม<span class="key"> D</span></a><br />
-<a href="#p1689">543. ความรักอัศจรรย์ <span class="en">(Amazing love)</span><span class="key"> D</span></a><br />
-<a href="#p1691">544. คำสรรเสริญมาจากดวงใจ <span class="en">(Love You so much)</span><span class="key"> D</span></a><br />
-<a href="#p1695">545. จงเตรียมหนทาง <span class="en">(Prepare the way of the Lord)</span><span class="key"> D</span></a><br />
-<a href="#p1701">546. ชนชาติที่รักสงบฟังเสียงพระเจ้า<span class="key"> D</span></a><br />
-<a href="#p1704">547. ดวงใจของข้าอยู่ในพระหัตถ์<span class="key"> D</span></a><br />
-<a href="#p1708">548. ทุกๆ สิ่ง<span class="key"> D</span></a><br />
-<a href="#p1711">549. พระเจ้าดีต่อฉัน<span class="key"> D</span></a><br />
-<a href="#p1714">550. พระเยซูดวงใจร้องเรียกหา <span class="en">(Jesus, lover of my soul, all consuming fire)</span><span class="key"> D</span></a><br />
-<a href="#p1718">551. พระเจ้าทรงสถิตกับฉัน<span class="key"> D</span></a><br />
-<a href="#p1722">552. อยากเห็นคนไทยนมัสการพระเจ้า<span class="key"> D</span></a><br />
-<a href="#p1725">553. เชิญมานมัสการ<span class="key"> Dm</span></a><br />
-<a href="#p1729">554. ขอบอกข่าวดี<span class="key"> Dm</span></a><br />
-<a href="#p1735">555. พระเยโฮวาห์เป็นพระเจ้า<span class="key"> Dm</span></a><br />
-<a href="#p1739">556. สรรเสริญพระนามพระเจ้ายิ่งใหญ่<span class="key"> E</span></a><br />
-<a href="#p1742">557. เยรูซาเล็มใหม่<span class="key"> E</span></a><br />
-<a href="#p1746">558. ข้าเปล่งเสียงโห่ร้อง<span class="key"> E</span></a><br />
-<a href="#p1751">559. พระองค์ดี <span class="en">(You are good)</span><span class="key"> A</span></a><br />
-<a href="#p1754">560. เมื่อเราเป็นหนึ่งใจเดียวกัน<span class="key"> D</span></a><br />
-<a href="#p1758">561. ทุกๆ วัน <span class="en">(Every day)</span><span class="key"> E</span></a><br />
-<a href="#p1763">562. ณ ที่นั่น<span class="key"> E</span></a><br />
-<a href="#p1768">563. บทเพลงในดวงใจ <span class="en">(Song of my heart)</span><span class="key"> E</span></a><br />
-<a href="#p1773">564. พระเจ้าผู้ทรงเป็นทุกสิ่ง<span class="key"> E</span></a><br />
-<a href="#p1776">565. ร้องโฮซันนา<span class="key"> E</span></a><br />
-<a href="#p1779">566. พระเจ้าทรงพระชนม์ <span class="en">(My redeemer lives)</span><span class="key"> E</span></a><br />
-<a href="#p1783">567. พระเยซูผู้เป็นหนทาง<span class="key"> C</span></a><br />
-<a href="#p1787">568. โปรดทรงนำทาง<span class="key"> Em</span></a><br />
-<a href="#p1791">569. โลหิตบริสุทธิ์<span class="key"> Em</span></a><br />
-<a href="#p1796">570. ข้าร้องสรรเสริญ<span class="key"> Em</span></a><br />
-<a href="#p1799">571. ไหลลงมา<span class="key"> D</span></a><br />
-<a href="#p1802">572. ไม่ว่าอยู่แห่งหนใด <span class="en">(True worshippers)</span><span class="key"> F</span></a><br />
-<a href="#p1807">573. แม่น้ำ<span class="key"> G</span></a><br />
-<a href="#p1811">574. พระองค์ผู้ทรงนำข้า<span class="key"> Em</span></a><br />
-<a href="#p1815">575. มีสิ่งเดียวที่ข้าต้องการ<span class="key"> Em</span></a><br />
-<a href="#p1818">576. รักไม่มีสิ้นสุด <span class="en">(To the ends of the earth)</span><span class="key"> Em</span></a><br />
-<a href="#p1821">577. สุขใจจริงๆ<span class="key"> Dm</span></a><br />
-<a href="#p1824">578. โปรดช่วยข้าด้วย<span class="key"> F</span></a><br />
-<a href="#p1826">579. ให้ข้าอยู่ในพระนิเวศน์<span class="key"> F</span></a><br />
-<a href="#p1832">580. ไม่มีอะไรมาพราก<span class="key"> F</span></a><br />
-<a href="#p1835">581. แสนชื่นบานเพียงใด<span class="key"> F</span></a><br />
-<a href="#p1839">582. ฉันเป็นที่รักยิ่ง <span class="en">(Touch of love)</span><span class="key"> F</span></a><br />
-<a href="#p1842">583. ที่กางเขนนั้น<span class="key"> C</span></a><br />
-<a href="#p1846">584. ที่ประทับ<span class="key"> F</span></a><br />
-<a href="#p1849">585. ทุกๆวันใจข้าต้องการ<span class="key"> F</span></a><br />
-<a href="#p1852">586. มาร่วมกันร้องเพลง<span class="key"> F</span></a><br />
-<a href="#p1855">587. มีเพียงพระองค์บนทางที่เดิน<span class="key"> F</span></a><br />
-<a href="#p1858">588. รักวิเศษ<span class="key"> F</span></a><br />
-<a href="#p1863">589. พลังแห่งความรอด <span class="en">(Mighty to save)</span><span class="key"> C</span></a><br />
-<a href="#p1868">590. รักที่ยิ่งใหญ่<span class="key"> Bm</span></a><br />
-<a href="#p1871">591. เชิญมาเต้นรำ<span class="key"> G</span></a><br />
-<a href="#p1876">592. เทิดทูนพระเยซู<span class="key"> G</span></a><br />
-<a href="#p1879">593. ดีต่อข้า<span class="key"> G</span></a><br />
-<a href="#p1882">594. เพียงผู้เดียว<span class="key"> G</span></a><br />
-<a href="#p1884">595. เมื่อไม่นาน<span class="key"> G</span></a><br />
-<a href="#p1887">596. เราขอนมัสการ<span class="key"> G</span></a><br />
-<a href="#p1889">597. พระผู้ไถ่แห่งชีวิต<span class="key"> D</span></a><br />
-<a href="#p1894">598. โปรดส่งการเจิม<span class="key"> G</span></a><br />
-<a href="#p1898">599. ในทุกสิ่งเราขอบพระคุณ<span class="key"> G</span></a><br />
-<a href="#p1902">600. ทรงเป็นพระเจ้านิรันคร์ <span class="en">(The everlasting God)</span><span class="key"> G</span></a><br />
-<a href="#p1905">601. ข้าได้ยินเสียงตรัส <span class="en">(Under the shelter of Your wings)</span><span class="key"> G</span></a><br />
-<a href="#p1908">602. รักและบูชา<span class="key"> G</span></a><br />
-<a href="#p1911">603. ข้าพร้อมกลับใจ<span class="key"> G</span></a><br />
-<a href="#p1914">604. ดวงใจฉันเฝ้าคอยพระองค์<span class="key"> G</span></a><br />
-<a href="#p1917">605. ตลอดไป <span class="en">(Forever)</span><span class="key"> G</span></a><br />
-<a href="#p1921">606. ธงชัย<span class="key"> G</span></a><br />
-<a href="#p1923">607. นมัสการ นมัสการองค์พระบิดา<span class="key"> G</span></a><br />
-<a href="#p1926">608. พระเยซูความหวังของประชาชาติ <span class="en">(Jesus, hope of the nations)</span><span class="key"> G</span></a><br />
-<a href="#p1930">609. พระเจ้าทรงเลี้ยงดู<span class="key"> G</span></a><br />
-<a href="#p1934">610. ขอหัวใจเหมือนพระทัยพระองค์ <span class="en">(True worshippers)</span><span class="key"> F</span></a><br />
-<a href="#p1937">611. ขอองค์พระวิญญาณเคลื่อน <span class="en">(Let Your Spirit come)</span><span class="key"> D</span></a><br />
-<a href="#p1941">612. พระองค์ทรงดีต่อฉันทรงรักษาใจ <span class="en">(You are beautiful my sweet, sweet song)</span><span class="key"> G</span></a><br />
-<a href="#p1945">613. เมื่อองค์พระวิญญาณ <span class="en">(Where the Spirit of the Lord is)</span><span class="key"> G</span></a><br />
-<a href="#p1948">614. รักมั่นคงพระองค์<span class="key"> G</span></a><br />
-<a href="#p1951">615. ซ่อนข้าไว้ภายใต้ปีกพระองค์ <span class="en">(Hide me now)</span><span class="key"> C</span></a><br />
-<a href="#p1954">616. วิญญาณข้าเรียกร้อง <span class="en">(This is my desire)</span><span class="key"> G</span></a><br />
-<a href="#p1956">617. ข้ารักพระนามพระองค์<span class="key"> G</span></a><br />
-<a href="#p1958">618. องค์พระเจ้าเราเข้ามา<span class="key"> G</span></a><br />
-<a href="#p1960">619. ทุกๆ ครัง<span class="key"> G</span></a><br />
-<a href="#p1966">620. ดุจความสว่าง <span class="en">(Light of the world)</span><span class="key"> E</span></a><br />
-<a href="#p1969">621. โฮซันนา <span class="en">(Hosanna, I see the king of glory)</span><span class="key"> E</span></a><br />
-<a href="#p1975">622. ทรงชื่นบาน<span class="key"> C</span></a><br />
-<a href="#p1979">623. ฉันเป็นใคร <span class="en">(Who am I)</span><span class="key"> G</span></a><br />
-<a href="#p1986">624. ที่กางเขนฉันคุกเข่า <span class="en">(At the cross)</span><span class="key"> E</span></a><br />
-<a href="#p1991">625. บ้านหลังนี้<span class="key"> A</span></a><br />
-<a href="#p1995">626. พระเจ้าประเสริฐ<span class="key"> G</span></a><br />
-<a href="#p1997">627. สบายดีบ่<span class="key"> C#m</span></a><br />
-<a href="#p2001">628. ข่าวดีจากสวรรค์<span class="key"> D</span></a><br />
-<a href="#p2005">629. เจ้ารักเราหรือ<span class="key"> Am</span></a><br />
-<a href="#p2011">630. พระเจ้าชีวิต<span class="key"> F</span></a><br />
-<a href="#p2017">631. เพลงแห่งสันติสุข<span class="key"> Em</span></a><br />
-<a href="#p2022">632. วอนอธิษฐาน<span class="key"> F</span></a><br />
-<a href="#p2028">633. เปิดใจให้พระเยซู<span class="key"> C</span></a><br />
-<a href="#p2034">634. พลังสัมพันธ์ภาคกลาง<span class="key"> C</span></a><br />
-<a href="#p2037">635. ไกลสุดขอบฟ้ามีพระบิดา<span class="key"> C</span></a><br />
-<a href="#p2038">636. ปฐมกาล อพยพ<span class="key"> C</span></a><br />
+<a href="#p1541">504. เมื่อข้าร้อง<span class="key"> D</span></a><br>
+<a href="#p1545">505. เวลาของเอลียาห์ <span class="en">(These are the days of Elijah)</span><span class="key"> A</span></a><br>
+<a href="#p1551">506. เหนือโลกา<span class="key"> A</span></a><br>
+<a href="#p1555">507. ใคร<span class="key"> A</span></a><br>
+<a href="#p1559">508. ใจฉันรู้<span class="key"> A</span></a><br>
+<a href="#p1563">509. ได้ยินพระสุรเสียง<span class="key"> A</span></a><br>
+<a href="#p1567">510. ข้าได้มองเห็น<span class="key"> A</span></a><br>
+<a href="#p1571">511. ฉันจะเปลี่ยนความเศร้าโศก <span class="en">(I'm trading my sorrows)</span><span class="key"> A</span></a><br>
+<a href="#p1577">512. บนบัลลังก์<span class="key"> A</span></a><br>
+<a href="#p1580">513. สาธุการพระนามในแผ่นดิน <span class="en">(Blessed be Your name)</span><span class="key"> A</span></a><br>
+<a href="#p1588">514. องค์สูงสุด <span class="en">(Above all powers)</span><span class="key"> A</span></a><br>
+<a href="#p1591">515. ส่งการฟื้นฟู<span class="key"> A</span></a><br>
+<a href="#p1594">516. ถึงกระนั้น<span class="key"> Am</span></a><br>
+<a href="#p1599">517. ไม่เคยลืมที่ได้ตัดสินใจ<span class="key"> A</span></a><br>
+<a href="#p1602">518. หัวใจผู้รับใช้<span class="key"> Am</span></a><br>
+<a href="#p1608">520. องค์พระบารมี <span class="en">(King of Majesty)</span><span class="key"> B</span></a><br>
+<a href="#p1612">521. จงมีความเชือในพระองค์<span class="key"> Bm</span></a><br>
+<a href="#p1615">522. ราชาแห่งดวงใจ<span class="key"> Bb</span></a><br>
+<a href="#p1617">523. บ่มีผู้ใดจะเปรียบปานพระเจ้า<span class="key"> Bm</span></a><br>
+<a href="#p1623">524. ได้ยินบ่เน้อ<span class="key"> Bm</span></a><br>
+<a href="#p1626">525. เจ้าสาว<span class="key"> C</span></a><br>
+<a href="#p1628">526. เพราะทรงเรียกข้า<span class="key"> C</span></a><br>
+<a href="#p1632">527. เพลงถวายตัว<span class="key"> C</span></a><br>
+<a href="#p1634">528. เรามาเต้นรำ <span class="en">(Hear our praises)</span><span class="key"> C</span></a><br>
+<a href="#p1637">529. โมทนาขอบพระคุณ<span class="key"> C</span></a><br>
+<a href="#p1640">530. กล่าวคำว่ารัก<span class="key"> C</span></a><br>
+<a href="#p1644">531. ผู้ที่เหน็ดเหนื่อยอยู่ ผู้ที่อ่อนล้า<span class="key"> C</span></a><br>
+<a href="#p1647">532. เมตตาชื่นใจ<span class="key"> C</span></a><br>
+<a href="#p1651">533. พระเจ้าทรงครอบครอง <span class="en">(Lord, reign in me)</span><span class="key"> C</span></a><br>
+<a href="#p1654">534. พระเจ้าทรงยิ่งใหญ่ <span class="en">(How great is our God)</span><span class="key"> G</span></a><br>
+<a href="#p1659">535. รักของพระองค์<span class="key"> C</span></a><br>
+<a href="#p1662">536. อยู่บนกางเขน<span class="key"> C</span></a><br>
+<a href="#p1665">537. เปลี่ยน<span class="key"> A</span></a><br>
+<a href="#p1668">538. เยซูพระเจ้ายิ่งใหญ่<span class="key"> Cm</span></a><br>
+<a href="#p1673">539. หัวใจการนมัสการ <span class="en">(The heart of worship)</span><span class="key"> D</span></a><br>
+<a href="#p1679">540. เรามาเพื่อร้องเพลงนมัสการ<span class="key"> D</span></a><br>
+<a href="#p1683">541. พระเจ้าของทุกสิ่ง<span class="key"> D</span></a><br>
+<a href="#p1687">542. โปรดเทการเจิม<span class="key"> D</span></a><br>
+<a href="#p1689">543. ความรักอัศจรรย์ <span class="en">(Amazing love)</span><span class="key"> D</span></a><br>
+<a href="#p1691">544. คำสรรเสริญมาจากดวงใจ <span class="en">(Love You so much)</span><span class="key"> D</span></a><br>
+<a href="#p1695">545. จงเตรียมหนทาง <span class="en">(Prepare the way of the Lord)</span><span class="key"> D</span></a><br>
+<a href="#p1701">546. ชนชาติที่รักสงบฟังเสียงพระเจ้า<span class="key"> D</span></a><br>
+<a href="#p1704">547. ดวงใจของข้าอยู่ในพระหัตถ์<span class="key"> D</span></a><br>
+<a href="#p1708">548. ทุกๆ สิ่ง<span class="key"> D</span></a><br>
+<a href="#p1711">549. พระเจ้าดีต่อฉัน<span class="key"> D</span></a><br>
+<a href="#p1714">550. พระเยซูดวงใจร้องเรียกหา <span class="en">(Jesus, lover of my soul, all consuming fire)</span><span class="key"> D</span></a><br>
+<a href="#p1718">551. พระเจ้าทรงสถิตกับฉัน<span class="key"> D</span></a><br>
+<a href="#p1722">552. อยากเห็นคนไทยนมัสการพระเจ้า<span class="key"> D</span></a><br>
+<a href="#p1725">553. เชิญมานมัสการ<span class="key"> Dm</span></a><br>
+<a href="#p1729">554. ขอบอกข่าวดี<span class="key"> Dm</span></a><br>
+<a href="#p1735">555. พระเยโฮวาห์เป็นพระเจ้า<span class="key"> Dm</span></a><br>
+<a href="#p1739">556. สรรเสริญพระนามพระเจ้ายิ่งใหญ่<span class="key"> E</span></a><br>
+<a href="#p1742">557. เยรูซาเล็มใหม่<span class="key"> E</span></a><br>
+<a href="#p1746">558. ข้าเปล่งเสียงโห่ร้อง<span class="key"> E</span></a><br>
+<a href="#p1751">559. พระองค์ดี <span class="en">(You are good)</span><span class="key"> A</span></a><br>
+<a href="#p1754">560. เมื่อเราเป็นหนึ่งใจเดียวกัน<span class="key"> D</span></a><br>
+<a href="#p1758">561. ทุกๆ วัน <span class="en">(Every day)</span><span class="key"> E</span></a><br>
+<a href="#p1763">562. ณ ที่นั่น<span class="key"> E</span></a><br>
+<a href="#p1768">563. บทเพลงในดวงใจ <span class="en">(Song of my heart)</span><span class="key"> E</span></a><br>
+<a href="#p1773">564. พระเจ้าผู้ทรงเป็นทุกสิ่ง<span class="key"> E</span></a><br>
+<a href="#p1776">565. ร้องโฮซันนา<span class="key"> E</span></a><br>
+<a href="#p1779">566. พระเจ้าทรงพระชนม์ <span class="en">(My redeemer lives)</span><span class="key"> E</span></a><br>
+<a href="#p1783">567. พระเยซูผู้เป็นหนทาง<span class="key"> C</span></a><br>
+<a href="#p1787">568. โปรดทรงนำทาง<span class="key"> Em</span></a><br>
+<a href="#p1791">569. โลหิตบริสุทธิ์<span class="key"> Em</span></a><br>
+<a href="#p1796">570. ข้าร้องสรรเสริญ<span class="key"> Em</span></a><br>
+<a href="#p1799">571. ไหลลงมา<span class="key"> D</span></a><br>
+<a href="#p1802">572. ไม่ว่าอยู่แห่งหนใด <span class="en">(True worshippers)</span><span class="key"> F</span></a><br>
+<a href="#p1807">573. แม่น้ำ<span class="key"> G</span></a><br>
+<a href="#p1811">574. พระองค์ผู้ทรงนำข้า<span class="key"> Em</span></a><br>
+<a href="#p1815">575. มีสิ่งเดียวที่ข้าต้องการ<span class="key"> Em</span></a><br>
+<a href="#p1818">576. รักไม่มีสิ้นสุด <span class="en">(To the ends of the earth)</span><span class="key"> Em</span></a><br>
+<a href="#p1821">577. สุขใจจริงๆ<span class="key"> Dm</span></a><br>
+<a href="#p1824">578. โปรดช่วยข้าด้วย<span class="key"> F</span></a><br>
+<a href="#p1826">579. ให้ข้าอยู่ในพระนิเวศน์<span class="key"> F</span></a><br>
+<a href="#p1832">580. ไม่มีอะไรมาพราก<span class="key"> F</span></a><br>
+<a href="#p1835">581. แสนชื่นบานเพียงใด<span class="key"> F</span></a><br>
+<a href="#p1839">582. ฉันเป็นที่รักยิ่ง <span class="en">(Touch of love)</span><span class="key"> F</span></a><br>
+<a href="#p1842">583. ที่กางเขนนั้น<span class="key"> C</span></a><br>
+<a href="#p1846">584. ที่ประทับ<span class="key"> F</span></a><br>
+<a href="#p1849">585. ทุกๆวันใจข้าต้องการ<span class="key"> F</span></a><br>
+<a href="#p1852">586. มาร่วมกันร้องเพลง<span class="key"> F</span></a><br>
+<a href="#p1855">587. มีเพียงพระองค์บนทางที่เดิน<span class="key"> F</span></a><br>
+<a href="#p1858">588. รักวิเศษ<span class="key"> F</span></a><br>
+<a href="#p1863">589. พลังแห่งความรอด <span class="en">(Mighty to save)</span><span class="key"> C</span></a><br>
+<a href="#p1868">590. รักที่ยิ่งใหญ่<span class="key"> Bm</span></a><br>
+<a href="#p1871">591. เชิญมาเต้นรำ<span class="key"> G</span></a><br>
+<a href="#p1876">592. เทิดทูนพระเยซู<span class="key"> G</span></a><br>
+<a href="#p1879">593. ดีต่อข้า<span class="key"> G</span></a><br>
+<a href="#p1882">594. เพียงผู้เดียว<span class="key"> G</span></a><br>
+<a href="#p1884">595. เมื่อไม่นาน<span class="key"> G</span></a><br>
+<a href="#p1887">596. เราขอนมัสการ<span class="key"> G</span></a><br>
+<a href="#p1889">597. พระผู้ไถ่แห่งชีวิต<span class="key"> D</span></a><br>
+<a href="#p1894">598. โปรดส่งการเจิม<span class="key"> G</span></a><br>
+<a href="#p1898">599. ในทุกสิ่งเราขอบพระคุณ<span class="key"> G</span></a><br>
+<a href="#p1902">600. ทรงเป็นพระเจ้านิรันคร์ <span class="en">(The everlasting God)</span><span class="key"> G</span></a><br>
+<a href="#p1905">601. ข้าได้ยินเสียงตรัส <span class="en">(Under the shelter of Your wings)</span><span class="key"> G</span></a><br>
+<a href="#p1908">602. รักและบูชา<span class="key"> G</span></a><br>
+<a href="#p1911">603. ข้าพร้อมกลับใจ<span class="key"> G</span></a><br>
+<a href="#p1914">604. ดวงใจฉันเฝ้าคอยพระองค์<span class="key"> G</span></a><br>
+<a href="#p1917">605. ตลอดไป <span class="en">(Forever)</span><span class="key"> G</span></a><br>
+<a href="#p1921">606. ธงชัย<span class="key"> G</span></a><br>
+<a href="#p1923">607. นมัสการ นมัสการองค์พระบิดา<span class="key"> G</span></a><br>
+<a href="#p1926">608. พระเยซูความหวังของประชาชาติ <span class="en">(Jesus, hope of the nations)</span><span class="key"> G</span></a><br>
+<a href="#p1930">609. พระเจ้าทรงเลี้ยงดู<span class="key"> G</span></a><br>
+<a href="#p1934">610. ขอหัวใจเหมือนพระทัยพระองค์ <span class="en">(True worshippers)</span><span class="key"> F</span></a><br>
+<a href="#p1937">611. ขอองค์พระวิญญาณเคลื่อน <span class="en">(Let Your Spirit come)</span><span class="key"> D</span></a><br>
+<a href="#p1941">612. พระองค์ทรงดีต่อฉันทรงรักษาใจ <span class="en">(You are beautiful my sweet, sweet song)</span><span class="key"> G</span></a><br>
+<a href="#p1945">613. เมื่อองค์พระวิญญาณ <span class="en">(Where the Spirit of the Lord is)</span><span class="key"> G</span></a><br>
+<a href="#p1948">614. รักมั่นคงพระองค์<span class="key"> G</span></a><br>
+<a href="#p1951">615. ซ่อนข้าไว้ภายใต้ปีกพระองค์ <span class="en">(Hide me now)</span><span class="key"> C</span></a><br>
+<a href="#p1954">616. วิญญาณข้าเรียกร้อง <span class="en">(This is my desire)</span><span class="key"> G</span></a><br>
+<a href="#p1956">617. ข้ารักพระนามพระองค์<span class="key"> G</span></a><br>
+<a href="#p1958">618. องค์พระเจ้าเราเข้ามา<span class="key"> G</span></a><br>
+<a href="#p1960">619. ทุกๆ ครัง<span class="key"> G</span></a><br>
+<a href="#p1966">620. ดุจความสว่าง <span class="en">(Light of the world)</span><span class="key"> E</span></a><br>
+<a href="#p1969">621. โฮซันนา <span class="en">(Hosanna, I see the king of glory)</span><span class="key"> E</span></a><br>
+<a href="#p1975">622. ทรงชื่นบาน<span class="key"> C</span></a><br>
+<a href="#p1979">623. ฉันเป็นใคร <span class="en">(Who am I)</span><span class="key"> G</span></a><br>
+<a href="#p1986">624. ที่กางเขนฉันคุกเข่า <span class="en">(At the cross)</span><span class="key"> E</span></a><br>
+<a href="#p1991">625. บ้านหลังนี้<span class="key"> A</span></a><br>
+<a href="#p1995">626. พระเจ้าประเสริฐ<span class="key"> G</span></a><br>
+<a href="#p1997">627. สบายดีบ่<span class="key"> C#m</span></a><br>
+<a href="#p2001">628. ข่าวดีจากสวรรค์<span class="key"> D</span></a><br>
+<a href="#p2005">629. เจ้ารักเราหรือ<span class="key"> Am</span></a><br>
+<a href="#p2011">630. พระเจ้าชีวิต<span class="key"> F</span></a><br>
+<a href="#p2017">631. เพลงแห่งสันติสุข<span class="key"> Em</span></a><br>
+<a href="#p2022">632. วอนอธิษฐาน<span class="key"> F</span></a><br>
+<a href="#p2028">633. เปิดใจให้พระเยซู<span class="key"> C</span></a><br>
+<a href="#p2034">634. พลังสัมพันธ์ภาคกลาง<span class="key"> C</span></a><br>
+<a href="#p2037">635. ไกลสุดขอบฟ้ามีพระบิดา<span class="key"> C</span></a><br>
+<a href="#p2038">636. ปฐมกาล อพยพ<span class="key"> C</span></a><br>
 </div>
 <div class="slide"><a id="p3"></a><h1><span class="nonum">สรรเสริญ. </span>&#160;&#160;ข้อสรรเสริญ <span class="en">(Doxology)</span><span class="key"> C</span></h1><a href="#p2">1/1</a>
 <p>สรรเสริญพระเจ้าผู้อำนวยพร</p><p>สรรเสริญพระเจ้าเหล่าประชากร</p><p>สรรเสริญองค์พระบิดาพระบุตร</p><p>สรรเสริญพระวิญญาณบริสุทธิ์</p><p>อาเมน</p></div>

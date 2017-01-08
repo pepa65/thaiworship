@@ -2,11 +2,12 @@
 ##
 ## worshipp.sh
 ##
-## Worshipp v0.5 Copyright 2016 OMF International under a GPL-3.0 license
+## Worshipp v0.6 Copyright 2017 OMF International under a GPL-3+ license
 ##
-## Makes a single-webpage (html,css) with all the songs, combining:
+## Makes a single-webpage (html+css) with all the songs, combining:
 ##  head_file (html-head), songs_file (song content), index_file (song indexes), and css_file (css)
-## Expects these files in the same directory, and outputs worshipp.html
+## All these files are expected in the same directory.
+## Outputs: worshipp.html, worshipp.html5
 ##
 ## Syntax songs_file: (configurable, see declarations below)
 ## - Title starts song: -hyphen- in the first character, followed by index-string, 1 space, and the songtitle
@@ -35,6 +36,7 @@
 self=$(readlink -e "$0")
 dir=${self%/*}  ## directory where the build-script resides has all necessary files
 html_file="$dir/worshipp.html"
+html5_file="$dir/worshipp.html5"
 head_file="$dir/worshipp.head"  ## open div will be closed in code, open body & html as well
 css_file="$dir/worshipp.css"
 songs_file="$dir/worship.songs"
@@ -53,7 +55,7 @@ do
 	## no-number index
 	title="$index. "
 	[[ ${index:0:1} == [1-9] ]] || title=""
-	[[ $en_title ]] && en_title=" ($en_title)"
+	[[ $en_title ]] && en_title=" <span lang=\"en\">($en_title)</span>"
 	title+="$th_title$en_title"
 	title_indexes[$index]=$title
 done <"$index_file"
@@ -79,10 +81,16 @@ do
 done <"$songs_file"
 
 ## Write copyright
-echo '<div>© 2016 <a href="http://omf.org/thailand">OMF International</a></div>' >>"$html_file"
+echo '<div><a href="mailto:worship@teamlampang.org?subject=Thai%20Worship">contact</a> <a href="http://omf.org/thailand" target="_blank">OMF International</a> © 2017</div>' >>"$html_file"
 ## close body/html
 echo '</body></html>' >>"$html_file"
 ## insert css
 sed -i "/<style type=\"text\/css\">/r $css_file" "$html_file"
+
+## Make additional html5 file
+(
+	echo -e '<!DOCTYPE html>\n<html lang="th">\n<meta charset="utf-8">'
+	sed -e '1,5d' -e 's@ />$@>@g' -e '/<\/head>/d' "$html_file"
+) >"$html5_file"
 
 exit 0

@@ -1,7 +1,18 @@
 //<![CDATA[<!--
-// Copyright (C) 2016 OMF International (GPL-3.0 licence)
+// Copyright (C) 2017 OMF International (GPL-3+ licence)
 // Based on slidy, copyright 2005 W3C (MIT licence)
 var w3 = {
+	// user modifiable: website, email, year, langs, timer, dfont, sizept, minpt, maxpt, steppt
+	website: "omf.org/thailand", // Go to website
+	email: "worship@teamlampang.org", // Contact by email
+	year: "2017", // Copyright year
+	langs: ["th", "en", "nl"], // Interface languages offered; empty: all available
+	timer: -1, // In minutes; 0: keep time; pos: count down to zero; neg: don't show
+	dfont: -1, // Initial font size adjustment (see sizept, minpt, maxpt, steppt)
+	sizept: 10, // Base font size
+	minpt: 6, // Min.font size
+	maxpt: 64, // Max.font size
+	steppt: 2, // Font adjustment
 	// classify which kind of browser we're running under
 	ns_pos: (window.pageYOffset !== undefined),
 	khtml: ((navigator.userAgent).indexOf("KHTML") >= 0),
@@ -43,24 +54,13 @@ var w3 = {
 	want_toolbar: 1, // user preference to show/hide toolbar
 	mouse_click_enabled: 0, // enables left-click for next slide
 	scroll_hack: 0, // IE work around for position: fixed
-	// Count down from M minutes; M==0: keep the time, counting up; M<0: don't show <meta name="timer" content="M" />
-	timer: -1,
 	time_inc: 0,
 	interval: 200, // 200ms interval for timer
 	disable_slide_click: 0, // used by clicked anchors
-	// The languages that will be used, from <meta http-equiv="Content-Language" content="th,en,nl" />
-	langs: [], // In the order of the meta tag; if not present, all languages in w3.strings will be available
 	lang: 0, // The current language index; starts as the first of langs
 	tocpage: "#p2",
 	help_anchor: null, // used for keyboard focus hack in showToolbar()
 	help_page: "#p1", // http://www.w3.org/Talks/Tools/Slidy2/help/help.html
-	// fontsize 10pt min. 6pt, max. 48pt, change in steps of 2
-	sizept: 10,
-	minpt: 6,
-	maxpt: 64,
-	steppt: 2,
-	// Initial font size adjustment, steppt times <meta name="font-size-adjustment" content="-1" />
-	adjustmentpt: 0,
 	// needed for efficient resizing
 	last_width: 0,
 	last_height: 0,
@@ -80,8 +80,7 @@ var w3 = {
 		window.resizeBy(0, -1);
 		window.resizeBy(0, 1);},
 	init: function (){
-		var fontadjustment = this.find_meta("font-size-adjustment") || 0;
-		this.adjustmentpt = this.steppt * fontadjustment;
+		this.dfont *= this.steppt;
 		w3.setup_lang();
 		this.add_toolbar();
 		this.wrap_implicit_slides();
@@ -92,8 +91,7 @@ var w3 = {
 		this.patch_anchors();
 		this.slide_number = this.find_slide_number(location.href);
 		window.offscreenbuffering = 1;
-		var timer = this.find_meta("timer");
-		this.timer = (isNaN(timer) ? -1 : timer * 60000); // min to ms
+		this.timer = (isNaN(this.timer) ? -1 : this.timer * 60000); // min to ms
 		if (this.timer === 0){
 			this.timer = w3.interval;
 			this.time_inc = w3.interval;}
@@ -143,16 +141,13 @@ var w3 = {
 		document.body.style.display = "inherit";
 		w3.initialized = 1;},
 	setup_lang: function (){
-		var i, j, k, p, b, text, sep, br, langs = {}, contlangs, contlang = this.find_meta("Content-Language", "http-equiv");
-		for (i in w3.strings) langs[i] = 1; // array indexed with all available languages
-		if (contlang) contlangs = contlang.replace(/\s/g, "").split(","); // array with all languages in meta
-		for (i = 0; i < contlangs.length; i++) if (langs[contlangs[i]]){
-			w3.langs.push(contlangs[i]);
-			langs[contlangs[i]] = 0;}
-		if (!w3.langs) for (i in w3.strings) w3.langs.push(i);
+		var i, j, k, p, b, text, sep, br, langs = [];
+		for (i in w3.strings) if (w3.langs.indexOf(i) >= 0) langs.push(i);
+		w3.langs = langs;
 		w3.lang = 0;
-		if (w3.langs.length === 0) w3.langs = ["th"];
-		if (w3.langs.length === 1){
+		// If no languages set/left: use all available
+		if (w3.langs.length === 0) for (i in w3.strings) w3.langs.push(i);
+		if (w3.langs.length === 1){ // Don't offer options if only 1 language
 			p = document.getElementById(w3.langs[0]);
 			p.style = "display: none;";}
 		else for (i = 0; i < w3.langs.length; i++){
@@ -262,7 +257,6 @@ var w3 = {
 		if (target && target.nodeType === 1){
 			var uri = target.getAttribute("href");
 			if (uri){
-				//alert("toc_click " + uri);
 				var slide = w3.slides[w3.slide_number];
 				w3.hide_slide(slide);
 				w3.slide_number = w3.find_slide_number(uri);
@@ -294,7 +288,6 @@ var w3 = {
 		if (key === 13){ // Enter
 			var uri = this.getAttribute("href");
 			if (uri){
-				//alert("toc_key_down " + uri);
 				var slide = w3.slides[w3.slide_number];
 				w3.hide_slide(slide);
 				w3.slide_number = w3.find_slide_number(uri);
@@ -491,8 +484,8 @@ var w3 = {
 		var toolbar = document.getElementById("toolbar");
 		if (toolbar) toolbar.parentNode.removeChild(toolbar);
 		var right, left, counter, gap, help, contents, mailto, email, copyright, year;
-		mailto = this.find_meta("reply-to") || "worship@teamlampang.org";
-		var date = this.find_meta("date") || "2016";
+		mailto = this.find_meta("reply-to") || w3.email;
+		var date = this.find_meta("date") || w3.year;
 		this.toolbar = this.create_element("div");
 		this.toolbar.setAttribute("id", "toolbar");
 		this.toolbar.setAttribute("class", "toolbar");
@@ -535,8 +528,8 @@ var w3 = {
 				gap = document.createTextNode(" - ");
 				left.appendChild(gap);}
 			copyright = this.create_element("a");
-			copyright.setAttribute("href", "http://omf.org/thailand");
-			copyright.setAttribute("title", "omf.org/thailand");
+			copyright.setAttribute("href", "//" + w3.website);
+			copyright.setAttribute("title", w3.website);
 			copyright.setAttribute("target", "_blank");
 			copyright.innerHTML = this.localize("org") + " ";
 			left.appendChild(copyright);
@@ -549,7 +542,7 @@ var w3 = {
 			this.toolbar.style.position = (this.ie7 ? "fixed" : "absolute");
 			this.toolbar.style.zIndex = "200";
 			this.toolbar.style.width = "99.9%";
-			this.toolbar.style.height = "1.2em";
+			this.toolbar.style.height = "1.5em";
 			this.toolbar.style.top = "auto";
 			this.toolbar.style.bottom = "0";
 			this.toolbar.style.left = "0";
@@ -586,8 +579,8 @@ var w3 = {
 				gap = document.createTextNode(" - ");
 				this.toolbar.appendChild(gap);}
 			copyright = this.create_element("a");
-			copyright.setAttribute("href", "http://omf.org/thailand");
-			copyright.setAttribute("title", "omf.org/thailand");
+			copyright.setAttribute("href", "//" + w3.website);
+			copyright.setAttribute("title", w3.website);
 			copyright.setAttribute("target", "_blank");
 			copyright.innerHTML = this.localize("org") + " ";
 			this.toolbar.appendChild(copyright);
@@ -596,7 +589,7 @@ var w3 = {
 			counter = this.create_element("div");
 			counter.style.position = "absolute";
 			counter.style.width = "auto";
-			counter.style.height = "1.2em";
+			counter.style.height = "1.5em";
 			counter.style.top = "auto";
 			counter.style.bottom = 0;
 			counter.style.right = "0";
@@ -664,7 +657,7 @@ var w3 = {
 				div.appendChild(node);
 				node = document.createElement("br");
 				div.appendChild(node);}
-			// work around for Firefox SVG reload bug which otherwise replaces 1st SVG graphic with 2nd
+			// workaround for Firefox SVG reload bug which otherwise replaces 1st SVG graphic with 2nd
 			else if (this.has_class(div, "background")) div.style.display = "block";}
 		this.slides = slides;},
 	// return new array of all <div class="handout">
@@ -838,7 +831,6 @@ var w3 = {
 		if (this.eos) this.eos.style.color = (state ? "rgb(240,240,240)" : "#822");},
 	// first slide is 0
 	goto_slide: function (num){
-		//alert("goto_slide " + num);
 		var slide = w3.slides[w3.slide_number];
 		w3.hide_slide(slide);
 		w3.slide_number = num;
@@ -861,16 +853,12 @@ var w3 = {
 		setTimeout(function (){ w3.help_anchor.blur();}, 1);},
 	// Show just the backgrounds pertinent to this slide when slide background-color is transparent, this should now work with rgba color values
 	sync_background: function (slide){
-		var background, bgColor;
+		var background, bgColor = "transparent";
 		if (slide.currentStyle) bgColor = slide.currentStyle["backgroundColor"];
 		else if (document.defaultView){
 			var styles = document.defaultView.getComputedStyle(slide, null);
-			if (styles) bgColor = styles.getPropertyValue("background-color");
-			// broken implementation probably due Safari or Konqueror
-			else {
-				//alert("defective implementation of getComputedStyle()");
-				bgColor = "transparent";}}
-		else bgColor = "transparent";
+			if (styles) bgColor = styles.getPropertyValue("background-color");}
+			// else: broken implementation probably due Safari or Konqueror
 		if (bgColor === "transparent" || bgColor.indexOf("rgba") >= 0 || bgColor.indexOf("opacity") >= 0){
 			var slideClass = this.get_class_list(slide);
 			for (var i = 0; i < this.backgrounds.length; i++){
@@ -924,7 +912,7 @@ var w3 = {
 			else if (width >= 600) w3.sizept = 14;
 			else if (width) w3.sizept = 10;
 			// Add in initial font size adjustment
-			if (w3.minpt <= w3.sizept + w3.adjustmentpt <= w3.maxpt) w3.sizept += w3.adjustmentpt;
+			if (w3.minpt <= w3.sizept + w3.dfont <= w3.maxpt) w3.sizept += w3.dfont;
 			// Enables cross browser use of relative width/height on object elements for use with SVG and Flash media
 			w3.adjust_object_dimensions(width, height);
 			document.body.style.fontSize = w3.sizept + "pt";
@@ -1061,12 +1049,11 @@ var w3 = {
 			return w3.cancel(event);}
 		// Select background image: CapsLock I
 		else if (key === 20 || key === 73){
-			document.getElementById("bg").src = prompt(w3.localize("background"), "http://www.why-is-the-sky-blue.tv/images/why-sky-is-blue.jpg");
+			document.getElementById("bg").src = prompt(w3.localize("background"), "//www.why-is-the-sky-blue.tv/images/why-sky-is-blue.jpg");
 			return w3.cancel(event);}
 		// Previous slide or Page up (not on Content page or Index): PageUp U
 		else if (!w3.is_shown_toc() && (key === 33 || key === 85)){
 			if (w3.view_all) return 1;
-			//alert(window.pageYOffset);
 			if (w3.slide_number === 1 && window.pageYOffset > 0) return 1;
 			w3.previous_slide("song");
 			return w3.cancel(event);}
@@ -1148,7 +1135,6 @@ var w3 = {
 		else if (key === 35 || key === 67){
 			window.location = w3.tocpage;
 			return w3.cancel(event);}
-		//else { alert("key code: " + key); return w3.cancel(event);}
 		return 1;},
 	// Safe for both text/html and application/xhtml+xml
 	create_element: function (name){

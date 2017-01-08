@@ -1,23 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="th">
+<html lang="th" xmlns="http://www.w3.org/1999/xhtml" xml:lang="th">
 <head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <title>เพลงนมัสการ</title>
 <meta name="copyright" content="OMF International" />
-<meta name="date" content="20160203" />
+<meta name="date" content="20170108" />
 <meta name="reply-to" content="worship@teamlampang.org" />
-<meta name="timer" content="-1" />
-<meta name="font-size-adjustment" content="-1" />
-<meta http-equiv="Content-Language" content="th,en,nl" />
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<link rel="shortcut icon" href="https://omf.org/thailand/wp-content/uploads/sites/31/2015/02/OMF72.png" />
+<link rel="shortcut icon" href="//omf.org/thailand/wp-content/uploads/sites/31/2015/02/OMF72.png" />
 <script type="application/javascript">
 </script>
 <style type="text/css" media="screen, print">
 </style>
 </head>
 <body style="display:none;">
-<div><img id="bg" src="" alt="" /></div>
+<div><img id="bg" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="" /></div>
 <div class="slide title"><a id="p1"></a>
 <div class="th"><h2 class="big">บทเพลงนมัสการ</h2>
 <h1 class="big">ความช่วยเหลือ</h1>
@@ -34,7 +31,7 @@
 <p><b>Enter</b> พิมพ์หมายเลขของเพลงที่ต้องการแล้วกด Enter</p>
 <p id="th" class="intro"></p>
 </div>
-<div class="en"><h2 class="big">Thai worship songs</h2>
+<div class="en" lang="en"><h2 class="big">Thai worship songs</h2>
 <h1 class="big">Help</h1>
 <p><b>F11</b> Full screen<br />
 <b>↑ ↓</b> Increase and Decrease font size</p>
@@ -49,7 +46,7 @@
 <p><b>Enter</b> Type a song number and hit Enter to go straight to it</p>
 <p id="en" class="intro"></p>
 </div>
-<div class="nl"><h2 class="big">Thaise aanbiddingsliederen</h2>
+<div class="nl" lang="nl"><h2 class="big">Thaise aanbiddingsliederen</h2>
 <h1 class="big">Help</h1>
 <p><b>F11</b> Schermvullend<br />
 <b>↑ ↓</b> Vergroten en Verkleinen van het letterformaat</p>
@@ -66,6 +63,6 @@
 </div></div>
 <div class="slide title"><a id="p2"></a><h1 class="big">
 <span class="th">สารบัญ บทเพลงนมัสการ</span>
-<span class="en">Table of song titles</span>
-<span class="nl">Inhoudsopgave</span>
+<span class="en" lang="en">Table of song titles</span>
+<span class="nl" lang="nl">Inhoudsopgave</span>
 </h1><br />

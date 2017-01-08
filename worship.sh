@@ -2,11 +2,12 @@
 ##
 ## worship.sh
 ##
-## Worship v0.5 Copyright 2016 OMF International under a GPL-3.0 license
+## Worship v0.6 Copyright 2017 OMF International under a GPL-3+ license
 ##
 ## Makes a single-webpage application (html,css,javascript) with all the songs, combining:
 ##  head_file (html-head), songs_file (song content), index_file (song indexes), js_file (javascript) and css_file (css)
-## Expects these files in the same directory, and outputs worship.html
+## All these files are expected in the same directory.
+## Outputs: worship.html, worship.html5
 ##
 ## Syntax songs_file: (configurable, see declarations below)
 ## - Title starts song: -hyphen- in the first character, followed by index-string, 1 space, and the songtitle
@@ -35,6 +36,7 @@
 self=$(readlink -e "$0")
 dir=${self%/*}  ## directory where the build-script resides has all necessary files
 html_file="$dir/worship.html"
+html5_file="$dir/worship.html5"
 head_file="$dir/worship.head"  ## open div will be closed in code, open body & html as well
 js_file="$dir/worship.js"
 css_file="$dir/worship.css"
@@ -43,7 +45,7 @@ index_file="$dir/worship.index"
 t1='-'  ## Song Title
 s1='='  ## Verse Separator
 h1='+'  ## Section Header
-nbsp3='&#160;&#160;&#160;'
+nonum='&#160;&#160;'
 
 #book="$dir/worship.book"
 #ref="$dir/worship.ref"
@@ -58,7 +60,7 @@ do
 	en_title=$(cut -d';' -f5 <<<"$line")
 	## no-number index: put 3 spaces, otherwise the number
 	title="$index. "
-	[[ ${index:0:1} == [1-9] ]] || title="<span class=\"nonum\">$title</span>$nbsp3"
+	[[ ${index:0:1} == [1-9] ]] || title="<span class=\"nonum\">$title</span>$nonum"
 	[[ $en_title ]] && en_title=" <span class=\"en\">($en_title)</span>"
 	title+="$th_title$en_title<span class=\"key\"> $key</span>"
 	title_indexes[$index]=$title
@@ -147,5 +149,11 @@ echo "</body></html>" >>"$html_file"
 ## insert javascript and css
 sed -i "/<script type=\"application\/javascript\">/r $js_file" "$html_file"
 sed -i "/<style type=\"text\/css\" media=\"screen, print\">/r $css_file" "$html_file"
+
+## Make additional html5 file
+(
+  echo -e '<!DOCTYPE html>\n<html lang="th">\n<meta charset="utf-8">'
+  sed -e '1,5d' -e 's@ />$@>@g' -e '/^<\/head>$/d' "$html_file"
+) >"$html5_file"
 
 exit 0
