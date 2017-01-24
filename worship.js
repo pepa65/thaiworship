@@ -528,7 +528,7 @@ var w3 = {
 				gap = document.createTextNode(" - ");
 				left.appendChild(gap);}
 			copyright = this.create_element("a");
-			copyright.setAttribute("href", "//" + w3.website);
+			copyright.setAttribute("href", "http://" + w3.website);
 			copyright.setAttribute("title", w3.website);
 			copyright.setAttribute("target", "_blank");
 			copyright.innerHTML = this.localize("org") + " ";
@@ -579,7 +579,7 @@ var w3 = {
 				gap = document.createTextNode(" - ");
 				this.toolbar.appendChild(gap);}
 			copyright = this.create_element("a");
-			copyright.setAttribute("href", "//" + w3.website);
+			copyright.setAttribute("href", "http://" + w3.website);
 			copyright.setAttribute("title", w3.website);
 			copyright.setAttribute("target", "_blank");
 			copyright.innerHTML = this.localize("org") + " ";
@@ -1049,7 +1049,7 @@ var w3 = {
 			return w3.cancel(event);}
 		// Select background image: CapsLock I
 		else if (key === 20 || key === 73){
-			document.getElementById("bg").src = prompt(w3.localize("background"), "//www.why-is-the-sky-blue.tv/images/why-sky-is-blue.jpg");
+			document.getElementById("bg").src = prompt(w3.localize("background"), "http://www.why-is-the-sky-blue.tv/images/why-sky-is-blue.jpg");
 			return w3.cancel(event);}
 		// Previous slide or Page up (not on Content page or Index): PageUp U
 		else if (!w3.is_shown_toc() && (key === 33 || key === 85)){
