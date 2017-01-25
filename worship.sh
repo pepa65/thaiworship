@@ -2,35 +2,17 @@
 ##
 ## worship.sh
 ##
-## Worship v0.6 Copyright 2017 OMF International under a GPL-3+ license
+## Copyright 2017 OMF International under a GPL-3+ license
 ##
 ## Makes a single-webpage application (html,css,javascript) with all the songs, combining:
-##  head_file (html-head), songs_file (song content), index_file (song indexes), js_file (javascript) and css_file (css)
-## All these files are expected in the same directory.
+##  head_file (html-head), songs_file (song content), index_file (song indexes),
+##  js_file (javascript) and css_file (css)
+##  All these files are expected in the same directory.
 ## Outputs: worship.html, worship.html5
 ##
-## Syntax songs_file: (configurable, see declarations below)
-## - Title starts song: -hyphen- in the first character, followed by index-string, 1 space, and the songtitle
-##   (index starting with 1-9 will be displayed as such, otherwise hidden through css)
-## - Verses with a line on each line (newline breaks a line within a verse, but otherwise don't matter)
-## - Verse separator: =equals= sign as the first character (rest gets ignored), ignored if not after a verse line
-## - Section header: lines starting with +plus+ sign; these appear in the index of titles before the next song title
-## - Double spaces, starting or trailing spaces will be removed
-## - Preferences: put 'singing instructions' in square brackets
-##
-## The index_file is a semicolon separated csv with no header record and 7 fields:
-## - Song index: all index-string in the songs_file should be in the index_file
-## - Key
-## - Thai title
-## - Thai start
-## - English title
-## - English start
-## - Song information (authors, album, classification, etc.)
-## Only Song index, Key, Thai title and English title are used
-##
-## The head_file is the html with the head section, the body with Help slide, start of Index slide (div not closed)
-##
-## The js_file is the JavaScript, the css_file the CSS
+## The head_file is the html with the head section, the body with Help slide,
+##  start of Index slide; div not closed, will be closed at the bottom of
+##  this script.
 ##
 
 self=$(readlink -e "$0")
@@ -45,6 +27,7 @@ index_file="$dir/worship.index"
 t1='-'  ## Song Title
 s1='='  ## Verse Separator
 h1='+'  ## Section Header
+c1='#'  ## Comment
 nonum='&#160;&#160;'
 
 #book="$dir/worship.book"
@@ -54,6 +37,7 @@ nonum='&#160;&#160;'
 declare -A title_indexes
 while read line
 do
+	[[ ${line:0:1} = $c1 ]] && continue
 	index=$(cut -d';' -f1 <<<"$line")
 	key=$(cut -d';' -f2 <<<"$line")
 	th_title=$(cut -d';' -f3 <<<"$line")
@@ -77,7 +61,10 @@ while read line
 do
 	first=${line:0:1}
 	rest=${line:1}
-	if [[ $first = $t1 ]]
+	if [[ $first = $c1 ]]
+	then
+		continue
+	elif [[ $first = $t1 ]]
 	then  ## title: finish song
 		#echo ${song[0]} >>th_start.txt
 		if [[ $lines ]]
@@ -100,15 +87,13 @@ do
 		titleline=${title_indexes[${rest%% *}]}
 		echo "<a href=\"#p$page\">$titleline</a><br />" >>"$html_file"
 		song=() verse=1
-		#song+=("<div class=\"slide\"><a id=\"p$page\"></a><h1>$titleline</h1><a class=\"song\" href=\"#p2\">1/")  ## add $verse</a> later!
 		song+=("<div class=\"slide\"><a id=\"p$page\"></a><h1>$titleline</h1><a href=\"#p2\">1/")  ## add $verse</a> later!
-		#title="<div class=\"slide\"><h1>$titleline</h1><a class=\"verse\" href=\"#p$page\">"  ## add $verse/ and $verse</a> later!
 		title="<div class=\"slide\"><h1>$titleline</h1><a href=\"#p$page\">"  ## add $verse/ and $verse</a> later!
-	elif [[ $first = $h1 ]]  ## h3 section header
-	then
+	elif [[ $first = $h1 ]]
+	then  ## h3 section header
 		echo "<h3>$rest</h3>" >>"$html_file"
-	elif [[ $first = $s1 ]]  ## empty line: finish verse, another page
-	then
+	elif [[ $first = $s1 ]]
+	then  ## verse separator: finish verse, another page
 		if [[ $lines ]]
 		then  ## ignore empty verses
 			((verse>1)) && song+=("$title$verse/")  ## add $verse</a> later!
@@ -117,8 +102,10 @@ do
 			((page++))
 			((verse++))
 		fi
-	else  ## songline -- if not empty
-		[[ $line ]] && lines+="<p>$line</p>"  ## add </div> at the end!
+		## add content of the line if not empty
+		[[ $rest ]] && lines="<p>$(sed -e 's@\[@<i>[@g' -e 's@]@]</i>@g' <<<"$rest")</p>"
+	else  ## add songline -- if not empty
+		[[ $line ]] && lines+="<p>$(sed -e 's@\[@<i>[@g' -e 's@]@]</i>@g' <<<"$line")</p>"
 	fi
 done <"$songs_file"
 

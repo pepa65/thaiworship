@@ -1,16 +1,11 @@
 #!/bin/bash
+##
 ## openlp.sh
+##
 ## Expects worship.songs in the same directory
-## Outputs xml files for each song in the subdirectory OpenLP
+## For each song xml files are added into the subdirectory OpenLP
 ## (These can be imported by the OpenLP presentation software)
 ##
-## Syntax worship.songs:
-## - Title starts song, hyphen in the first character, followed by index-string (number/id), 1 space, title
-## - First line of the verse can be (or contain) [ร้องรับ] for chorus to be marked
-## - Verses with a line on each line
-## - End of verse/song by equals sign as the first character (rest empty)
-## - Lines starting with plus sign are section headers, appear in the index of titles
-## - Conventions: no double spaces, starting or trailing spaces; 'instructions' in square brackets
 
 self=$(readlink -e "$0")
 dir=${self%/*}  ## directory where the build-script resides has all necessary files
@@ -44,20 +39,26 @@ p6=' </lyrics>
 '
 while read line
 do
+	rest=${line:1}
 	case ${line:0:1} in
-		-) ## title: finish song
+		\#)  ## comment
+			continue ;;
+		-)  ## title: finish verse and song
+			[[ $lines ]] && echo -n "$lines$p5" >>"$name" && lines='' ## finish verse
 			((vn+cn)) && echo "$p6" >>"$name"  ## unless it's the very first one!
 			## Start new song
-			ti=${line:1}
+			ti=$rest
 			name="$xml/${ti%% *}.xml"  ## filename is songnumber
 			echo "$p0$md$p1$ti$p2" >"$name"
 			vn=0 cn=0 lines='' ;;
-		+) ## h3 section header: ignored
-			true ;; 
-		=) ## verse end: finish verse
+		+)  ## h3 section header: ignored, but also verse end
 			echo -n "$lines$p5" >>"$name"
 			lines='' ;;
-		*) ## songline
+		=)  ## verse end: finish verse
+			echo -n "$lines$p5" >>"$name"
+			lines=''
+			line=$rest ;;&  ## Continue with the next case!
+		*)  ## songline
 			if [[ $lines ]]
 			then  ## not the first line
 				lines+=$br
@@ -69,7 +70,7 @@ do
 			lines+="$line" ;;
 	esac
 done <"$songs"
-
-echo -n "$p6" >>"$name"
+echo -n "$lines$p5" >>"$name" && lines=''  ## finish verse
+echo -n "$p6" >>"$name"  ## finish song
 
 exit 0

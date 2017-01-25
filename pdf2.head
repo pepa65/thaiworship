@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>เพลงนมัสการ</title>
+<style type="text/css">
+body{font-family:"Arundina Serif",serif; font-size:11pt; font-kerning:normal;}
+h1{font-size:300%; font-weight:bold; text-align:center;
+ margin:0 0 32pt; padding:6pt 0 0 0; border-top:1pt solid #000; border-bottom:1pt solid #000;}
+h2{font-size:160%; font-weight:bold; color:#444; text-align:center;
+ padding:2em; -weasy-string-set: chapter content();}
+h3{font-size:110%; font-weight:bold; margin:0 0 -10pt;}
+h3.sub{margin:0 0 -1.2em;}
+p{break-inside:avoid-page;}
+span{font-size:90%; font-weight:bold; color:#444; display:inline-block; margin:-0.2em 0 0.6em;}
+i{font-size: 90%; font-style:normal; color:#444;}
+a{color:#000; text-decoration:none}
+.footer{font-size:80%; color:#444; text-align:center;}
+div {column-count:2;}
+@page{margin:1in 1in 1in 1in; @bottom-left{content:string(chapter); font-size:100%; font-weight:bold; color:#444;} @bottom-right{content:counter(page); font-size:100%; font-weight:bold;}}
+</style></head>
+<body>
+<h1>เพลงนมัสการ</h1>

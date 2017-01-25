@@ -1,3 +1,13 @@
+# The index_file is a semicolon separated csv with no header record and 7 fields:
+# - Song index: all index-string in the songs_file should be in the index_file
+# - Key
+# - Thai title
+# - Thai first line
+# - English title
+# - English first line
+# - Song information (authors, album, classification, etc.)
+# Only Song index, Key, Thai title and English title are used
+# Lines starting with # are ignored
 สรรเสริญ;C;ข้อสรรเสริญ;สรรเสริญพระเจ้าผู้อำนวยพร;Doxology;Praise God from Whom all blessings flow;
 1;C;เราจะยินดีและเราจะเปรมปรีดิ์;เราจะยินดี และเราจะเปรมปรีดิ์;I will rejoice in You and be glad;;
 2;C;ข้ายินดีเมื่อเขากล่าวแก่ข้าว่า;ข้ายินดี เมื่อเขากล่าวแก่ข้าว่า;I was glad when they said unto me;;Danny Chambers
@@ -199,7 +209,7 @@
 203;D;นี่คือเวลาเราบูชาพระบิดา;นี่คือเวลา นี่คือเวลา;Now is the time;;
 204;D;เมื่อรับการสวมทับ;เมื่อรับการสวมทับ โดยพระหัตถ์วางบนชีวิต;When I feel the touch of Your hand;;
 205;D;พระองค์เป็นที่กำบัง;พระองค์เป็นที่กำบัง พระองค์ทรงเป็นพลัง;You are my hiding place;;
-206;;ล้ำเลิศพระองค์ล้ำเลิศ;ล้ำเลิศพระองค์ล้ำเลิศ จอมราชา;Worthy, You are worthy;Worthy, You are worthy;
+206;C;ล้ำเลิศพระองค์ล้ำเลิศ;ล้ำเลิศพระองค์ล้ำเลิศ จอมราชา;Worthy, You are worthy;Worthy, You are worthy;
 207;D;พระเยซูบุตรพระเจ้า;พระเยซู บุตรพระเจ้า;You are my all in all;;Dennis Jernigan
 208;D;เชิญพระวิญญาณ;เชิญพระวิญญาณแห่งความรักยิ่งใหญ่;O let the Son of God enfold you;;John Wimber
 209;D;เชิญองค์พระวิญญาณโปรดเจิมข้า;เชิญองค์พระวิญญาณ โปรดเจิมข้า;Come Holy Spirit;;William J. Gaither
