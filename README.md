@@ -14,6 +14,8 @@ The content is provided by the files `worship.songs` and `worship.index`
 
 [View the output](https://pepa65.github.io/thaiworship/index.html)
 
+Shortcut to page: [j.mp/thaiworship](http://j.mp/thaiworship)
+
 ## worshipp.sh
 
 ### Produce single-webpage of all song lyrics for easy use on handhelds
@@ -24,6 +26,8 @@ from the html-head file `worshipp.head` and the CSS style sheet `worshipp.css`.
 The content is provided by the files `worship.songs` and `worship.index`
 
 [View the output](https://pepa65.github.io/thaiworship/index.htm)
+
+Shortcut to page: [j.mp/thworship](http://j.mp/thworship)
 
 ## openlp.sh
 
