@@ -23,6 +23,8 @@ head_file="$dir/pdf.head"
 head2_file="$dir/pdf2.head"
 songs_file="$dir/worship.songs"
 index_file="$dir/worship.index"
+pdf_file="$dir/worship.pdf"
+pdf2_file="$dir/worship2.pdf"
 t1='-'  ## Song Title
 s1='='  ## Verse Separator
 h1='+'  ## Section Header
@@ -89,5 +91,11 @@ cat <<-\EOP |tee -a "$html_file" >>"$html2_file"
 	</p></body>
 	</html>
 EOP
+
+if w=$(type -p weasyprint)
+then
+	$w "$html_file" "$pdf_file"
+	$w "$html2_file" "$pdf2_file"
+fi
 
 exit 0

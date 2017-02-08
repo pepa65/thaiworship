@@ -15,7 +15,7 @@ echo 'making worshipp.html'
 echo 'making worship.htm and worship2.htm'
 ./pdf.sh
 
-if w=$(command -v weasyprint)
+if w=$(type -p weasyprint)
 then
 	echo 'making worship.pdf'
 	$w worship.htm worship.pdf

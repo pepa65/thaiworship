@@ -43,3 +43,8 @@ The bash script `openlp.sh` makes xml song files for import into
 The bash script `pdf.sh` builds `worship.htm` and `worship2.htm` that can
 be used as input for the pdf generation software [Weasyprint](http://weasyprint.org)
 to produce a single-column and a double-column pdf document.
+
+```
+weasyprint worship.htm worship.pdf
+weasyprint worship2.htm worship2.pdf
+```
