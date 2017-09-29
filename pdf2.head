@@ -8,7 +8,7 @@ body{font-family:"Arundina Serif",serif; font-size:10pt; font-kerning:normal;}
 h1{font-size:300%; font-weight:bold; text-align:center;
  margin:0 0 32pt; padding:6pt 0 0 0; border-top:1pt solid #000; border-bottom:1pt solid #000;}
 h2{font-size:160%; font-weight:bold; color:#444; text-align:center;
- padding:2em; -weasy-string-set: chapter content();}
+ padding:2em; string-set: chapter content();}
 h3{font-size:110%; font-weight:bold; margin:0 0 -10pt;}
 h3.sub{margin:0 0 -1.2em;}
 p{break-inside:avoid-page;}

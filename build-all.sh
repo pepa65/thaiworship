@@ -25,6 +25,7 @@ else
 	echo 'Cannot make worship.pdf and worship2.pdf,'
 	echo ' weasyprint is not installed, see:'
 	echo ' http://weasyprint.readthedocs.io/en/latest/install.html'
+	echo 'Do: sudo pip install Weasyprint'
 	exit 1
 fi
 

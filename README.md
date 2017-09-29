@@ -1,6 +1,6 @@
 # Worship lyrics presentation suite v0.7
 
-All files can be built with the bash script `all.sh`.
+All files can be built with the bash script `build-all.sh`.
 
 ## worship.sh
 
