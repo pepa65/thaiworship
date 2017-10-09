@@ -94,8 +94,8 @@ EOP
 
 if w=$(type -p weasyprint)
 then
-	$w "$html_file" "$pdf_file"
-	$w "$html2_file" "$pdf2_file"
+	"$w" "$html_file" "$pdf_file"
+	"$w" "$html2_file" "$pdf2_file"
 fi
 
 exit 0
