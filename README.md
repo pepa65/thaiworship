@@ -48,3 +48,9 @@ to produce a single-column and a double-column pdf document.
 weasyprint worship.htm worship.pdf
 weasyprint worship2.htm worship2.pdf
 ```
+
+## Booklet
+
+The BookletA5.pdf is editable with LibreOffice. The a5toa4 script in
+[pepa65's misc github repo](https://github.com/pepa65/misc) can onvert it into
+BookletA4.pdf for printing.
