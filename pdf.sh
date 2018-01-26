@@ -2,8 +2,6 @@
 ##
 ## pdf.sh
 ##
-## Copyright 2018 OMF International under a GPL-3+ license
-##
 ## Produces 2 html files with embedded css with all the songs that can be used
 ##  by Weasyprint http://weasyprint.org to make pdf documents, one with a
 ##  single column and one with a double column.
@@ -83,21 +81,20 @@ echo -n "</p>" |tee -a "$html_file" >>"$html2_file"
 echo -n "</div>" >>"$html2_file"
 cat <<-\EOP |tee -a "$html_file" >>"$html2_file"
 	<br /><br />
+	<h2>เกี่ยวกับเพลงนมัสการ</h2>
 	<p class="footer">
-	<a href="http://loof.bid/tws">Browser-based Thai worship projection for online usage</a><br />
-	<a href="http://loof.bid/thws" download="thaiworship.html">Download browser-based Thai worship projection for offline usage</a><br />
-	<a href="http://github.com/pepa65/thaiworship">Thai worship download page</a><br />
-	<a href="mailto:worship@teamlampang.org?subject=Thai%20worship%20PDF">contact</a><br />
-	<a href="http://omf.org/thailand">OMF International © 2018</a>
+	<a href="http://loof.bid/tws" title="Browser-based Thai worship projection for online usage">เพลงนมัสการสำหรับเครื่องฉายใช้งานออนไลน์</a><br /><br />
+	<a href="https://github.com/pepa65/thaiworship/blob/master/worship.html" title="Download browser-based Thai worship projection for offline usage">ดาวน์โหลดเพลงนมัสการสำหรับเครื่องฉายใช้งานออฟไลน์ได้</a><br /><br />
+	<a href="http://github.com/pepa65/thaiworship" title="Thai worship download page">เพจดาวน์โหลดเพลงนมัสการ</a><br /><br />
+	<a href="mailto:worship@teamlampang.org?subject=Thai%20worship%20PDF" title="contact">ติดต่อ</a><br /><br />
+	<a href="http://omf.org/thailand" title="OMF International © 2018">โอเอ็มเอฟ อินเทอร์เนชันนัล © 2018</a>
 	</p></body>
 	</html>
 EOP
 
 if w=$(type -p weasyprint)
 then
-	echo "making $pdf_file"
 	"$w" "$html_file" "$pdf_file"
-	echo "making $pdf2_file"
 	"$w" "$html2_file" "$pdf2_file"
 else
   echo "Cannot make $pdf_file and $pdf2_file,"
