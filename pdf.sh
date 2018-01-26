@@ -2,7 +2,7 @@
 ##
 ## pdf.sh
 ##
-## Copyright 2017 OMF International under a GPL-3+ license
+## Copyright 2018 OMF International under a GPL-3+ license
 ##
 ## Produces 2 html files with embedded css with all the songs that can be used
 ##  by Weasyprint http://weasyprint.org to make pdf documents, one with a
@@ -84,18 +84,27 @@ echo -n "</div>" >>"$html2_file"
 cat <<-\EOP |tee -a "$html_file" >>"$html2_file"
 	<br /><br />
 	<p class="footer">
-	<a href="worship.html" rel="attachment">Start worship slide projection</a><br />
-	<a href="http://github.com/pepa65/thaiworship">Thai worship home page</a><br />
-	<a href="mailto:worship@teamlampang.org?subject=Thai%20worship%20PDF">contact</a>
-	<a href="http://omf.org/thailand">OMF International © 2017</a>
+	<a href="http://loof.bid/tws">Browser-based Thai worship projection for online usage</a><br />
+	<a href="http://loof.bid/thws" download="thaiworship.html">Download browser-based Thai worship projection for offline usage</a><br />
+	<a href="http://github.com/pepa65/thaiworship">Thai worship download page</a><br />
+	<a href="mailto:worship@teamlampang.org?subject=Thai%20worship%20PDF">contact</a><br />
+	<a href="http://omf.org/thailand">OMF International © 2018</a>
 	</p></body>
 	</html>
 EOP
 
 if w=$(type -p weasyprint)
 then
+	echo "making $pdf_file"
 	"$w" "$html_file" "$pdf_file"
+	echo "making $pdf2_file"
 	"$w" "$html2_file" "$pdf2_file"
+else
+  echo "Cannot make $pdf_file and $pdf2_file,"
+  echo " weasyprint is not installed, see:"
+  echo " http://weasyprint.readthedocs.io/en/latest/install.html"
+  echo "Do: 'sudo pip install WeasyPrint'"
+  exit 1
 fi
 
 exit 0

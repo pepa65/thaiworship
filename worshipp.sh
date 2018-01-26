@@ -2,7 +2,7 @@
 ##
 ## worshipp.sh
 ##
-## Copyright 2017 OMF International under a GPL-3+ license
+## Copyright 2018 OMF International under a GPL-3+ license
 ##
 ## Makes a single-webpage (html+css) with all the songs, combining:
 ##  head_file (html-head), songs_file (song content) and
@@ -70,7 +70,7 @@ do
 done <"$songs_file"
 
 ## Write copyright
-echo '<div><a href="mailto:worship@teamlampang.org?subject=Thai%20Worship">contact</a> <a href="http://omf.org/thailand" target="_blank">OMF International</a> © 2017</div>' >>"$html_file"
+echo '<div><a href="mailto:worship@teamlampang.org?subject=Thai%20Worship">contact</a> <a href="http://omf.org/thailand" target="_blank">OMF International</a> © 2018</div>' >>"$html_file"
 ## close body/html
 echo '</body></html>' >>"$html_file"
 

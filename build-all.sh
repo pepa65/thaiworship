@@ -2,7 +2,7 @@
 
 ## build-all.sh
 ##
-## Copyright 2017 OMF International under a GPL-3+ license
+## Copyright 2018 OMF International under a GPL-3+ license
 ##
 ## Makes all the files in the project 
 
@@ -13,20 +13,5 @@ echo 'making worship.html'
 echo 'making worshipp.html'
 ./worshipp.sh
 echo 'making worship.htm and worship2.htm'
+## and worship.pdf, worship2.pdf
 ./pdf.sh
-
-if w=$(type -p weasyprint)
-then
-	echo 'making worship.pdf'
-	$w worship.htm worship.pdf
-	echo 'making worship2.pdf'
-	$w worship2.htm worship2.pdf
-else
-	echo 'Cannot make worship.pdf and worship2.pdf,'
-	echo ' weasyprint is not installed, see:'
-	echo ' http://weasyprint.readthedocs.io/en/latest/install.html'
-	echo 'Do: sudo pip install Weasyprint'
-	exit 1
-fi
-
-exit 0

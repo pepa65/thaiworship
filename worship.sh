@@ -2,7 +2,7 @@
 ##
 ## worship.sh
 ##
-## Copyright 2017 OMF International under a GPL-3+ license
+## Copyright 2018 OMF International under a GPL-3+ license
 ##
 ## Makes a single-webpage application (html,css,javascript) with all the songs, combining:
 ##  head_file (html-head), songs_file (song content), index_file (song indexes),
