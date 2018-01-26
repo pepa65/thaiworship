@@ -32,7 +32,7 @@ nonum='&#160;&#160;'
 #ref="$dir/worship.ref"
 
 ## Reading song index, key, Thai title, English title from the index_file
-declare -A title_indexes
+declare -A title_indexes key_indexes
 while read line
 do
 	[[ ${line:0:1} = $c1 ]] && continue
@@ -44,8 +44,9 @@ do
 	title="$index. "
 	[[ ${index:0:1} == [1-9] ]] || title="<span class=\"nonum\">$title</span>$nonum"
 	[[ $en_title ]] && en_title=" <span class=\"en\">($en_title)</span>"
-	title+="$th_title$en_title<span class=\"key\"> $key</span>"
+	title+="$th_title$en_title"
 	title_indexes[$index]=$title
+	key_indexes[$index]="</h1><span class=\"key\">$key</span><a href=\"#p"
 done <"$index_file"
 
 /bin/cat "$head_file" >"$html_file"
@@ -85,8 +86,8 @@ do
 		titleline=${title_indexes[${rest%% *}]}
 		echo "<a href=\"#p$page\">$titleline</a><br />" >>"$html_file"
 		song=() verse=1
-		song+=("<div class=\"slide\"><a id=\"p$page\"></a><h1>$titleline</h1><a href=\"#p2\">1/")  ## add $verse</a> later!
-		title="<div class=\"slide\"><h1>$titleline</h1><a href=\"#p$page\">"  ## add $verse/ and $verse</a> later!
+		song+=("<div class=\"slide\"><a id=\"p$page\"></a><h1>$titleline${key_indexes[${rest%% *}]}2\">1/")  ## add $verse</a> later!
+		title="<div class=\"slide\"><h1>$titleline${key_indexes[${rest%% *}]}$page\">"  ## add $verse/ and $verse</a> later!
 	elif [[ $first = $h1 ]]
 	then  ## h3 section header
 		echo "<h3>$rest</h3>" >>"$html_file"

@@ -1,5 +1,5 @@
-body{width:100%; height:100%; color:#000; font-family:"Gill Sans MT", "Gill Sans", GillSans, sans-serif; font-size:16pt; margin:0; padding:0; background:#fff;}
-span.key{margin-left:1em;}
+body{width:100%; height:100%; color:#000; font-family:"Arundina Serif",serif; font-size:16pt; margin:0; padding:0; background:#fff;}
+span.key{color:#666; margin:0 1em;}
 .intro{margin-left:.6em; min-width:40em; width:50%; padding:.4em; background:#eee;}
 div.toolbar{position:fixed; z-index:200; top:auto; bottom:0; left:0; right:0; height:1.5em; text-align:right; padding-left:1em; padding-right:1em; font-size:80%; color:#822; border-top:solid 1px #aaa; background:#ccc;}
 div.toolbar span.copyright{color:#333; margin-left:.5em;}
@@ -11,7 +11,7 @@ div.toc .toc_heading{text-align:center; width:100%; border-bottom-style:solid; b
 div.slide{z-index:20; clear:both; top:0; bottom:0; left:0; right:0; line-height:120%; visibility:visible; position:inherit; border-width:0; margin:0; padding:0 20px;}
 div.handout{margin-left:20px; margin-right:20px; border-top-style:solid; border-top-width:thin; border-top-color:#000;}
 div.slide.titlepage h1{padding-top:10%; margin-right:0;}
-div.slide h1{display:block; font-size:110%; line-height:1.2em; float:left; margin:0 60pt .5em 0; padding:4pt 20pt 4pt 0;}
+div.slide h1{display:block; font-size:110%; line-height:1.2em; float:left; margin:.5em 60pt .5em 0; padding:4pt 20pt 4pt 0;}
 div.slide h1.big{font-size:160%; margin-left:.6em;}
 div.slide h2.big{font-size:280%; margin-bottom:.5em; margin-left:.3em; margin-top:.3em; padding-top:0.3em;}
 div.slide br{clear:both;}

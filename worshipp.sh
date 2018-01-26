@@ -31,13 +31,14 @@ while read line
 do
 	[[ ${line:0:1} = $c1 ]] && continue
 	index=$(cut -d';' -f1 <<<"$line")
+  key=$(cut -d';' -f2 <<<"$line")
 	th_title=$(cut -d';' -f3 <<<"$line")
 	en_title=$(cut -d';' -f5 <<<"$line")
 	## no-number index
 	title="$index. "
 	[[ ${index:0:1} == [1-9] ]] || title=""
-	[[ $en_title ]] && en_title=" <span lang=\"en\">($en_title)</span>"
-	title+="$th_title$en_title"
+	[[ $en_title ]] && en_title="<br /><span lang=\"en\">($en_title)</span>"
+	title+="$th_title<span class="key">$key</span>$en_title"
 	title_indexes[$index]=$title
 done <"$index_file"
 
