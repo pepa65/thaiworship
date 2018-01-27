@@ -1,4 +1,4 @@
-# Worship lyrics presentation suite v0.72
+# Worship lyrics presentation suite v0.73
 
 All files can be built with the bash script `build-all.sh`.
 
