@@ -14,7 +14,7 @@ The content is provided by the files `worship.songs` and `worship.index`
 
 [View the output](https://pepa65.github.io/thaiworship/index.html)
 
-Shortcut to page: [j.mp/thaiworship](http://j.mp/thaiworship)
+Shortcut to page: [4e4.win/thaiworship](http://4e4.win/thaiworship)
 
 ## worshipp.sh
 
@@ -27,7 +27,7 @@ The content is provided by the files `worship.songs` and `worship.index`
 
 [View the output](https://pepa65.github.io/thaiworship/index.htm)
 
-Shortcut to page: [j.mp/thworship](http://j.mp/thworship)
+Shortcut to page: [4e4.win/thworship](http://4e4.win/thworship)
 
 ## openlp.sh
 
@@ -52,5 +52,5 @@ weasyprint worship2.htm worship2.pdf
 ## Booklet
 
 The BookletA5.pdf is editable with LibreOffice. The a5toa4 script in
-[pepa65's misc github repo](https://github.com/pepa65/misc) can convert it into
+[pepa65's misc gitlab repo](https://gitlab.com/pepa65/misc) can convert it into
 BookletA4.pdf for printing. Just call it like: `bash a5toa4 BookletA5.pdf`
