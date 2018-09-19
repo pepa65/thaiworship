@@ -1,4 +1,4 @@
-# Worship lyrics presentation suite v0.73
+# Worship lyrics presentation suite v0.74
 
 All files can be built with the bash script `build-all.sh`.
 
@@ -12,9 +12,7 @@ and the CSS style sheet `worship.css`.
 
 The content is provided by the files `worship.songs` and `worship.index`
 
-[View the output](https://pepa65.github.io/thaiworship/index.html)
-
-Shortcut to page: [4e4.win/thaiworship](http://4e4.win/thaiworship)
+[View the output](https://4e4.win/thws)
 
 ## worshipp.sh
 
@@ -25,9 +23,7 @@ from the html-head file `worshipp.head` and the CSS style sheet `worshipp.css`.
 
 The content is provided by the files `worship.songs` and `worship.index`
 
-[View the output](https://pepa65.github.io/thaiworship/index.htm)
-
-Shortcut to page: [4e4.win/thworship](http://4e4.win/thworship)
+[View the output](https://4e4.win/thw)
 
 ## openlp.sh
 
