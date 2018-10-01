@@ -92,7 +92,7 @@ cat <<-\EOP |tee -a "$html_file" >>"$html2_file"
 	</html>
 EOP
 
-if w=$(type -p weasyprint)
+if w=$(type -P weasyprint)
 then
 	"$w" "$html_file" "$pdf_file"
 	"$w" "$html2_file" "$pdf2_file"
