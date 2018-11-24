@@ -15,7 +15,7 @@ span{font-size:90%; font-weight:bold; color:#666; display:inline-block; margin:-
 i{font-size:90%; font-style:normal; color:#666;}
 a{color:#000; text-decoration:none;}
 .footer{font-size:80%; color:#666;}
-@page{margin:.5in .5in 1.4in .5in;
+@page{size:A4; margin:.5in .5in 1.4in .5in;
  @bottom-left{content:string(chapter); font-size:140%; font-weight:bold; font-style:normal; color:#666;}
  @bottom-right{content:counter(page); font-size:140%; font-weight:bold;}}
 </style></head>
