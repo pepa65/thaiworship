@@ -49,4 +49,4 @@ weasyprint worship2.htm worship2.pdf
 
 The BookletA5.pdf is editable with LibreOffice. The a5toa4 script in
 [pepa65's misc gitlab repo](https://gitlab.com/pepa65/misc) can convert it into
-BookletA4.pdf for printing. Just call it like: `bash a5toa4 BookletA5.pdf`
+BookletA4.pdf for printing. Just call it like: `bash a5toa4 -r BookletA5.pdf`
