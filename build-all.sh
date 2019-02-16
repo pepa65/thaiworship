@@ -15,4 +15,4 @@ echo 'making worship.pdf and worship2.pdf'
 ./pdf.sh
 
 echo 'making BookletA4.pdf'
-a5toa4 -r BookletA5.pdf
+a5toa4 BookletA5.pdf
