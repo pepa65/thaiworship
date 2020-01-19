@@ -1,12 +1,12 @@
 ## Syntax worship.songs:
-## - Title starts song, - hyphen in the first character, followed by index-string
-##  (number/id), 1 space, title (title is ignored, the one in worship.index used)
-## - First line of the verse can be (or contain) [ร้องรับ] for chorus to be marked
+## - Title starts song: '-' hyphen as first character, followed by index-string
+##   (number/id), 1 space, title (ignored, the one in worship.index used)
+## - First line of the verse can be/contain [ร้องรับ] for chorus to be marked
 ## - Verses with a line on each line
-## - Verse separator between verses within song: = equals sign as the only character
-## - Lines starting with + plus sign are section headers
+## - Verse separator between verses: '=' equal sign as first character
+## - Lines starting with + plus sign are section headers (between songs)
 ## - Lines starting with # are ignored
-## - Put 'singing instructions' in square brackets in normal lines
+## - Put "singing instructions" in square brackets in normal lines
 ## - Double spaces, starting or trailing spaces will be removed
 -สรรเสริญ ข้อสรรเสริญ
 สรรเสริญพระเจ้าผู้อำนวยพร

@@ -12,6 +12,7 @@
 ##
 ## The head_file is the html with the head section and the body with the title.
 ##  will be closed at the end of this script.
+## Required: weasyprint (https://github.com/Kozea/WeasyPrint)
 
 self=$(readlink -e "$0")
 dir=${self%/*}  ## directory where the build-script resides has all necessary files
@@ -94,13 +95,15 @@ EOP
 
 if w=$(type -P weasyprint)
 then
-	"$w" "$html_file" "$pdf_file"
-	"$w" "$html2_file" "$pdf2_file"
+	"$w" -v "$html_file" "$pdf_file"
+	"$w" -v "$html2_file" "$pdf2_file"
 else
-  echo "Cannot make $pdf_file and $pdf2_file,"
-  echo " weasyprint is not installed, see:"
+  echo "Cannot make $pdf_file and $pdf2_file, weasyprint not installed, see:"
   echo " http://weasyprint.readthedocs.io/en/latest/install.html"
-  echo "Do: 'sudo pip install WeasyPrint'"
+  echo "Either do: 'sudo pip install WeasyPrint', or:"
+	echo " git clone https://github.com/Kozea/WeasyPrint"
+	echo " python3 Weasyprint/setup.py build"
+	echo " sudo python3 Weasyprint/setup.py install"
   exit 1
 fi
 
