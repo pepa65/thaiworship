@@ -1,18 +1,18 @@
-#!/bin/bash
-##
-## pdf.sh
-##
-## Produces 2 html files with embedded css with all the songs that can be used
-##  by Weasyprint http://weasyprint.org to make pdf documents, one with a
-##  single column and one with a double column.
-## Needs: head_file, head2_file (html-head), songs_file (song content)
-##  and index_file (song indexes).
-##  All these files are expected in the same directory.
-## Outputs: worship.htm, worship2.htm
-##
-## The head_file is the html with the head section and the body with the title.
-##  will be closed at the end of this script.
-## Required: weasyprint (https://github.com/Kozea/WeasyPrint)
+#!/usr/bin/env bash
+
+# pdf.sh - Make single and double column html files for WeasyPrint
+#
+# Produces 2 html files with embedded css with all the songs that can be used
+#  by Weasyprint http://weasyprint.org to make pdf documents, one with a
+#  single column and one with a double column.
+# Needs: head_file, head2_file (html-head), songs_file (song content)
+#  and index_file (song indexes).
+#  All these files are expected in the same directory.
+# Outputs: worship.htm, worship2.htm
+#
+# The head_file is the html with the head section and the body with the title.
+#  will be closed at the end of this script.
+# Required: weasyprint (https://github.com/Kozea/WeasyPrint)
 
 self=$(readlink -e "$0")
 dir=${self%/*}  ## directory where the build-script resides has all necessary files

@@ -1,11 +1,10 @@
-#!/bin/bash
-##
-## openlp.sh
-##
-## Expects worship.songs in the same directory
-## For each song xml files are added into the subdirectory OpenLP
-## (These can be imported by the OpenLP presentation software)
-##
+#!/usr/bin/env bash
+#
+# openlp.sh - Make xml files for OpenLP
+#
+# Expects worship.songs in the same directory
+# For each song xml files are added into the subdirectory OpenLP
+# (These can be imported by the OpenLP presentation software)
 
 self=$(readlink -e "$0")
 dir=${self%/*}  ## directory where the build-script resides has all necessary files

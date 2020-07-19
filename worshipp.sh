@@ -1,17 +1,16 @@
-#!/bin/bash
-##
-## worshipp.sh
-##
-## Makes a single-webpage (html+css) with all the songs, combining:
-##  head_file (html-head), songs_file (song content) and
-##  index_file (song indexes)
-##  All these files are expected in the same directory.
-## Outputs: worshipp.html, worshipp.html5
-##
-## The head_file is the html with the head section, the body with Help slide,
-##  the start of Index slide; div not closed, will be closed at the bottom
-##  of this script.
-##
+#!/usr/bin/env bash
+
+# worshipp.sh - Make a html page with all songs
+#
+# Makes a single-webpage (html+css) with all the songs, combining:
+#  head_file (html-head), songs_file (song content) and
+#  index_file (song indexes)
+#  All these files are expected in the same directory.
+# Outputs: worshipp.html, worshipp.html5
+#
+# The head_file is the html with the head section, the body with Help slide,
+#  the start of Index slide; div not closed, will be closed at the bottom
+#  of this script.
 
 self=$(readlink -e "$0")
 dir=${self%/*}  ## directory where the build-script resides has all necessary files

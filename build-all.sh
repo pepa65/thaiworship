@@ -1,6 +1,6 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
-## build-all.sh - Makes all the files in the project 
+# build-all.sh - Make all the files in the project
 
 echo 'making OpenLP/*.xml files'
 ./openlp.sh

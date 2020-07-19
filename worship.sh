@@ -1,17 +1,17 @@
-#!/bin/bash
-##
-## worship.sh
-##
-## Makes a single-webpage application (html,css,javascript) with all the songs, combining:
-##  head_file (html-head), songs_file (song content), index_file (song indexes),
-##  js_file (javascript) and css_file (css)
-##  All these files are expected in the same directory.
-## Outputs: worship.html, worship.html5
-##
-## The head_file is the html with the head section, the body with Help slide,
-##  start of Index slide; div not closed, will be closed at the bottom of
-##  this script.
-##
+#!/usr/bin/env bash
+
+# worship.sh - Make single-webpage application for showing songs
+#
+# Makes a single-webpage application (html,css,javascript) with all the songs,
+# combining:
+#  head_file (html-head), songs_file (song content), index_file (song indexes),
+#  js_file (javascript) and css_file (css)
+#  All these files are expected in the same directory.
+# Outputs: worship.html, worship.html5
+#
+# The head_file is the html with the head section, the body with Help slide,
+#  start of Index slide; div not closed, will be closed at the bottom of
+#  this script.
 
 self=$(readlink -e "$0")
 dir=${self%/*}  ## directory where the build-script resides has all necessary files
