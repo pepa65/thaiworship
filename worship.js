@@ -4,7 +4,7 @@
 var w3 = {
 	// user modifiable: website, email, year, langs, timer, dfont, sizept, minpt, maxpt, steppt
 	website: "omf.org/thailand", // Go to website
-	email: "worship@teamlampang.org", // Contact by email
+	email: "worship@thaimissions.info", // Contact by email
 	year: "2018", // Copyright year
 	langs: ["th", "en", "nl"], // Interface languages offered; empty: all available
 	timer: -1, // In minutes; 0: keep time; pos: count down to zero; neg: don't show
