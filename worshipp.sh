@@ -68,7 +68,7 @@ do
 done <"$songs_file"
 
 ## Write copyright
-echo '<div><a href="mailto:worship@thaimissions.info?subject=Thai%20Worship">contact</a> <a href="http://omf.org/thailand" target="_blank">OMF International</a> © 2018</div>' >>"$html_file"
+echo '<div><a href="mailto:worship@thaimissions.info?subject=Thai%20Worship">contact</a> <a href="http://omf.org/thailand" target="_blank">OMF International</a> © 2021</div>' >>"$html_file"
 ## close body/html
 echo '</body></html>' >>"$html_file"
 
