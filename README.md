@@ -1,6 +1,10 @@
-# Worship lyrics presentation suite v0.74
+# Worship lyrics presentation suite v0.8.0
 
-All files can be built with the bash script `build-all.sh`.
+**The common 636 Thai worship songs as gathered together by OMF Thailand.**
+
+The Doxology is included in the beginning, and the song "The Lord's Prayer" as song 637.
+
+* Build: All files can be built with the bash script `build-all.sh`.
 
 ## worship.sh
 

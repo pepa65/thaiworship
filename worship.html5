@@ -3,18 +3,18 @@
 <meta charset="utf-8">
 <title>เพลงนมัสการ</title>
 <meta name="copyright" content="OMF International">
-<meta name="date" content="20180126">
+<meta name="date" content="20210510">
 <meta name="reply-to" content="worship@thaimissions.info">
 <link rel="shortcut icon" href="http://omf.org/thailand/wp-content/uploads/sites/31/2015/02/OMF72.png">
 <script>
 //<![CDATA[<!--
-// Copyright 2018 © OMF International (GPL-3+ licence)
+// Copyright 2021 © OMF International (GPL-3+ licence)
 // Based on slidy, copyright 2005 W3C (MIT licence)
 var w3 = {
 	// user modifiable: website, email, year, langs, timer, dfont, sizept, minpt, maxpt, steppt
 	website: "omf.org/thailand", // Go to website
 	email: "worship@thaimissions.info", // Contact by email
-	year: "2018", // Copyright year
+	year: "2021", // Copyright year
 	langs: ["th", "en", "nl"], // Interface languages offered; empty: all available
 	timer: -1, // In minutes; 0: keep time; pos: count down to zero; neg: don't show
 	dfont: -1, // Initial font size adjustment (see sizept, minpt, maxpt, steppt)
@@ -2275,6 +2275,7 @@ li ol li,li li ol li{list-style-type:decimal;}
 <a href="#p2033">634. พลังสัมพันธ์ภาคกลาง</a><br>
 <a href="#p2036">635. ไกลสุดขอบฟ้ามีพระบิดา</a><br>
 <a href="#p2037">636. ปฐมกาล อพยพ</a><br>
+<a href="#p2040">637. คำอธิษฐาน</a><br>
 </div>
 <div class="slide"><a id="p3"></a><h1><span class="nonum">สรรเสริญ. </span>&#160;&#160;ข้อสรรเสริญ <span class="en">(Doxology)</span></h1><span class="key">C</span><a href="#p2">1/1</a>
 <p>สรรเสริญพระเจ้าผู้อำนวยพร<p>สรรเสริญพระเจ้าเหล่าประชากร<p>สรรเสริญองค์พระบิดาพระบุตร<p>สรรเสริญพระวิญญาณบริสุทธิ์<p>อาเมน</div>
@@ -3091,7 +3092,7 @@ li ol li,li li ol li{list-style-type:decimal;}
 <div class="slide"><a id="p409"></a><h1>197. จงยอพระเกียรติพระเจ้า <span class="en">(Exalt the Lord our God)</span></h1><span class="key">D</span><a href="#p2">1/1</a>
 <p>จงยอพระเกียรติพระเจ้า<p>จงยอพระเกียรติพระเจ้า<p>นมัส-การ ที่แท่นรองพระบาท<p>นมัส-การ ด้วยจิตใจชื่นบาน<p>พระองค์บริสุทธิ์ พระองค์บริสุทธิ์</div>
 <div class="slide"><a id="p410"></a><h1>198. โปรดเปิดดวงตา <span class="en">(Open my eyes)</span></h1><span class="key">D</span><a href="#p2">1/1</a>
-<p>โปรดเปิดดวงตา ให้ข้าเห็นสง่าราศี<p>เปิดปากของข้า ให้เต็มล้นด้วยคำสรรเสริญ<p>ข้ารักพระองค์ จึงโมทนา<p>ฮา เล ลู ยา บูชาพระนาม</div>
+<p>โปรดเปิดดวงตา<p>ให้ข้าเห็นสง่าราศี<p>เปิดปากของข้า<p>ให้เต็มล้นด้วยคำสรรเสริญ<p>ข้ารักพระองค์ จึงโมทนา<p>ฮา เล ลู ยา บูชาพระนาม</div>
 <div class="slide"><a id="p411"></a><h1>199. ด้วยมือที่ข้าชูขึ้น <span class="en">(With my hands lifted up)</span></h1><span class="key">D</span><a href="#p2">1/1</a>
 <p>ด้วยมือที่ข้าชูขึ้น ด้วยปากที่ข้าสรรเสริญ<p>ด้วยใจที่โมทนา ข้าจะสรรเสริญพระองค์<p>ข้าจะสรรเสริญพระองค์<p>ข้าจะสรรเสริญพระองค์<p>ด้วยใจที่โมทนา ข้าจะสรรเสริญพระองค์</div>
 <div class="slide"><a id="p412"></a><h1>200. สรรเสริญนามพระเยซู <span class="en">(Praise the name of Jesus)</span></h1><span class="key">D</span><a href="#p2">1/1</a>
@@ -3165,7 +3166,7 @@ li ol li,li li ol li{list-style-type:decimal;}
 <div class="slide"><a id="p446"></a><h1>219. งามจริงพระพักตร์พระเจ้า <span class="en">(O Lord, You're beautiful)</span></h1><span class="key">D</span><a href="#p2">1/3</a>
 <p>งามจริง พระพักตร์พระเจ้า<p>สิริ ทอแสง งามตา<p>เมื่อยามพระองค์ ประทับเคียงใกล้<p>สุขล้ำ ที่ได้ บูชา</div>
 <div class="slide"><h1>219. งามจริงพระพักตร์พระเจ้า <span class="en">(O Lord, You're beautiful)</span></h1><span class="key">D</span><a href="#p446">2/3</a>
-<p>โปรดเถิด โปรดเจิมด้วยไฟ ทำลาย<p>บาปพ้น มลทิน<p>ให้ใจล้นใน ความรักมั่นคง ให้รัก<p>ยำเกรง พระองค์</div>
+<p>โปรดเถิด โปรดเจิมด้วยไฟ<p>ทำลายบาปพ้น มลทิน<p>ให้ใจล้นใน ความรักมั่นคง<p>ให้รักยำเกรง พระองค์</div>
 <div class="slide"><h1>219. งามจริงพระพักตร์พระเจ้า <span class="en">(O Lord, You're beautiful)</span></h1><span class="key">D</span><a href="#p446">3/3</a>
 <p>พระเจ้า องค์ทรงงามสง่า<p>พระพักตร์ ทอแสง ตระการตา<p>องค์การุณย์ พระคุณรวยล้อมตัวข้า<p>พระคุณ รายล้อม ตัวข้า</div>
 <div class="slide"><a id="p449"></a><h1>220. เมื่อมองดูความบริสุทธิ์ของพระองค์ <span class="en">(When I look into Your holiness)</span></h1><span class="key">D</span><a href="#p2">1/3</a>
@@ -3183,7 +3184,7 @@ li ol li,li li ol li{list-style-type:decimal;}
 <div class="slide"><a id="p455"></a><h1>223. ขอพระวิญญาณทรงโปรดประทาน</h1><span class="key">D</span><a href="#p2">1/1</a>
 <p>ขอพระวิญญาณ ทรงโปรด<p>ประทานชีวิตใหม่<p>เป็นพระวิหารบริสุทธิ์<p>ขอประทานใจสดใส และชื่นบาน<p>ดั่งพระวิหาร ของพระองค์</div>
 <div class="slide"><a id="p456"></a><h1>224. 178 ข้าเชื่อในพระเยซู <span class="en">(I believe in Jesus)</span></h1><span class="key">D</span><a href="#p2">1/1</a>
-<p>ข้าเชื่อในพระเยซู ข้าเชื่อว่าทรงเป็นบุตรพระเจ้า<p>ข้าเชื่อว่าทรงเป็นขึ้นใหม่ ข้าเชื่อว่า<p>ทรงไถ่เราทุกคน และพระองค์ทรงอยู่ที่นี่<p>(พระองค์ทรงอยู่ที่นี่) สถิตท่ามกลางพวกเรา<p>ทรงฤทธา พร้อมการรักษา (พร้อมการรักษา)<p>และพระคุณอภัยบาปข้า</div>
+<p>ข้าเชื่อในพระเยซู<p>ข้าเชื่อว่าทรงเป็นบุตรพระเจ้า<p>ข้าเชื่อว่าทรงเป็นขึ้นใหม่<p>ข้าเชื่อว่าทรงไถ่เราทุกคน<p>และพระองค์ทรงอยู่ที่นี่ (พระองค์ทรงอยู่ที่นี่)<p>สถิตท่ามกลางพวกเรา (สถิตท่ามกลางพวกเรา)<p>ทรงฤทธาพร้อมการรักษา (ทรงฤทธาพร้อมการรักษา)<p>และพระคุณอภัยบาปข้า</div>
 <div class="slide"><a id="p457"></a><h1>225. ผู้ทรงสิรินั้นคือผู้ใด</h1><span class="key">C</span><a href="#p2">1/1</a>
 <p>ผู้ทรงสิรินั้นคือผู้ใดคือพระเจ้าผู้ทรงเข้มแข็ง<p>ทรงฤทธาร้ายแรง ในยามสงคราม<p>ผู้ทรงสิรินั้นคือผู้ใด คือพระเจ้าจอมโยธา<p>ทรงเป็นองค์กษัตรา ผู้ครองบัลลังก์ใจเรา<p>เราต้องกราบลง นมัสการด้วยจริงใจ<p>เทิดทูนบาทไท้ ผู้เป็นใหญ่ในเรา</div>
 <div class="slide"><a id="p458"></a><h1>226. เรานมัสการ</h1><span class="key">D</span><a href="#p2">1/2</a>
@@ -3401,7 +3402,7 @@ li ol li,li li ol li{list-style-type:decimal;}
 <div class="slide"><h1>277. ทรงอุ้มชูค้ำจุน</h1><span class="key">G</span><a href="#p563">2/2</a>
 <p><i>[ร้องรับ]</i><p>ไม้อ้อ ที่ช้ำ จวนหัก ยังทรง ไม่หัก<p>แต่กลับค้ำจุนไว้ ไส้ตะเกียงริบหรี่<p>พระองค์ทรงไม่วีดับโปรดทรงเมตตา<p>ประทานความรัก และเมตตาทรงอุ้มชู<p>ค้ำจุน ตลอด นิรันดร์</div>
 <div class="slide"><a id="p565"></a><h1>278. ข้ารักพระองค์ด้วยสิ้นสุดดวงใจ</h1><span class="key">G</span><a href="#p2">1/2</a>
-<p>ข้ายอมทุกสิ่ง จะเชื่อฟังพระองค์ทุกอย่าง<p>สิ่งใดที่ทรงบัญชา ข้าขอทำตาม<p>เมื่อรู้ว่านั้นเป็นน้ำพระทัย <i>[x2]</i></div>
+<p>ข้ายอมทุกสิ่ง จะเชื่อฟังพระองค์ทุกอย่าง<p>สิ่งใดที่ทรงบัญชา ข้าขอทำตาม<p>เมื่อรู้ว่านั้นเป็นน้ำพระทัย<p><i>[x2]</i></div>
 <div class="slide"><h1>278. ข้ารักพระองค์ด้วยสิ้นสุดดวงใจ</h1><span class="key">G</span><a href="#p565">2/2</a>
 <p>ข้ารักพระองค์ด้วยสิ้นสุดดวงใจ<p>ข้ารักพระองค์ด้วยสิ้นสุดกำลัง<p>ข้าขอเทิดทูนบูชาพระนามพระองค์<p>ข้าขอเทใจออกมาเป็นคำสรรเสริญ<p>ข้าขอชูมือถวายคำสดุดี<p>ในชีวิตนี้ข้ามีพระองค์ผู้เดียว เป็นพระเจ้า</div>
 <div class="slide"><a id="p567"></a><h1>279. โดยพระโลหิตไหล</h1><span class="key">G</span><a href="#p2">1/2</a>
@@ -6350,4 +6351,10 @@ li ol li,li li ol li{list-style-type:decimal;}
 <p>เอสเธอร์ โยบ เพลงสดุดี สุภาษิต มี<p>และปัญญาจารย์ เพลงซาโลมอน อิสยาห์<p>เยเรมีย์ บทเพลงคร่ำครวญ เอเสเคียล<p>ดาเนียล โฮเชยา โยเอลก็มี<p>อาโมส โอบาดีย์ โยนาห์ มีคาห์ ฮาเลลูยา</div>
 <div class="slide"><h1>636. ปฐมกาล อพยพ</h1><span class="key">C</span><a href="#p2037">3/3</a>
 <p>นาฮูม มี ฮะบากุก เศฟันยาห์<p>ฮักกัย เศคาริยาห์ มาลาคี<p>รวมทั้งหมดนี้เป็นพระคัมภีร์เดิม<p>จะช่วยส่งเสริมให้เราเข้าใจ<p>โปรดจำไว้ให้ดี</div>
+<div class="slide"><a id="p2040"></a><h1>637. คำอธิษฐาน</h1><span class="key">D</span><a href="#p2">1/3</a>
+<p>พระบิดา พระเจ้าแห่งฟ้าสวรรค์<p>ขอพระนามพระองค์เป็นที่สรรเสริญบูชา<p>พระเยซู เราร่วมคำอธิษฐาน<p>ขอแผ่นดินพระองค์ สำแดงเป็นจริง</div>
+<div class="slide"><h1>637. คำอธิษฐาน</h1><span class="key">D</span><a href="#p2040">2/3</a>
+<p><i>[ร้องรับ]</i><p>ให้แผ่นดินพระองค์ มาตั้งอยู่ท่ามกลางเรา<p>ให้พระทัยพระองค์ เป็นจริงในเรา<p>ในสวรรค์นั้นเป็นเช่นไร<p>ให้แผ่นดินโลกเป็นไปอย่างนั้น<p>ให้พระเกียรติเป็นของพระองค์ พระเจ้านิรันดร์</div>
+<div class="slide"><h1>637. คำอธิษฐาน</h1><span class="key">D</span><a href="#p2040">3/3</a>
+<p><i>[บทแยก]</i><p>อาเมน อาเมน<p>ขอพระสิริและพระเกียรติเป็นของพระองค์<p><i>[2x]</i></div>
 </body></html>

@@ -88,7 +88,7 @@ cat <<-\EOP |tee -a "$html_file" >>"$html2_file"
 	<a href="https://4e4.win/thaiworship.html" title="Download browser-based Thai worship projection for offline usage">ดาวน์โหลดเพลงนมัสการสำหรับเครื่องฉายใช้งานออฟไลน์ได้</a><br /><br />
 	<a href="http://gitlab.com/pepa65/thaiworship" title="Thai worship download page">เพจดาวน์โหลดเพลงนมัสการ</a><br /><br />
 	<a href="mailto:worship@thaimissions.info?subject=Thai%20worship%20PDF" title="contact">ติดต่อ</a><br /><br />
-	<a href="http://omf.org/thailand" title="OMF International © 2018">โอเอ็มเอฟ อินเทอร์เนชันนัล © 2018</a>
+	<a href="http://omf.org/thailand" title="OMF International © 2021">โอเอ็มเอฟ อินเทอร์เนชันนัล © 2021</a>
 	</p></body>
 	</html>
 EOP
@@ -100,7 +100,11 @@ then
 else
   echo "Cannot make $pdf_file and $pdf2_file, weasyprint not installed, see:"
   echo " http://weasyprint.readthedocs.io/en/latest/install.html"
-  echo "Either do: 'sudo pip install WeasyPrint', or:"
+  echo "Either do:"
+	echo " sudo apt install weasyprint"
+	echo "or:"
+	echo " sudo pip install WeasyPrint"
+	echo "or:"
 	echo " git clone https://github.com/Kozea/WeasyPrint"
 	echo " python3 Weasyprint/setup.py build"
 	echo " sudo python3 Weasyprint/setup.py install"
