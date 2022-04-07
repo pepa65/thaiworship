@@ -1,4 +1,4 @@
-# Worship lyrics presentation suite v0.8.0
+# Worship lyrics presentation suite v0.9.0
 
 **The common 636 Thai worship songs as gathered together by OMF Thailand.**
 
@@ -16,7 +16,7 @@ and the CSS style sheet `worship.css`.
 
 The content is provided by the files `worship.songs` and `worship.index`
 
-[View the output](https://4e4.win/thws)
+[View the output](https://good4.eu/thws)
 
 ## worshipp.sh
 
@@ -27,7 +27,7 @@ from the html-head file `worshipp.head` and the CSS style sheet `worshipp.css`.
 
 The content is provided by the files `worship.songs` and `worship.index`
 
-[View the output](https://4e4.win/thw)
+[View the output](https://good4.eu/thw)
 
 ## openlp.sh
 
