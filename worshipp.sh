@@ -3,12 +3,12 @@
 # worshipp.sh - Make a html page with all songs
 #
 # Makes a single-webpage (html+css) with all the songs, combining:
-#  head_file (html-head), songs_file (song content) and
-#  index_file (song indexes)
+#  $head_file (html-head), $songs_file (song content) and
+#  $index_file (song indexes)
 #  All these files are expected in the same directory.
 # Outputs: worshipp.html, worshipp.html5
 #
-# The head_file is the html with the head section, the body with Help slide,
+# The $head_file is the html with the head section, the body with Help slide,
 #  the start of Index slide; div not closed, will be closed at the bottom
 #  of this script.
 
@@ -68,7 +68,7 @@ do
 done <"$songs_file"
 
 ## Write copyright
-echo '<div><a href="mailto:worship@thaimissions.info?subject=Thai%20Worship">contact</a> <a href="http://omf.org/thailand" target="_blank">OMF International</a> © 2021</div>' >>"$html_file"
+echo '<div><a href="mailto:worship@thaimissions.info?subject=Thai%20Worship">contact</a> <a href="http://omf.org/thailand" target="_blank">OMF International</a> © '"$(date +%Y)</div>" >>"$html_file"
 ## close body/html
 echo '</body></html>' >>"$html_file"
 

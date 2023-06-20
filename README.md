@@ -2,7 +2,8 @@
 
 **The common 636 Thai worship songs as gathered together by OMF Thailand.**
 
-The Doxology is included in the beginning, and the song "The Lord's Prayer" as song 637.
+The Doxology is included in the beginning, and the songs "The Lord's Prayer" as song 637
+and "The Lord is our shelter" as song 638.
 
 * Build: All files can be built with the bash script `build-all.sh`.
 
@@ -38,16 +39,11 @@ The bash script `openlp.sh` makes xml song files for import into
 
 ## pdf.sh
 
-### Produce html documents for generating pdf documents with Weasyprint
+### Produce the single-column and double-column pdf documents 
 
-The bash script `pdf.sh` builds `worship.htm` and `worship2.htm` that can
-be used as input for the pdf generation software [Weasyprint](http://weasyprint.org)
-to produce a single-column and a double-column pdf document.
-
-```
-weasyprint worship.htm worship.pdf
-weasyprint worship2.htm worship2.pdf
-```
+The bash script `pdf.sh` builds the single-column `worship.pdf` and
+the double-column `worship2.pdf` documents using [Weasyprint](http://weasyprint.org),
+which uses `worship.htm` and `worship2.htm` as input.
 
 ## Booklet
 

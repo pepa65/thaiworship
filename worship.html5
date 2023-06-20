@@ -8,13 +8,13 @@
 <link rel="shortcut icon" href="http://omf.org/thailand/wp-content/uploads/sites/31/2015/02/OMF72.png">
 <script>
 //<![CDATA[<!--
-// Copyright 2021 © OMF International (GPL-3+ licence)
+// Copyright 2023 © OMF International (GPL-3+ licence)
 // Based on slidy, copyright 2005 W3C (MIT licence)
 var w3 = {
 	// user modifiable: website, email, year, langs, timer, dfont, sizept, minpt, maxpt, steppt
 	website: "omf.org/thailand", // Go to website
 	email: "worship@thaimissions.info", // Contact by email
-	year: "2021", // Copyright year
+	year: "2023", // Copyright year
 	langs: ["th", "en", "nl"], // Interface languages offered; empty: all available
 	timer: -1, // In minutes; 0: keep time; pos: count down to zero; neg: don't show
 	dfont: -1, // Initial font size adjustment (see sizept, minpt, maxpt, steppt)
@@ -2305,7 +2305,7 @@ li ol li,li li ol li{list-style-type:decimal;}
 <div class="slide"><h1>7. มาเถิดให้เราพากันไป <span class="en">(Come and let us go up)</span></h1><span class="key">D</span><a href="#p14">2/2</a>
 <p>พระองค์จะทรงนำในมรรคา<p>และเราจะเดินในทางพระองค์<p>และพระธรรมจะออกมาจากศิโยน<p>และพระดำรัสของพระองค์จากเยรูซาเล็ม</div>
 <div class="slide"><a id="p16"></a><h1>8. เรานำเสียงการสรรเสริญมา <span class="en">(We bring a sacrifice of praise)</span></h1><span class="key">D</span><a href="#p2">1/1</a>
-<p>เรานำเสียงการสรรเสริญ มายังวิหารของ<p>พระองค์ เรานำเสียงการสรรเสริญ มายัง<p>วิหารของพระองค์ เราถวายคำโมทนา เป็น<p>เครื่องบูชาแด่พระผู้เป็นเจ้า เราถวายคำ<p>สดุดี เป็นเครื่องบูชาแด่พระองค์</div>
+<p>เรานำเสียงการสรรเสริญ<p>มายังวิหารของพระองค์<p>เรานำเสียงการสรรเสริญ<p>มายังวิหารของพระองค์ เราถวายคำโมทนา<p>เป็นเครื่องบูชาแด่พระผู้เป็นเจ้า<p>เราถวายคำสดุดี เป็นเครื่องบูชาแด่พระองค์</div>
 <div class="slide"><a id="p17"></a><h1>9. มาเถิดมาสรรเสริญพระผู้เป็นเจ้า</h1><span class="key">D</span><a href="#p2">1/5</a>
 <p>มาเถิดมาสรรเสริญพระผู้เป็นเจ้า<p>มาเถิดมาสรรเสริญพระผู้เป็นเจ้า<p>มาเถิดมาสรรเสริญพระผู้เป็นเจ้า<p>มาเถิดมาสรรเสริญพระผู้เป็นเจ้า</div>
 <div class="slide"><h1>9. มาเถิดมาสรรเสริญพระผู้เป็นเจ้า</h1><span class="key">D</span><a href="#p17">2/5</a>

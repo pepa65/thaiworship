@@ -2,15 +2,15 @@
 
 # pdf.sh - Make single and double column html files for WeasyPrint
 #
-# Produces 2 html files with embedded css with all the songs that can be used
-#  by Weasyprint http://weasyprint.org to make pdf documents, one with a
-#  single column and one with a double column.
-# Needs: head_file, head2_file (html-head), songs_file (song content)
-#  and index_file (song indexes).
+# Produces 2 pdf files (a single-column and a double column file)
+# by transforming 2 html files with embedded css with all the songs
+# by Weasyprint (http://weasyprint.org).
+# Needs: $head_file, $head2_file (html-head), $songs_file (song content)
+#  and $index_file (song indexes).
 #  All these files are expected in the same directory.
-# Outputs: worship.htm, worship2.htm
+# Outputs: worship.pdf and worship2.pdf (and: worship.htm, worship2.htm)
 #
-# The head_file is the html with the head section and the body with the title.
+# The $head_file is the html with the head section and the body with the title.
 #  will be closed at the end of this script.
 # Required: weasyprint (https://github.com/Kozea/WeasyPrint)
 
@@ -80,7 +80,7 @@ done <"$songs_file"
 ## Write ending
 echo -n "</p>" |tee -a "$html_file" >>"$html2_file"
 echo -n "</div>" >>"$html2_file"
-cat <<-\EOP |tee -a "$html_file" >>"$html2_file"
+cat <<-EOP |tee -a "$html_file" >>"$html2_file"
 	<br /><br />
 	<h2>เกี่ยวกับเพลงนมัสการ</h2>
 	<p class="footer">
@@ -88,27 +88,23 @@ cat <<-\EOP |tee -a "$html_file" >>"$html2_file"
 	<a href="https://good4.eu/thaiworship.html" title="Download browser-based Thai worship projection for offline usage">ดาวน์โหลดเพลงนมัสการสำหรับเครื่องฉายใช้งานออฟไลน์ได้</a><br /><br />
 	<a href="http://gitlab.com/pepa65/thaiworship" title="Thai worship download page">เพจดาวน์โหลดเพลงนมัสการ</a><br /><br />
 	<a href="mailto:worship@thaimissions.info?subject=Thai%20worship%20PDF" title="contact">ติดต่อ</a><br /><br />
-	<a href="http://omf.org/thailand" title="OMF International © 2021">โอเอ็มเอฟ อินเทอร์เนชันนัล © 2021</a>
+	<a href="http://omf.org/thailand" title="OMF International © $(date +%Y)">โอเอ็มเอฟ อินเทอร์เนชันนัล © $(date +%Y)</a>
 	</p></body>
 	</html>
 EOP
 
-if w=$(type -P weasyprint)
-then
-	"$w" -v "$html_file" "$pdf_file"
-	"$w" -v "$html2_file" "$pdf2_file"
-else
+if ! w=$(type -P weasyprint)
+then # WeasyPrint not in PATH
   echo "Cannot make $pdf_file and $pdf2_file, weasyprint not installed, see:"
   echo " http://weasyprint.readthedocs.io/en/latest/install.html"
   echo "Either do:"
 	echo " sudo apt install weasyprint"
 	echo "or:"
 	echo " sudo pip install WeasyPrint"
-	echo "or:"
-	echo " git clone https://github.com/Kozea/WeasyPrint"
-	echo " python3 Weasyprint/setup.py build"
-	echo " sudo python3 Weasyprint/setup.py install"
   exit 1
 fi
+
+"$w" -v "$html_file" "$pdf_file"
+"$w" -v "$html2_file" "$pdf2_file"
 
 exit 0

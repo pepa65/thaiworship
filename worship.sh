@@ -4,8 +4,8 @@
 #
 # Makes a single-webpage application (html,css,javascript) with all the songs,
 # combining:
-#  head_file (html-head), songs_file (song content), index_file (song indexes),
-#  js_file (javascript) and css_file (css)
+#  $head_file (html-head), $songs_file (song content), $index_file (song indexes),
+#  $js_file (javascript) and $css_file (css)
 #  All these files are expected in the same directory.
 # Outputs: worship.html, worship.html5
 #
