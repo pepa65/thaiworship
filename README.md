@@ -1,6 +1,6 @@
 # Worship lyrics presentation suite v0.9.0
 
-**The common 636 Thai worship songs as gathered together by OMF Thailand.**
+**The common 636 (+3) Thai worship songs as gathered together by OMF Thailand.**
 
 The Doxology is included in the beginning, and the songs "The Lord's Prayer" as song 637
 and "The Lord is our shelter" as song 638.
@@ -29,6 +29,13 @@ from the html-head file `worshipp.head` and the CSS style sheet `worshipp.css`.
 The content is provided by the files `worship.songs` and `worship.index`
 
 [View the output](https://good4.eu/thw)
+
+## songbook.sh
+
+## Produce png files for use in Song Book (Soli Deo Gloria app on Android & iOS)
+
+The bash script `songbook.sh` builds the files necessary: `songbook/*.png` and
+`songs.csv` plus intermediate files `songbook/*.htm` and `songbook/*.pdf`.
 
 ## openlp.sh
 

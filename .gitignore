@@ -1,3 +1,4 @@
 OpenLP/
-songbook/
-*.htm
+songbook/*.htm
+songbook/*.pdf
+songbook/songs.csv
