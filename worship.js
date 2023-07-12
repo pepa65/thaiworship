@@ -4,7 +4,7 @@
 var w3 = {
 	// user modifiable: website, email, year, langs, timer, dfont, sizept, minpt, maxpt, steppt
 	website: "omf.org/thailand", // Go to website
-	email: "worship@thaimissions.info", // Contact by email
+	email: "worship@godat.work", // Contact by email
 	year: "2023", // Copyright year
 	langs: ["th", "en", "nl"], // Interface languages offered; empty: all available
 	timer: -1, // In minutes; 0: keep time; pos: count down to zero; neg: don't show
@@ -533,7 +533,7 @@ var w3 = {
 			copyright.setAttribute("target", "_blank");
 			copyright.innerHTML = this.localize("org") + " ";
 			left.appendChild(copyright);
-			year = document.createTextNode(" © " + date.substr(0, 4) + " - ");
+			year = document.createTextNode(" © " + date.substr(0, 4) + " ");
 			left.appendChild(year);
 			// Finalize the toolbar
 			this.toolbar.setAttribute("tabindex", "0"); // focusable
@@ -561,7 +561,7 @@ var w3 = {
 			help.innerHTML = this.localize("help");
 			this.toolbar.appendChild(help);
 			this.help_anchor = help; // save for focus hack
-			gap = document.createTextNode(" - ");
+			gap = document.createTextNode(" ");
 			this.toolbar.appendChild(gap);
 			contents = this.create_element("a");
 			contents.setAttribute("href", "javascript:toggleTableOfContents()");

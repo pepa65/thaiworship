@@ -67,8 +67,10 @@ do
 	fi
 done <"$songs_file"
 
+## link to the app
+echo '<br /><a href="https://play.google.com/store/apps/details?id=net.surehope.songbook.thai" title="Song Book app"><img src="googleplay.png"><br /><b>ลงแอพนมัสการไทย</b></a><br /><br />' >>"$html_file"
 ## Write copyright
-echo '<div><a href="mailto:worship@thaimissions.info?subject=Thai%20Worship">contact</a> <a href="http://omf.org/thailand" target="_blank">OMF International</a> © '"$(date +%Y)</div>" >>"$html_file"
+echo '<div><a href="mailto:worship@godat.work?subject=Thai%20Worship">contact</a> <a href="http://omf.org/thailand" target="_blank">OMF International</a> © '"$(date +%Y)</div>" >>"$html_file"
 ## close body/html
 echo '</body></html>' >>"$html_file"
 

@@ -82,14 +82,15 @@ echo -n "</p>" |tee -a "$html_file" >>"$html2_file"
 echo -n "</div>" >>"$html2_file"
 cat <<-EOP |tee -a "$html_file" >>"$html2_file"
 	<br /><br />
+	<div class="footer">
 	<h2>เกี่ยวกับเพลงนมัสการ</h2>
-	<p class="footer">
-	<a href="https://good4.eu/thws" title="Browser-based Thai worship projection for online usage">เพลงนมัสการสำหรับเครื่องฉายใช้งานออนไลน์</a><br /><br />
-	<a href="https://good4.eu/thaiworship.html" title="Download browser-based Thai worship projection for offline usage">ดาวน์โหลดเพลงนมัสการสำหรับเครื่องฉายใช้งานออฟไลน์ได้</a><br /><br />
-	<a href="http://gitlab.com/pepa65/thaiworship" title="Thai worship download page">เพจดาวน์โหลดเพลงนมัสการ</a><br /><br />
-	<a href="mailto:worship@thaimissions.info?subject=Thai%20worship%20PDF" title="contact">ติดต่อ</a><br /><br />
-	<a href="http://omf.org/thailand" title="OMF International © $(date +%Y)">โอเอ็มเอฟ อินเทอร์เนชันนัล © $(date +%Y)</a>
-	</p></body>
+	<a href="https://godat.work/w" title="Browser-based Thai worship projection for online usage">เพลงนมัสการสำหรับเครื่องฉายใช้งานออนไลน์</a><br /><br />
+	<a href="https://godat.work/w" download="thaiworship.html" title="Download browser-based Thai worship projection for offline usage">ดาวน์โหลดเพลงนมัสการสำหรับเครื่องฉายใช้งานออฟไลน์ได้</a><br /><br />
+	<a href="http://songs.godat.work" title="Thai worship songs on one page">เพลงนมัสการในเพจเดียวกัน</a><br /><br />
+	<a href="https://play.google.com/store/apps/details?id=net.surehope.songbook.thai" title="Song Book app">ลงแอพเพลงนมัสการไทย <img src="googleplay.png"></a><br /><br />
+	<a href="mailto:worship@godat.work?subject=Thai%20worship%20PDF" title="contact">ติดต่อ</a><br /><br />
+	<a href="http://omf.org/thailand" title="OMF International © $(date +%Y)">โอเอ็มเอฟ อินเทอร์เนชันนัล © $(date +%Y)</a><br /><br />
+	</div></body>
 	</html>
 EOP
 
