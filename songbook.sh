@@ -11,8 +11,8 @@
 #
 # Usage: songbook.sh [-j|--json]
 #        -j/--json:  Only generate the json file
-# Required: imagemagick(convert) weasyprint [https://github.com/Kozea/WeasyPrint]
-#           coreutils(rm mkdir cat)
+# Required: imagemagick([convert] mogrify) [weasyprint]
+#           chromium/google-chrome-stable coreutils(rm mkdir cat)
 
 out='songbook'
 jsonfile='songs.json'
@@ -90,8 +90,8 @@ do # Process $songs_file line
 				fi
 			fi
 		fi
-		title=$rest id=${rest%% *}
-		jsonstr+="{\"id\":\"$id\", \"title\":\"$title\", \"lyricstype\":\"image\", \"lyrics\":\"$link/$id.png\", \"category\":\"$type\"},\n"
+		id=${rest%% *} title=${rest/ /. }  # Insert a dot after the id in the title
+		jsonstr+="{\"id\":\"$id\", \"title\":\"${title#0. }\", \"lyricstype\":\"image\", \"lyrics\":\"$link/$id.png\", \"category\":\"$type\"},\n"  # Remove the number from title number 0
 		if ((!json))
 		then cat <<-HEAD >"$out/$id.htm"
 				<!DOCTYPE html>
@@ -136,5 +136,5 @@ then
 	fi
 fi
 
-echo -e "${jsonstr:0: -3}]" >"$jsonfile"
+echo -e "${jsonstr:0: -3}]" >"$jsonfile"  # Remove the final comma and append a closing square-bracket
 exit 0
