@@ -92,7 +92,7 @@ do # Process $songs_file line
 			fi
 		fi
 		id=${rest%% *} title=${rest/ /. }  # Insert a dot after the id in the title
-		[[ -f mp3/$id.mp3 ]] && mp3="\"audio\":\"$link/mp3/$id.mp3\", " || mp3=
+		[[ -f mp3/$id.mp3 ]] && mp3="\"audiourl\":\"$link/mp3/$id.mp3\", " || mp3=
 		jsonstr+="{\"id\":\"$id\", \"title\":\"${title#0. }\", \"lyricstype\":\"image\", \"lyrics\":\"$link/songs/$id.png\", $mp3\"category\":\"$type\"},\n"  # Remove the number from title number 0
 		if ((!json))
 		then cat <<-HEAD >"$out/$id.htm"
