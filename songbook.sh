@@ -22,8 +22,8 @@ pdf=0
 self=$(readlink -e "$0")
 dir=${self%/*}  # directory where the build-script resides has all necessary files
 songs_file="$dir/worship.songs"
-link="https://good4.eu/songs"
-jsonstr="["
+link="https://good4.eu"
+jsonstr="[\n"
 
 t1='-'  # Song Title
 s1='='  # Verse Separator
@@ -67,6 +67,7 @@ fi
 
 ((json)) || rm -rf -- "$out"
 ((json)) || mkdir "$out"
+((pdf)) || rm -f ~/.config/chromium/SingletonLock
 
 title= type='ข้อสรรเสริญ'
 while read line
@@ -91,7 +92,8 @@ do # Process $songs_file line
 			fi
 		fi
 		id=${rest%% *} title=${rest/ /. }  # Insert a dot after the id in the title
-		jsonstr+="{\"id\":\"$id\", \"title\":\"${title#0. }\", \"lyricstype\":\"image\", \"lyrics\":\"$link/$id.png\", \"category\":\"$type\"},\n"  # Remove the number from title number 0
+		[[ -f mp3/$id.mp3 ]] && mp3="\"audio\":\"$link/mp3/$id.mp3\", " || mp3=
+		jsonstr+="{\"id\":\"$id\", \"title\":\"${title#0. }\", \"lyricstype\":\"image\", \"lyrics\":\"$link/songs/$id.png\", $mp3\"category\":\"$type\"},\n"  # Remove the number from title number 0
 		if ((!json))
 		then cat <<-HEAD >"$out/$id.htm"
 				<!DOCTYPE html>
@@ -136,5 +138,5 @@ then
 	fi
 fi
 
-echo -e "${jsonstr:0: -3}]" >"$jsonfile"  # Remove the final comma and append a closing square-bracket
+echo -e "${jsonstr:0: -3}\n]" >"$jsonfile"  # Remove the final comma and append a closing square-bracket
 exit 0
