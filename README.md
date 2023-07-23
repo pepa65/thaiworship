@@ -1,10 +1,11 @@
-# Worship lyrics presentation suite v0.9.0
+# Worship lyrics presentation suite
 
 **The common 636 (+3) Thai worship songs as gathered together by OMF Thailand.**
 
 The Doxology is included in the beginning, and the songs "The Lord's Prayer" as song 637
 and "The Lord is our shelter" as song 638.
 
+* v0.10.0
 * Build: All files can be built with the bash script `build-all.sh`.
 
 ## worship.sh
