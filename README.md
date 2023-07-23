@@ -5,7 +5,7 @@
 The Doxology is included in the beginning, and the songs "The Lord's Prayer" as song 637
 and "The Lord is our shelter" as song 638.
 
-* v0.10.0
+* Repo: https://github.com/pepa65/thaiworship
 * Build: All files can be built with the bash script `build-all.sh`.
 
 ## worship.sh
