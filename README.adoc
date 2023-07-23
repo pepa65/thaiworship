@@ -2,6 +2,7 @@
 Peter Passchier <worship@godat.work>
 v0.10.0, 2023-07-23
 :homepage: https://gitlab.com/pepa65/thaiworship
+:songsurl: https://good4.eu/
 
 *The common 600+ (+3) Thai worship songs as gathered together by OMF Thailand.*
 
@@ -18,7 +19,7 @@ and the CSS style sheet `worship.css`.
 
 The content is provided by the files `worship.songs` and `worship.index`
 
-https://good4.eu/thws[View the result online]
+{songsurl}thws[View the result online]
 
 == worshipp.sh
 === Produce single-webpage of all song lyrics for easy use on handhelds
@@ -27,14 +28,14 @@ from the html-head file `worshipp.head` and the CSS style sheet `worshipp.css`.
 
 The content is provided by the files `worship.songs` and `worship.index`
 
-https://good4.eu/thw[View the result online]
+{songsurl}thw[View the result online]
 
 == songbook.sh
 === Produce png files for use in Song Book (Soli Deo Gloria app on Android & iOS)
 The bash script `songbook.sh` builds the files necessary: `songbook/*.png` and
 `songs.json` plus intermediate files `songbook/*.htm` [and `songbook/*.pdf`].
 The files `songs.json` and `songlistVersion.json` need to be present at
-https://good4.eu/ and the song files need to be located wherever the URL in the
+{songsurl} and the song files need to be located wherever the URL in the
 `lyrics` field in the json file points to. The json file could also include
 URLs to audio files in a `audio` field.
 The file `songlistVersion.json` needs to be updated whenever any of the files
