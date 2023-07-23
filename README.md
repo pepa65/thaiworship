@@ -18,7 +18,7 @@ and the CSS style sheet `worship.css`.
 
 The content is provided by the files `worship.songs` and `worship.index`
 
-[View the result online](https://good4.eu/thws)
+[View the result online](https://good4.eu/thws){:target="_blank" rel="noopener"}
 
 ## worshipp.sh
 
@@ -29,7 +29,7 @@ from the html-head file `worshipp.head` and the CSS style sheet `worshipp.css`.
 
 The content is provided by the files `worship.songs` and `worship.index`
 
-[View the result online](https://good4.eu/thw)
+[View the result online](https://good4.eu/thw){:target="_blank" rel="noopener"}
 
 ## songbook.sh
 
