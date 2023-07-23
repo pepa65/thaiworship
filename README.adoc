@@ -2,15 +2,15 @@
 Peter Passchier <worship@godat.work>
 v0.10.0, 2023-07-23
 :homepage: https://gitlab.com/pepa65/thaiworship
+:toc:
 
-*The common 636 (+3) Thai worship songs as gathered together by OMF Thailand.*
+*The common 600+ (+3) Thai worship songs as gathered together by OMF Thailand.*
 
 The Doxology is included in the beginning, and the songs "The Lord's Prayer" as song 637
 and "The Lord is our shelter" as song 638.
 
 * Build: All files can be built with the bash script `build-all.sh`.
 
-:toc:
 toc::[]
 
 == worship.sh
