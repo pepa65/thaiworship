@@ -38,7 +38,7 @@ The content is provided by the files `worship.songs` and `worship.index`
 The bash script `songbook.sh` builds the files necessary: `songbook/*.png` and
 `songs.json` plus intermediate files `songbook/*.htm` [and `songbook/*.pdf`].
 The files `songs.json` and `songlistVersion.json` need to be present at
-https://good4eu/ and the song files need to be located wherever the URL in the
+https://good4.eu/ and the song files need to be located wherever the URL in the
 `lyrics` field in the json file points to. The json file could also include
 URLs to audio files in a `audio` field.
 The file `songlistVersion.json` needs to be updated whenever any of the files
