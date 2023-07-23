@@ -1,7 +1,6 @@
 = Worship lyrics presentation suite
 Peter Passchier <worship@godat.work>
 v0.10.0, 2023-07-23
-:toc:
 :homepage: https://gitlab.com/pepa65/thaiworship
 
 *The common 636 (+3) Thai worship songs as gathered together by OMF Thailand.*
@@ -11,6 +10,7 @@ and "The Lord is our shelter" as song 638.
 
 * Build: All files can be built with the bash script `build-all.sh`.
 
+:toc:
 toc::[]
 
 == worship.sh
