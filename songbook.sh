@@ -5,8 +5,9 @@
 # Produce png files [based on pdf files] based on html files for each song,
 # and the json file, for online use in Song Book (Soli Deo Gloria app).
 #
-# Input: $songs_file (song content), expected in the same directory.
-# Output: $out/*.png $json (id,title,lyricstype,lyrics,[audiourl,]category)
+# Input: $songs_file (song content), expected in the same directory, and the
+#        mp3 files `mp3/<id>.mp3`.
+# Output: $out/*.png $json (id,title,lyricstype,lyrics,audiourl[,category])
 #         [$out/*.pdf and] $out/*.htm are intermediate products
 #
 # Usage: songbook.sh [-j|--json]
@@ -92,8 +93,10 @@ do # Process $songs_file line
 			fi
 		fi
 		id=${rest%% *} title=${rest/ /. }  # Insert a dot after the id in the title
-		[[ -f mp3/$id.mp3 ]] && mp3="\"audiourl\":\"$link/mp3/$id.mp3\", " || mp3=
-		jsonstr+="{\"id\":\"$id\", \"title\":\"${title#0. }\", \"lyricstype\":\"image\", \"lyrics\":\"$link/songs/$id.png\", $mp3\"category\":\"$type\"},\n"  # Remove the number from title number 0
+		[[ -f mp3/$id.mp3 ]] && mp3=", \"audiourl\":\"$link/mp3/$id.mp3\"" || mp3=
+		cat= #", \"category\":\"$type\""  # Category is (not yet?) used
+		# Also remove the number from title number 0
+		jsonstr+="{\"id\":\"$id\", \"title\":\"${title#0. }\", \"lyricstype\":\"image\", \"lyrics\":\"$link/songs/$id.png\"$mp3$cat},\n"
 		if ((!json))
 		then cat <<-HEAD >"$out/$id.htm"
 				<!DOCTYPE html>
