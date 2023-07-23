@@ -20,7 +20,7 @@ and the CSS style sheet `worship.css`.
 
 The content is provided by the files `worship.songs` and `worship.index`
 
-{url-songs}thws[View the result online]
+{url-songs}thws[View the result online,window=_blank]
 
 == worshipp.sh
 === Produce single-webpage of all song lyrics for easy use on handhelds
@@ -29,7 +29,7 @@ from the html-head file `worshipp.head` and the CSS style sheet `worshipp.css`.
 
 The content is provided by the files `worship.songs` and `worship.index`
 
-{url-songs}thw[View the result online]
+{url-songs}thw[View the result online,window=_blank]
 
 == songbook.sh
 === Produce png files for use in Song Book (Soli Deo Gloria app on Android & iOS)
