@@ -1,31 +1,28 @@
 #!/usr/bin/env bash
 
-# songbook.sh - Make separate png files of each song for Song Book
+# songbook.sh - Make separate pdf files of each song for Song Book
 #
-# Produce png files [based on pdf files] based on html files for each song,
-# and the json file, for online use in Song Book (Soli Deo Gloria app).
+# Produce pdf files of each song with Typst [and png files with chromium,]
+# and the songs.json file for online use in Song Book (Soli Deo Gloria app).
 #
-# Input: $songs_file (song content), expected in the same directory, and the
-#        mp3 files `mp3/<id>.mp3`.
-# Output: $out/*.png $json (id,title,lyricstype,lyrics,audiourl[,category])
-#         [$out/*.pdf and] $out/*.htm are intermediate products
+# Input: $songsfile (song content), expected in the same directory, and the
+#        mp3 files `$mp3/<id>.mp3`.
+# Output: $out/*.pdf songs.json (id,title,lyricstype,lyrics,audiourl[,category])
+#         [$out/*.png; $out/*.htm are intermediate files]
 #
 # Usage: songbook.sh [-j|--json]
 #        -j/--json:  Only generate the json file
-# Required: imagemagick([convert] mogrify) [weasyprint]
-#           chromium/google-chrome-stable coreutils(rm mkdir cat)
+# Required: typst[github.com/typst/typst] ghostscript(gs)
+#           coreutils(rm mkdir cat) [chromium/google-chrome-stable]
 
-out='songbook'
-jsonfile='songs.json'
-pdf=0
+# Determine pdf(1) or png(0) files
+pdf=1
 
 [[ $1 = -j || $1 = --json ]] && json=1 || json=0
 self=$(readlink -e "$0")
-dir=${self%/*}  # directory where the build-script resides has all necessary files
-songs_file="$dir/worship.songs"
-link="https://good4.eu"
-jsonstr="[\n"
-
+dir=${self%/*}  # The build-script directory should have all necessary files
+songsfile="$dir/worship.songs" link="https://good4.eu"
+jsonfile="$dir/songs.json" out="$dir/songbook" jsonstr="[\n"
 t1='-'  # Song Title
 s1='='  # Verse Separator
 h1='+'  # Section Header
@@ -33,113 +30,123 @@ c1='#'  # Comment
 nl=$'\n'  # Newline
 
 if ((pdf))
-then # Use Weasyprint and convert
-	if ! we=$(type -P weasyprint)
-	then # WeasyPrint not found in PATH
-	  echo "Cannot make pdf files, WeasyPrint not installed, see:"
-	  echo " http://weasyprint.readthedocs.io/en/latest/install.html"
-	  echo "Either do:"
-		echo " sudo apt install weasyprint"
-		echo "or:"
-		echo " sudo pip install WeasyPrint"
-	  exit 1
+then # make pdfs
+	# Use Typst and Ghostscript
+	if ! ty=$(type -P typst)
+	then # Typst not found in PATH
+		echo "Cannot make pdf files, Typst not installed, get it here:"
+		echo " https://github.com/typst/typst/releases"
+		exit 1
 	fi
-	if ! co=$(type -P convert)
-	then # ImageMagick not found in PATH
-	  echo "Cannot transform png files, ImageMagick not installed, do:"
-		echo " sudo apt install imagemagick"
-	  exit 2
+	ty+=' c' # Compile
+	if ! gs=$(type -P gs)
+	then # Ghostscript not found in PATH
+		echo "Cannot optimize pdf files, Ghostscript not installed, do:"
+		echo " sudo apt install ghostscript"
+		exit 2
 	fi
-else # User chromium and mogrify
+	gs+=' -q -sDEVICE=pdfwrite -o' # Quietly use pdfwrite
+	# Prepare for Typst
+	tmp=$(mktemp) type=pdf ext=pdf
+	header='#set page(width:auto, height:auto, margin:4mm)\n#set align(center)\n#set text(font:"Garuda")'
+else # Make pngs
+	# Use Chromium and Mogrify
 	if ch=$(type -P chromium) || ch=$(type -P chrome)
 	then : # OK
 	else # neither chromium nor chrome found in PATH
-	  echo "Cannot make png files, chromium/chrome not installed, do:"
+		echo "Cannot make png files, Chromium/Chrome not installed, do:"
 		echo " sudo apt install chromium"
-	  exit 3
+		exit 3
 	fi
+	ch+=' --headless=new --window-size=512,4096 --disable-gpu --enable-chrome-browser-cloud-management --force-device-scale-factor=1'
 	if ! mo=$(type -P mogrify)
 	then # ImageMagick not found in PATH
-	  echo "Cannot transform png files, ImageMagick not installed, do:"
+		echo "Cannot transform png files, ImageMagick not installed, do:"
 		echo " sudo apt install imagemagick"
-	  exit 4
+		exit 4
 	fi
+	mo+=' -density 120 -depth 3 -trim +repage -bordercolor White -border 24 -define png:color-type=3'
+	# Prevent Chromium/Chrome from locking
+	rm -f ~/.config/chromium/SingletonLock ~/.config/google-chrome/SingletonLock
+	type=image ext=png
 fi
 
-((json)) || rm -rf -- "$out"
-((json)) || mkdir "$out"
-((pdf)) || rm -f ~/.config/chromium/SingletonLock
+Outputsong(){ # I:ty gs tmp out id
+	if ((pdf))
+	then
+		$ty "$tmp" "$out/$id.pdf"
+		$gs "$tmp" "$out/$id.pdf" >/dev/null
+		mv "$tmp" "$out/$id.pdf"
+	else
+		$ch --screenshot="$out/$id.png" "$out/$id.htm" 2>/dev/null
+		$mo "$out/$id.png"
+	fi
+}
 
-title= type='ข้อสรรเสริญ'
+Handleline(){ # 1:line 2:newverse I:pdf tmp out id
+	if ((pdf))
+	then
+		(($2)) && echo >>"$tmp"
+		echo -ne "\n$(sed -e 's@\[@#set text(fill:rgb("#888"));[@g' -e 's@]@]#set text(fill:black);@g' <<<"$1")\\" >>"$tmp"
+	else
+		(($2)) && echo -n "<p>" >>"$out/$id.htm"
+		echo "$(sed -e 's@\[@<i>[@g' -e 's@]@]</i>@g' <<<"$1")<br>" >>"$out/$id.htm"
+	fi
+}
+
+((!json)) && rm -rf -- "$out" && mkdir "$out"
+title= category='ข้อสรรเสริญ' cat=
 while read line
-do # Process $songs_file line
-	first=${line:0:1}
-	rest=${line:1}
+do # Process $songsfile line
+	first=${line:0:1} rest=${line:1}
 	[[ $first = $c1 ]] && continue
 	if [[ $first = $t1 ]]
 	then # title
 		if [[ $title ]]
 		then # Finish previous title
-			if ((!json))
-			then
-				if ((pdf))
-				then
-					$we -v "$out/$id.htm" "$out/$id.pdf"
-					$co -density 120 -depth 3 "$out/$id.pdf" -trim +repage -bordercolor White -border 24 -define png:color-type=3 "$out/$id.png"
-				else
-					$ch --headless=new --window-size=512,4096 --disable-gpu --enable-chrome-browser-cloud-management --force-device-scale-factor=1 --screenshot="$out/$id.png" "$out/$id.htm"
-					$mo -density 120 -depth 3 -trim +repage -bordercolor White -border 24 -define png:color-type=3 "$out/$id.png"
-				fi
-			fi
+			((!json)) && Outputsong
 		fi
 		id=${rest%% *} title=${rest/ /. }  # Insert a dot after the id in the title
 		[[ -f mp3/$id.mp3 ]] && mp3=", \"audiourl\":\"$link/mp3/$id.mp3\"" || mp3=
-		cat= #", \"category\":\"$type\""  # Category is (not yet?) used
+		#cat=", \"category\":\"$category\""  # Category is (not yet) used
 		# Also remove the number from title number 0
-		jsonstr+="{\"id\":\"$id\", \"title\":\"${title#0. }\", \"lyricstype\":\"image\", \"lyrics\":\"$link/songs/$id.png\"$mp3$cat},\n"
+		jsonstr+="{\"id\":\"$id\", \"title\":\"${title#0. }\", \"lyricstype\":\"$type\", \"lyrics\":\"$link/$type/$id.$ext\"$mp3$cat},\n"
 		if ((!json))
-		then cat <<-HEAD >"$out/$id.htm"
-				<!DOCTYPE html>
-				<html lang="th">
-				<title>$title</title>
-				<style>
-				body{font-family:"Arundina Serif",serif; font-size:16pt; font-kerning:normal;}
-				i{font-size:90%; font-style:normal; color:#666;}
-				@page{size:299mm 999mm; margin:.4in;}
-				</style>
-				<p><b>$title</b>
-				<p>
-			HEAD
+		then # Start song
+			if ((pdf))
+			then # Generate typst title
+				echo -e "$header" >"$tmp"
+				echo -n "=== $title" >>"$tmp"
+			else # Generate html title
+				cat <<-HEAD >"$out/$id.htm"
+					<!DOCTYPE html>
+					<html lang="th">
+					<title>$title</title>
+					<style>
+					body{font-family:"Garuda",serif; font-size:16pt; font-kerning:normal;}
+					i{font-size:90%; font-style:normal; color:#888;}
+					@page{size:299mm 999mm; margin:.4in;}
+					</style>
+					<p><b>$title</b>
+				HEAD
+				echo -n "<p>" >>"$out/$id.htm"
+			fi
 		fi
 	elif [[ $first = $h1 ]]
-	then # h2 section header
-		type=$rest
+	then # Section/category
+		category=$rest
 	elif [[ $first = $s1 ]]
-	then # verse separator
-		if ((!json))
-		then
-			echo "<p>" >>"$out/$id.htm"
-			[[ $rest ]] && echo "$(sed -e 's@\[@<i>[@g' -e 's@]@]</i>@g' <<<"$rest")<br>" >>"$out/$id.htm"
-		fi
-	else # songline -- if not empty
-		if ((!json))
-		then [[ $line ]] && echo "$(sed -e 's@\[@<i>[@g' -e 's@]@]</i>@g' <<<"$line")<br>" >>"$out/$id.htm"
-		fi
+	then # Verse separator
+		((!json)) && Handleline "$rest" 1
+	else # Songline -- if not empty
+		((!json)) && Handleline "$line" 0
 	fi
-done <"$songs_file"
+done <"$songsfile"
 
 # Finish last title
-if ((!json))
-then
-	if ((pdf))
-	then
-		$we -v "$out/$id.htm" "$out/$id.pdf"
-		$co -density 120 -depth 3 "$out/$id.pdf" -trim +repage -bordercolor White -border 24 -define png:color-type=3 "$out/$id.png"
-	else
-		$ch --headless=new --window-size=512,4096 --disable-gpu --enable-chrome-browser-cloud-management --force-device-scale-factor=1 --screenshot="$out/$id.png" "$out/$id.htm"
-		$mo -density 120 -depth 3 -trim +repage -bordercolor White -border 24 -define png:color-type=3 "$out/$id.png"
-	fi
-fi
+((!json)) && Outputsong
 
 echo -e "${jsonstr:0: -3}\n]" >"$jsonfile"  # Remove the final comma and append a closing square-bracket
+((pdf)) && rm "$tmp"
+
 exit 0
