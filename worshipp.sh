@@ -77,7 +77,7 @@ echo '</body></html>' >>"$html_file"
 ## Make additional html5 file
 (
 	echo -e '<!DOCTYPE html>\n<html lang="th">\n<meta charset="utf-8">'
-	sed -e '1,5d' -e 's@ />$@>@g' -e '/<\/head>/d' "$html_file"
+	sed -e '1,5d' -e 's@ />@>@g' -e '/<\/head>/d' "$html_file"
 ) >"$html5_file"
 
 exit 0

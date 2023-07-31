@@ -4,7 +4,6 @@
 <title>เพลงนมัสการ</title>
 <meta name="copyright" content="OMF International">
 <meta name="reply-to" content="worship@godat.work">
-<link rel="shortcut icon" href="http://omf.org/thailand/wp-content/uploads/sites/31/2015/02/OMF72.png">
 <script>
 //<![CDATA[<!--
 // Copyright 2023 © OMF International (GPL-3+ licence)
@@ -660,7 +659,7 @@ var w3 = {
 				slides.push(div);
 				// hide each slide as it is found
 				this.add_class(div, "hidden");
-				// add dummy <br /> at end for scrolling hack
+				// add dummy <br> at end for scrolling hack
 				node = document.createElement("br");
 				div.appendChild(node);
 				node = document.createElement("br");
@@ -1584,7 +1583,7 @@ li ol li,li li ol li{list-style-type:decimal;}
  div.toolbar,div.toc,div.background{display:none; visibility:hidden;}}
 </style>
 <body style="display:none;">
-<div><img id="bg" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="" /></div>
+<div><img id="bg" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt=""></div>
 <div class="slide title"><a id="p1"></a>
 <div class="th"><h2 class="big">บทเพลงนมัสการ</h2>
 <h1 class="big">ความช่วยเหลือ</h1>

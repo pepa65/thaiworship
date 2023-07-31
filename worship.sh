@@ -139,7 +139,7 @@ sed -i "/<style type=\"text\/css\" media=\"screen, print\">/r $css_file" "$html_
 ## Make additional html5 file
 (
   echo -e '<!DOCTYPE html>\n<html lang="th">\n<meta charset="utf-8">'
-  sed -e '1,5d' -e 's@ />$@>@g' -e '/^<\/head>$/d' -e 's@</p>@@g' \
+  sed -e '1,5d' -e 's@ />@>@g' -e '/^<\/head>$/d' -e 's@</p>@@g' \
 			-e 's@<script[^>]*>@<script>@' "$html_file"
 ) >"$html5_file"
 
