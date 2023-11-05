@@ -8,7 +8,7 @@
 <style>
 body{height:100vh; width:100vw; margin:0; padding:0; font-family:"Garuda",serif; font-size:20pt; color:#000; background:#fff;}
 input{margin:0; width:100vw; padding:.4em; font-size:20pt; outline:none; color:#000; background-color:#ddd;}
-a,a:visited,a:link,a:hover,a:active{display:block; width:100vw; color:#000; text-decoration:none; margin:10px; padding:1px .4em; border:solid 1px #888; line-height:1;}
+a,a:visited,a:link,a:hover,a:active{display:block; width:100vw; color:#000; text-decoration:none; margin:0; padding:10px; border:solid 1px #888; line-height:1;}
 a:hover,a:active{background-color:#ddd;}
 .nonum{display:none;}
 .en{font-size:80%; font-style:normal;}
@@ -17,14 +17,23 @@ a:hover,a:active{background-color:#ddd;}
 <input type="search" id="search" value="" placeholder=" &#x1F50D; ค้นหา หัวข้อ/เลขที่" autocomplete autofocus>
 <script>
 const search=document.getElementById('search');
-search.addEventListener('keyup', function(){
+search.addEventListener('keyup', function(e){
 	filter(search.value.toLowerCase());
+	if(e.key === 'Enter'){
+		location.href=first;
+	}
 });
 function filter(query){
 	const ts=document.getElementsByTagName('a');
+	fst=true;
 	for(let i=0; i < ts.length; i++){
-		if(ts[i].textContent.toLowerCase().includes(query)) ts[i].style.display='block';
-		else ts[i].style.display='none';
+		if(ts[i].textContent.toLowerCase().includes(query)){
+			ts[i].style.display='block';
+			if(fst){
+				fst=false;
+				first=ts[i].href;
+			}
+		}else ts[i].style.display='none';
 	}
 }
 </script>
