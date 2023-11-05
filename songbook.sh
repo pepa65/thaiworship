@@ -86,7 +86,8 @@ then # Make pngs
 fi
 
 Outputsong(){ # I:pdf png ty gs ch mo tmp out id app
-	echo -e "</div>\n<script>\n\tdocument.addEventListener('click', function(){\n	location.href='index.html';\n});\n</script>" >>"$app/$id.html"
+	echo -e "</div>\n<script>\ndocument.addEventListener('click', function(){location.href='index.html';});\n</script>" >>"$app/$id.html"
+	echo -e "</div>\n<script>\ndocument.addEventListener('keypress', function(){location.href='index.html';});\n</script>" >>"$app/$id.html"
 	if ((pdf))
 	then
 		$ty "$tmp" "$out/$id.pdf"
