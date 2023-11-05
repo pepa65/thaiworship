@@ -31,13 +31,14 @@ nl=$'\n'  # Newline
 
 if ((pdf))
 then # make pdfs
-	# Use Typst and Ghostscript
+	# Use Typst to produce pdfs and Ghostscript to make them smaller
 	if ! ty=$(type -P typst)
 	then # Typst not found in PATH
 		echo "Cannot make pdf files, Typst not installed, get it here:"
 		echo " https://github.com/typst/typst/releases"
 		exit 1
 	fi
+
 	ty+=' c' # Compile
 	if ! gs=$(type -P gs)
 	then # Ghostscript not found in PATH
@@ -45,12 +46,13 @@ then # make pdfs
 		echo " sudo apt install ghostscript"
 		exit 2
 	fi
+
 	gs+=' -q -sDEVICE=pdfwrite -o' # Quietly use pdfwrite
 	# Prepare for Typst
 	tmp=$(mktemp) type=pdf ext=pdf
 	header='#set page(width:auto, height:auto, margin:4mm)\n#set align(center)\n#set text(font:"Garuda")'
 else # Make pngs
-	# Use Chromium and Mogrify
+	# Use Chromium to make screenshots of html and Mogrify to cut them
 	if ch=$(type -P chromium) || ch=$(type -P chrome)
 	then : # OK
 	else # neither chromium nor chrome found in PATH
@@ -58,6 +60,7 @@ else # Make pngs
 		echo " sudo apt install chromium"
 		exit 3
 	fi
+
 	ch+=' --headless=new --window-size=512,4096 --disable-gpu --enable-chrome-browser-cloud-management --force-device-scale-factor=1'
 	if ! mo=$(type -P mogrify)
 	then # ImageMagick not found in PATH
@@ -65,13 +68,14 @@ else # Make pngs
 		echo " sudo apt install imagemagick"
 		exit 4
 	fi
+
 	mo+=' -density 120 -depth 3 -trim +repage -bordercolor White -border 24 -define png:color-type=3'
 	# Prevent Chromium/Chrome from locking
 	rm -f ~/.config/chromium/SingletonLock ~/.config/google-chrome/SingletonLock
 	type=image ext=png
 fi
 
-Outputsong(){ # I:ty gs tmp out id
+Outputsong(){ # I:pdf ty gs ch mo tmp out id
 	if ((pdf))
 	then
 		$ty "$tmp" "$out/$id.pdf"
