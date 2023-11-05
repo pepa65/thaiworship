@@ -142,7 +142,7 @@ do # Process $songsfile line
 			<style>
 			body{margin:0; font-family:"Garuda",serif; font-size:20pt;}
 			i{font-size:80%; font-style:normal; color:#888;}
-			div{text-align:center; overflow:auto; margin-bottom:20em;}
+			div{text-align:center; overflow:auto; margin-bottom:40em;}
 			p{white-space:nowrap;}
 			</style>
 			<div>
