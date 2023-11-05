@@ -1,13 +1,14 @@
 #!/usr/bin/env bash
 
-# songbook.sh - Make separate pdf files of each song for Song Book
+# songbook.sh - Make separate pdf files of each song for Song Book and html files
 #
-# Produce pdf files of each song with Typst [and png files with chromium,]
-# and the songs.json file for online use in Song Book (Soli Deo Gloria app).
+# Produce pdf files of each song with Typst and html files for the app
+# [and png files with chromium] and the songs.json file for online use in
+# Song Book (Soli Deo Gloria app).
 #
 # Input: $songsfile (song content), expected in the same directory, and the
 #        mp3 files `$mp3/<id>.mp3`.
-# Output: $out/*.pdf songs.json (id,title,lyricstype,lyrics,audiourl[,category])
+# Output: $out/*.pdf $app/*.html songs.json (id,title,lyricstype,lyrics,audiourl[,category])
 #         [$out/*.png; $out/*.htm are intermediate files]
 #
 # Usage: songbook.sh [-j|--json]
@@ -22,7 +23,7 @@ pdf=1
 self=$(readlink -e "$0")
 dir=${self%/*}  # The build-script directory should have all necessary files
 songsfile="$dir/worship.songs" link="https://good4.eu"
-jsonfile="$dir/songs.json" out="$dir/songbook" jsonstr="[\n"
+jsonfile="$dir/songs.json" out="$dir/songbook" jsonstr="[\n" app="$dir/app"
 t1='-'  # Song Title
 s1='='  # Verse Separator
 h1='+'  # Section Header
@@ -81,6 +82,7 @@ Outputsong(){ # I:pdf ty gs ch mo tmp out id
 		$ty "$tmp" "$out/$id.pdf"
 		$gs "$tmp" "$out/$id.pdf" >/dev/null
 		mv "$tmp" "$out/$id.pdf"
+		echo -e "</div>\n<script>\n\tdocument.addEventListener('click', function(){\n	location.href='index.html';\n});\n</script>" >>"$app/$id.html"
 	else
 		$ch --screenshot="$out/$id.png" "$out/$id.htm" 2>/dev/null
 		$mo "$out/$id.png"
@@ -89,15 +91,19 @@ Outputsong(){ # I:pdf ty gs ch mo tmp out id
 
 Handleline(){ # 1:line 2:newverse I:pdf tmp out id
 	if ((pdf))
-	then
+	then # Handle for typst
 		(($2)) && echo >>"$tmp"
 		echo -ne "\n$(sed -e 's@\[@#set text(fill:rgb("#888"));[@g' -e 's@]@]#set text(fill:black);@g' <<<"$1")\\" >>"$tmp"
+		# Handle for html
+		(($2)) && echo -n "<p>" >>"$app/$id.html"
+		echo "$(sed -e 's@\[@<i>[@g' -e 's@]@]</i>@g' <<<"$1")<br>" >>"$app/$id.html"
 	else
 		(($2)) && echo -n "<p>" >>"$out/$id.htm"
 		echo "$(sed -e 's@\[@<i>[@g' -e 's@]@]</i>@g' <<<"$1")<br>" >>"$out/$id.htm"
 	fi
 }
 
+# $app needs generation of index.html and link to favicon
 ((!json)) && rm -rf -- "$out" && mkdir "$out"
 title= category='ข้อสรรเสริญ' cat=
 while read line
@@ -121,6 +127,22 @@ do # Process $songsfile line
 			then # Generate typst title
 				echo -e "$header" >"$tmp"
 				echo -n "=== $title" >>"$tmp"
+				# Generate html for app
+				cat <<-HEAD >"$app/$id.html"
+					<!DOCTYPE html>
+					<html lang="th">
+					<title>$title</title>
+					<link rel="icon" href="favicon.png">
+					<style>
+					body{margin:0; font-family:"Garuda",serif; font-size:20pt;}
+					i{font-size:80%; font-style:normal; color:#888;}
+					div{text-align:center; overflow:auto;}
+					p{white-space:nowrap;}
+					</style>
+					<div>
+					<p><b>$title</b>
+				HEAD
+				echo -n "<p>" >>"$app/$id.html"
 			else # Generate html title
 				cat <<-HEAD >"$out/$id.htm"
 					<!DOCTYPE html>
@@ -151,6 +173,5 @@ done <"$songsfile"
 ((!json)) && Outputsong
 
 echo -e "${jsonstr:0: -3}\n]" >"$jsonfile"  # Remove the final comma and append a closing square-bracket
-((pdf)) && rm "$tmp"
 
 exit 0
