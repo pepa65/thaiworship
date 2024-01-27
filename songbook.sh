@@ -235,4 +235,8 @@ Outputsong
 	echo -e "${jsonstr:0: -3}\n]" >songs.json && # Remove the final comma and append a closing square-bracket
 	echo "[{\"songlistVersion\": \"$(date +%Y%m%d)\"}]" >songlistVersion.json
 
+# Make link
+cd app
+ln -s ../mp3
+
 exit 0
