@@ -150,7 +150,7 @@ Handleline(){ # 1:line 2:newverse I:pdf,png,tmp,out,id
 	mkdir songbook
 rm -rf -- app &&
 	mkdir app
-cp android-chrome-512x512.png android-chrome-192x192.png favicon-32x32.png favicon-16x16.png apple-touch-icon.png safari-pinned-tab.svg maskable_icon.png favicon.ico app.webmanifest help.png app/
+cp android-chrome-512x512.png android-chrome-192x192.png favicon-32x32.png favicon-16x16.png apple-touch-icon.png safari-pinned-tab.svg maskable_icon.png favicon.ico app.webmanifest app/
 cp app.head app/index.html
 title= category='ข้อสรรเสริญ' cat=
 while read line
