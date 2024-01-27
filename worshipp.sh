@@ -52,9 +52,9 @@ do
 		continue
 	elif [[ $first = $t1 ]]
 	then  ## title
-		((p_open)) && echo -n "</p>" >>"$html_file"
+		((p_open)) && echo "</p>" >>"$html_file"
 		titleline=${title_indexes[${rest%% *}]}
-		echo "<h2>$titleline</h2><p>" >>"$html_file"
+		echo "<h2 id=\"${rest%% *}\">$titleline</h2><p>" >>"$html_file"
 		p_open=1
 	elif [[ $first = $h1 ]]
 	then  ## h3 section header, skip

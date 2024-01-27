@@ -1,21 +1,24 @@
 <!DOCTYPE html>
 <html lang="th">
 <title>303. ร้องแด่พระเจ้า</title>
-<link rel="icon" href="favicon.png">
+<link rel="icon" type="image/png" sizes="192x192" href="android-chrome-192x192.png">
 <style>
 body{margin:0; font-family:"Garuda",serif; font-size:20pt;}
 i{font-size:80%; font-style:normal; color:#888;}
 div{text-align:center; overflow:auto; margin-bottom:40em;}
 p{white-space:nowrap;}
+@media (prefers-color-scheme:dark){html{filter:invert();}}
 </style>
 <div>
 <p><b>303. ร้องแด่พระเจ้า</b>
-<p>พระเยซูพระผู้ช่วยไม่มีผู้ใดเปรียบปาน<br>
+<p>พระเยซูพระผู้ช่วย<br>
+ไม่มีผู้ใดเปรียบปาน<br>
 ชั่วชีวิตข้าข้าจะสรรเสริญ<br>
-ความรักอันอัศจรรย์ของพระองค์ผู้ปลอบ<br>
-โยนพระศิลาเป็นป้อมลี้ภัยและพลัง<br>
-ทุกลมหายใจของข้าพระองค์จงอย่าหยุด<br>
-นมัสการ<br>
+ความรักอันอัศจรรย์ของพระองค์<br>
+ผู้ปลอบโยนพระศิลา<br>
+เป็นป้อมลี้ภัยและพลัง<br>
+ทุกลมหายใจของข้าพระองค์<br>
+จงอย่าหยุดนมัสการ<br>
 <p>ให้ทั่วโลกาตะโกนร้องเพลงสรรเสริญ<br>
 ทรงฤทธิ์และบารมีโอ้จอมราชา<br>
 ภูเขาโค้งคำนับทะเลร้องคำรน<br>
@@ -25,9 +28,10 @@ p{white-space:nowrap;}
 หาใดเปรียบปานพระสัญญาที่มีในพระองค์<br>
 </div>
 <script>
-document.addEventListener('click', function(){location.href='index.html';});
-</script>
-</div>
-<script>
-document.addEventListener('keypress', function(){location.href='index.html';});
+const DELAY_MS=500;
+var a=new Audio();
+a.src='../mp3/303.mp3';
+document.addEventListener('keypress', function(){location.href='index.html'});
+document.addEventListener('dblclick', function(){location.href='index.html'});
+document.addEventListener('click', function(){if(a.paused) setTimeout(()=>{a.play()}, DELAY_MS); else a.pause()});
 </script>

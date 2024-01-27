@@ -1,41 +1,43 @@
 <!DOCTYPE html>
 <html lang="th">
 <title>128. แด่จอมราชานิรันดร์</title>
-<link rel="icon" href="favicon.png">
+<link rel="icon" type="image/png" sizes="192x192" href="android-chrome-192x192.png">
 <style>
 body{margin:0; font-family:"Garuda",serif; font-size:20pt;}
 i{font-size:80%; font-style:normal; color:#888;}
 div{text-align:center; overflow:auto; margin-bottom:40em;}
 p{white-space:nowrap;}
+@media (prefers-color-scheme:dark){html{filter:invert();}}
 </style>
 <div>
 <p><b>128. แด่จอมราชานิรันดร์</b>
-<p>แด่จอมราชานิจนิรันดร์ แด่จอมราชา<br>
-ครอบครอง แด่จอมเจ้านาย ฤทธิ์ยิ่งใหญ่<br>
-เราจึงสรรเสริญ ร้องต่อราชานิจนิรันดร์<br>
-ร้องต่อราชาเหนือราชาร้องเพื่อประกาศ<br>
-พระสิริ ก้องไปทั่วแผ่นดิน<br>
-<p>และให้มือเรายกชู ยินดีต่อหน้าพระองค์<br>
-เรายกมือสรร<i>[ระ]</i>เสริญ ใจเรายกขึ้น<br>
-ด้วยความยินดี ปรีดากัน<br>
+<p>แด่จอมราชานิจนิรันดร์<br>
+แด่จอมราชาครอบครอง<br>
+แด่จอมเจ้านายฤทธิ์ยิ่งใหญ่<br>
+เราจึงสรรเสริญ<br>
+ร้องต่อราชานิจนิรันดร์<br>
+ร้องต่อราชาเหนือราชา<br>
+ร้องเพื่อประกาศพระสิริ<br>
+ก้องไปทั่วแผ่นดิน<br>
+<p>ให้มือเรายกชู<br>
+ยินดีต่อหน้าพระองค์<br>
+เรายกมือสรร<i>[ระ]</i>เสริญ<br>
+ใจเรายกขึ้น<br>
+ด้วยความยินดีปรีดา<br>
 เราเปล่งเสียงสรร<i>[ระ]</i>เสริญ<br>
-และเราถวาย พระพร แด่พระองค์<br>
+<p>ให้เราถวายพระพร แด่พระองค์<br>
 และเราถวายสิริ แด่พระองค์<br>
-<p>และเราถวายพระเกียรติ แด่พระองค์<br>
+และเราถวายพระเกียรติ แด่พระองค์<br>
 และเราถวายอำนาจ แด่พระองค์<br>
 ประกาศว่า พระพร และสิริ<br>
 และพระเกียรติ และอำนาจ<br>
 จงมีแด่พระผู้ทรงนามเยซู<br>
-<p>แด่จอมราชานิจนิรันดร์ แด่จอมราชา<br>
-ครอบครอง แด่จอมเจ้านาย ฤทธิ์ยิ่งใหญ่<br>
-เราจึงสรรเสริญ ร้องต่อราชานิจนิรันดร์<br>
-ร้องต่อราชาเหนือราชาร้องเพื่อประกาศ<br>
-พระสิริ ก้องไปทั่วแผ่นดิน<br>
 </div>
 <script>
-document.addEventListener('click', function(){location.href='index.html';});
-</script>
-</div>
-<script>
-document.addEventListener('keypress', function(){location.href='index.html';});
+const DELAY_MS=500;
+var a=new Audio();
+a.src='../mp3/128.mp3';
+document.addEventListener('keypress', function(){location.href='index.html'});
+document.addEventListener('dblclick', function(){location.href='index.html'});
+document.addEventListener('click', function(){if(a.paused) setTimeout(()=>{a.play()}, DELAY_MS); else a.pause()});
 </script>

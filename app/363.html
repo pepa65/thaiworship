@@ -1,38 +1,42 @@
 <!DOCTYPE html>
 <html lang="th">
 <title>363. ขอรับใช้</title>
-<link rel="icon" href="favicon.png">
+<link rel="icon" type="image/png" sizes="192x192" href="android-chrome-192x192.png">
 <style>
 body{margin:0; font-family:"Garuda",serif; font-size:20pt;}
 i{font-size:80%; font-style:normal; color:#888;}
 div{text-align:center; overflow:auto; margin-bottom:40em;}
 p{white-space:nowrap;}
+@media (prefers-color-scheme:dark){html{filter:invert();}}
 </style>
 <div>
 <p><b>363. ขอรับใช้</b>
 <p><i>[ร้องรับ]</i><br>
-ขอรับใช้ ชีวิตข้า ขอรับใช้<br>
-ชีวิตข้า ขอให้ไท้ ตัวข้า<br>
-เป็นของพระองค์ ของพระองค์<br>
-<p>ข้ายินดีเมื่อ อยู่ที่สำหรับพระองค์<br>
+ขอรับใช้ ชีวิตข้าขอรับใช้<br>
+ชีวิตข้าขอให้ไท้<br>
+ตัวข้าเป็นของพระองค์<br>
+ของพระองค์<br>
+<p>ข้ายินดีเมื่ออยู่ที่สำหรับพระองค์<br>
 สำหรับพระองค์ ข้าไม่ลืมเลือน<br>
-ไม่ลืมเลือน พระเยซูยอมตาย<br>
-เพื่อข้าได้ ชีวิตใหม่ ในพระองค์<br>
-ในพระองค์<br>
+ไม่ลืมเลือน<br>
+พระเยซูยอมตายเพื่อข้าได้ชีวิตใหม่<br>
+ในพระองค์ ในพระองค์<br>
 <p><i>[ร้องรับ]</i><br>
-ขอรับใช้ ชีวิตข้า ขอรับใช้<br>
-ชีวิตข้า ขอให้ไท้ ตัวข้า<br>
-เป็นของพระองค์ ของพระองค์<br>
+ขอรับใช้ ชีวิตข้าขอรับใช้<br>
+ชีวิตข้าขอให้ไท้<br>
+ตัวข้าเป็นของพระองค์<br>
+ของพระองค์<br>
 <p>โลหิตพระคริสต์ ชำระข้าจากความบาป<br>
 จิตข้ากระหาย อยากใกล้พระองค์<br>
-ใกล้พระองค์ เพราะข้าลำเค็ญจิต<br>
-และกายข้า ขอมอบให้ องค์พระคริสต์<br>
-องค์พระคริสต์<br>
+ใกล้พระองค์<br>
+เพราะข้าลำเค็ญจิต และกายข้าขอมอบให้<br>
+องค์พระคริสต์ องค์พระคริสต์<br>
 </div>
 <script>
-document.addEventListener('click', function(){location.href='index.html';});
-</script>
-</div>
-<script>
-document.addEventListener('keypress', function(){location.href='index.html';});
+const DELAY_MS=500;
+var a=new Audio();
+a.src='../mp3/363.mp3';
+document.addEventListener('keypress', function(){location.href='index.html'});
+document.addEventListener('dblclick', function(){location.href='index.html'});
+document.addEventListener('click', function(){if(a.paused) setTimeout(()=>{a.play()}, DELAY_MS); else a.pause()});
 </script>

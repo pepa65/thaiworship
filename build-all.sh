@@ -12,7 +12,7 @@ echo 'Making worship.html'
 echo 'Making worshipp.html'
 \time -f%E ./worshipp.sh
 
-echo 'Making Song Book files'
+echo 'Making Song Book and Thai Worship files'
 \time -f%E ./songbook.sh pdf
 
 echo 'Making worship.pdf and worship2.pdf'

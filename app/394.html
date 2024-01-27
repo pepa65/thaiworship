@@ -1,26 +1,27 @@
 <!DOCTYPE html>
 <html lang="th">
 <title>394. ภูเขาแห่งพระคุณ</title>
-<link rel="icon" href="favicon.png">
+<link rel="icon" type="image/png" sizes="192x192" href="android-chrome-192x192.png">
 <style>
 body{margin:0; font-family:"Garuda",serif; font-size:20pt;}
 i{font-size:80%; font-style:normal; color:#888;}
 div{text-align:center; overflow:auto; margin-bottom:40em;}
 p{white-space:nowrap;}
+@media (prefers-color-scheme:dark){html{filter:invert();}}
 </style>
 <div>
 <p><b>394. ภูเขาแห่งพระคุณ</b>
 <p>พระคุณใหญ่ยิ่งจริงนัก โอ้ว่าความรัก<br>
 ความรักความเมตตา<br>
 ภูเขาชื่อว่ากลโกธา เป็นที่ข้าเห็นพระคุณ<br>
-โถพระเยซูสู้ทน ทุกข์ยากมากล้น<br>
+<p>โถพระเยซูสู้ทน ทุกข์ยากมากล้น<br>
 ยอมรับทุกข์สู้ทน<br>
-<p>เหมือนคนเลวสิ้นดี พลีพระกายวายชนม์<br>
+เหมือนคนเลวสิ้นดี พลีพระกายวายชนม์<br>
 ทรชนโบยตี เขาไม่ปรานี ตรึงท่านที่กางเขน<br>
 ด่าประจาน โถคนใจมาร<br>
 เหลือเดนเขาทำท่านเช่นเป็นโจร<br>
-แท้จริงพระองค์มิทรงผิดเลย<br>
-<p>เขายังได้เย้ยเอ่ยคำ กล่าวหาปรักปรำ<br>
+<p>แท้จริงพระองค์มิทรงผิดเลย<br>
+เขายังได้เย้ยเอ่ยคำ กล่าวหาปรักปรำ<br>
 เหยียดหยามนานา ไร้ความเมตตาเป็นธรรม<br>
 เขานำพระองค์ให้ทรงมงกุฎหนามสาน<br>
 เพื่อประจานให้อาย รักมนุษย์มากมาย<br>
@@ -28,9 +29,10 @@ p{white-space:nowrap;}
 พระคุณของพระเยซู<br>
 </div>
 <script>
-document.addEventListener('click', function(){location.href='index.html';});
-</script>
-</div>
-<script>
-document.addEventListener('keypress', function(){location.href='index.html';});
+const DELAY_MS=500;
+var a=new Audio();
+a.src='../mp3/394.mp3';
+document.addEventListener('keypress', function(){location.href='index.html'});
+document.addEventListener('dblclick', function(){location.href='index.html'});
+document.addEventListener('click', function(){if(a.paused) setTimeout(()=>{a.play()}, DELAY_MS); else a.pause()});
 </script>

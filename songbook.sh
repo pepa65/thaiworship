@@ -1,22 +1,24 @@
 #!/usr/bin/env bash
 
-# songbook.sh - Make separate pdf files of each song for Song Book and html files
+# songbook.sh - Make pdf and html files of each song
 #
 # Produce:
-# - html files for app
+# - html files for Thai Worship app
 # - pdf files of each song with Typst [pdf]
 # - png files with chromium [png]
 # - songs.json file for online use in Song Book (Soli Deo Gloria app)
 #
-# Input: $songsfile (song content), expected in the same directory, and the mp3 files `$mp3/<id>.mp3`.
+# Input: worship.songs (song content), expected in the same directory, and the mp3 files `$mp3/<id>.mp3`.
 # Output:
-# - $app/*.html songs.json (id,title,lyricstype,lyrics,audiourl[,category])
-# - [pdf] $out/*.pdf
-# - [png] $out/*.png ($out/*.htm are intermediate files)
+# - app/*.html [Thai Worship app]
+# - songs.json(id,title,lyricstype,lyrics,audiourl[,category]) [Song Book]
+# - [pdf] songbook/*.pdf [Song Book]
+# - [png] songbook/*.png (Song Book old style, songbook/*.htm are intermediate files)
 #
 # Usage: songbook.sh [pdf|png]
-# Required: typst[github.com/typst/typst] ghostscript(gs)
-#           coreutils(rm mkdir cat) [chromium/google-chrome-stable]
+# 'pdf' for Song Book, 'png' for old-style Song Book, none for Thai Worship app
+# Required: typst[github.com/typst/typst]:'pdf' ghostscript(gs):'pdf'
+#           coreutils(rm mkdir cat) chromium/google-chrome-stable:'png'
 
 pdf=0 png=0
 [[ $1 = pdf ]] &&
@@ -28,9 +30,8 @@ pdf=0 png=0
 	exit 1
 
 self=$(readlink -e "$0")
-dir=${self%/*}  # The build-script directory should have all necessary files
-songsfile="$dir/worship.songs" link="https://good4.eu" type=pdf ext=pdf
-jsonfile="$dir/songs.json" out="$dir/songbook" jsonstr="[\n" app="$dir/app"
+cd ${self%/*}  # The build-script directory must have all necessary files
+link="https://good4.eu" jsonstr="[\n"
 t1='-'  # Song Title
 s1='='  # Verse Separator
 h1='+'  # Section Header
@@ -39,6 +40,7 @@ nl=$'\n'  # Newline
 
 if ((pdf))
 then # make pdfs
+	type=pdf ext=pdf
 	# Use Typst to produce pdfs and Ghostscript to make them smaller
 	if ! ty=$(type -P typst)
 	then # Typst not found in PATH
@@ -62,6 +64,7 @@ then # make pdfs
 fi
 if ((png))
 then # Make pngs
+	type=image ext=png
 	# Use Chromium to make screenshots of html and Mogrify to cut them
 	if ch=$(type -P chromium) || ch=$(type -P chrome)
 	then : # OK
@@ -79,77 +82,121 @@ then # Make pngs
 		exit 4
 	fi
 
-	mo+=' -density 120 -depth 3 -trim +repage -bordercolor White -border 24 -define png:color-type=3'
+	mo+=' -depth 3 -trim +repage -bordercolor white -border 24 -define png:color-type=3'
 	# Prevent Chromium/Chrome from locking
 	rm -f ~/.config/chromium/SingletonLock ~/.config/google-chrome/SingletonLock
-	type=image ext=png
 fi
 
-Outputsong(){ # I:pdf png ty gs ch mo tmp out id app
-	echo -e "</div>\n<script>\ndocument.addEventListener('click', function(){location.href='index.html';});\n</script>" >>"$app/$id.html"
-	echo -e "</div>\n<script>\ndocument.addEventListener('keypress', function(){location.href='index.html';});\n</script>" >>"$app/$id.html"
-	if ((pdf))
+Outputsong(){ # I:pdf,png,ty,gs,ch,mo,tmp,out,id,app
+	# Output for app (always)
+	if [[ -f mp3/$id.mp3 ]]
 	then
-		$ty "$tmp" "$out/$id.pdf"
-		$gs "$tmp" "$out/$id.pdf" >/dev/null
-		mv "$tmp" "$out/$id.pdf"
+		cat <<-EOS1 >>"app/$id.html"
+			</div>
+			<script>
+			const DELAY_MS=500;
+			var a=new Audio();
+			a.src='../mp3/$id.mp3';
+			document.addEventListener('keypress', function(){location.href='index.html'});
+			document.addEventListener('dblclick', function(){location.href='index.html'});
+			document.addEventListener('click', function(){if(a.paused) setTimeout(()=>{a.play()}, DELAY_MS); else a.pause()});
+			</script>
+		EOS1
+	else
+		cat <<-EOS2 >>"app/$id.html"
+			</div>
+			<script>
+			document.body.style.borderTop='8px solid red';
+			document.addEventListener('keypress', function(){location.href='index.html'});
+			document.addEventListener('dblclick', function(){location.href='index.html'});
+			document.addEventListener('click', function(){location.href='index.html'});
+			</script>
+		EOS2
+	fi
+	if ((pdf))
+	then # Output for pdf
+		$ty "$tmp" "songbook/$id.pdf"
+		$gs "$tmp" "songbook/$id.pdf" >/dev/null
+		mv "$tmp" "songbook/$id.pdf"
 	fi
 	if ((png))
-	then
-		$ch --screenshot="$out/$id.png" "$out/$id.htm" 2>/dev/null
-		$mo "$out/$id.png"
+	then # Output for png
+		$ch --screenshot="songbook/$id.png" "songbook/$id.htm" 2>/dev/null
+		$mo "songbook/$id.png"
 	fi
 }
 
-Handleline(){ # 1:line 2:newverse I:pdf png tmp out id
-	# Handle for html
-	(($2)) && echo -n "<p>" >>"$app/$id.html"
-	echo "$(sed -e 's@\[@<i>[@g' -e 's@]@]</i>@g' <<<"$1")<br>" >>"$app/$id.html"
+Handleline(){ # 1:line 2:newverse I:pdf,png,tmp,out,id
+	# Handle for html (always)
+	(($2)) &&
+		echo -n "<p>" >>"app/$id.html"
+	echo "$(sed -e 's@\[@<i>[@g' -e 's@]@]</i>@g' <<<"$1")<br>" >>"app/$id.html"
 	if ((pdf))
 	then # Handle for typst
-		(($2)) && echo >>"$tmp"
+		(($2)) &&
+			echo >>"$tmp"
 		echo -ne "\n$(sed -e 's@\[@#set text(fill:rgb("#888"));[@g' -e 's@]@]#set text(fill:black);@g' <<<"$1")\\" >>"$tmp"
 	fi
 	if ((png))
 	then # Handle for png
-		(($2)) && echo -n "<p>" >>"$out/$id.htm"
-		echo "$(sed -e 's@\[@<i>[@g' -e 's@]@]</i>@g' <<<"$1")<br>" >>"$out/$id.htm"
+		(($2)) &&
+			echo -n "<p>" >>"songbook/$id.htm"
+		echo "$(sed -e 's@\[@<i>[@g' -e 's@]@]</i>@g' <<<"$1")<br>" >>"songbook/$id.htm"
 	fi
 }
 
-# $app needs generation of index.html and link to favicon
-((pdf || png)) && rm -rf -- "$out" && mkdir "$out"
+((pdf || png)) && # Recreate songbook directory
+	rm -rf -- songbook &&
+	mkdir songbook
+rm -rf -- app &&
+	mkdir app
+cp android-chrome-512x512.png android-chrome-192x192.png favicon-32x32.png favicon-16x16.png apple-touch-icon.png safari-pinned-tab.svg maskable_icon.png favicon.ico app.webmanifest help.png app/
+cp app.head app/index.html
 title= category='ข้อสรรเสริญ' cat=
 while read line
-do # Process $songsfile line
+do # Process worship.songs line
 	first=${line:0:1} rest=${line:1}
-	[[ $first = $c1 ]] && continue
+	[[ $first = $c1 ]] &&
+		continue
 	if [[ $first = $t1 ]]
 	then # title
 		# Finish previous title
-		[[ $title ]] && Outputsong
-		id=${rest%% *} title=${rest/ /. }  # Insert a dot after the id in the title
-		[[ -f mp3/$id.mp3 ]] && mp3=", \"audiourl\":\"$link/mp3/$id.mp3\"" || mp3=
+		[[ $title ]] &&
+			Outputsong
+		id=${rest%% *}
+		[[ $id = 0 ]] &&
+			title=${rest#0 } ||
+			title=${rest/ /. }  # Insert a dot after the id in the title
+		# Find English title
+		eng=$(grep "^$id;" worship.index) &&
+			eng=$(cut -d';' -f5 <<<"$eng")
+		[[ $eng ]] &&
+			eng="<i>$eng</i><br>"
+		# Write to index for app (always)
+		echo "<a href=\"$id.html\">$title<br>$eng</a>" >>app/index.html
+		mp3=
+		[[ -f mp3/$id.mp3 ]] &&
+			mp3=", \"audiourl\":\"$link/mp3/$id.mp3\""
 		#cat=", \"category\":\"$category\""  # Category is (not yet) used
-		# Also remove the number from title number 0
-		jsonstr+="{\"id\":\"$id\", \"title\":\"${title#0. }\", \"lyricstype\":\"$type\", \"lyrics\":\"$link/$type/$id.$ext\"$mp3$cat},\n"
+		jsonstr+="{\"id\":\"$id\", \"title\":\"$title\", \"lyricstype\":\"$type\", \"lyrics\":\"$link/$type/$id.$ext\"$mp3$cat},\n"
 		# Start song
-		# Generate html for app
-		cat <<-HEAD1 >"$app/$id.html"
+		# Generate html for app (always)
+		cat <<-HEAD1 >"app/$id.html"
 			<!DOCTYPE html>
 			<html lang="th">
 			<title>$title</title>
-			<link rel="icon" href="favicon.png">
+			<link rel="icon" type="image/png" sizes="192x192" href="android-chrome-192x192.png">
 			<style>
 			body{margin:0; font-family:"Garuda",serif; font-size:20pt;}
 			i{font-size:80%; font-style:normal; color:#888;}
 			div{text-align:center; overflow:auto; margin-bottom:40em;}
 			p{white-space:nowrap;}
+			@media (prefers-color-scheme:dark){html{filter:invert();}}
 			</style>
 			<div>
 			<p><b>$title</b>
 		HEAD1
-		echo -n "<p>" >>"$app/$id.html"
+		echo -n "<p>" >>"app/$id.html"
 		if ((pdf))
 		then # Generate typst title
 			echo -e "$header" >"$tmp"
@@ -157,7 +204,7 @@ do # Process $songsfile line
 		fi
 		if ((png))
 		then # Generate html title
-			cat <<-HEAD2 >"$out/$id.htm"
+			cat <<-HEAD2 >"songbook/$id.htm"
 				<!DOCTYPE html>
 				<html lang="th">
 				<title>$title</title>
@@ -168,7 +215,7 @@ do # Process $songsfile line
 				</style>
 				<p><b>$title</b>
 			HEAD2
-			echo -n "<p>" >>"$out/$id.htm"
+			echo -n "<p>" >>"songbook/$id.htm"
 		fi
 	elif [[ $first = $h1 ]]
 	then # Section/category
@@ -179,11 +226,13 @@ do # Process $songsfile line
 	else # Songline -- if not empty
 		Handleline "$line" 0
 	fi
-done <"$songsfile"
+done <"worship.songs"
 
 # Finish last title
 Outputsong
 
-echo -e "${jsonstr:0: -3}\n]" >"$jsonfile"  # Remove the final comma and append a closing square-bracket
+((png || pdf)) && # Make json-file for Song Book
+	echo -e "${jsonstr:0: -3}\n]" >songs.json && # Remove the final comma and append a closing square-bracket
+	echo "[{\"songlistVersion\": \"$(date +%Y%m%d)\"}]" >songlistVersion.json
 
 exit 0

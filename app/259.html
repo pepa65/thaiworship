@@ -1,36 +1,36 @@
 <!DOCTYPE html>
 <html lang="th">
-<title>259. ข้าอยากรู้จักพระองค์</title>
-<link rel="icon" href="favicon.png">
+<title>259. ในที่ลึกลับ</title>
+<link rel="icon" type="image/png" sizes="192x192" href="android-chrome-192x192.png">
 <style>
 body{margin:0; font-family:"Garuda",serif; font-size:20pt;}
 i{font-size:80%; font-style:normal; color:#888;}
 div{text-align:center; overflow:auto; margin-bottom:40em;}
 p{white-space:nowrap;}
+@media (prefers-color-scheme:dark){html{filter:invert();}}
 </style>
 <div>
-<p><b>259. ข้าอยากรู้จักพระองค์</b>
-<p>ในที่ลึกลับ ในที่เงียบสงัด ณ ที่นั่นพระองค์<br>
-ทรงอยู่ ในที่ลึกลับ ช่วงเวลาที่ ข้ากำลังรอ<br>
-เฝ้าแต่พระองค์ เพราะอยากรู้จักพระองค์<br>
+<p><b>259. ในที่ลึกลับ</b>
+<p><i>[1]</i> ในที่ลึกลับ ในที่เงียบสงัด<br>
+ณ ที่นั่นพระองค์ทรงอยู่<br>
+ในที่ลึกลับช่วงเวลาที่ข้ากำลังรอ เฝ้าแต่พระองค์<br>
+เพราะอยากรู้จักพระองค์<br>
 <p><i>[ร้องรับ]</i><br>
-ข้าอยากรู้จักพระองค์ อยากได้ยินเสียง<br>
-พระองค์ ข้าอยากรู้จักพระองค์เจ้า<br>
-ข้าอยากรู้จักพระองค์ ข้าอยากจะได้สัมผัส<br>
+ข้าอยากรู้จักพระองค์  อยากได้ยินเสียงพระองค์<br>
 ข้าอยากรู้จักพระองค์เจ้า<br>
-<p>ข้ากำลังไขว่คว้า ไปถึงที่สูงสุด เพื่อข้าจะ<br>
-ได้รางวัล ดำเนินต่อไป ข้าจะก้าวไป ไม่มี<br>
-สิ่งใด ที่จะขวางได้ เพราะอยากรู้จักมากขึ้น<br>
-<p><i>[ร้องรับ]</i><br>
-ข้าอยากรู้จักพระองค์ อยากได้ยินเสียง<br>
-พระองค์ ข้าอยากรู้จักพระองค์เจ้า<br>
 ข้าอยากรู้จักพระองค์ ข้าอยากจะได้สัมผัส<br>
-ข้าอยากรู้จักพระองค์เจ้า<br>
+ข้าอยากรู้จักพระเจ้า<br>
+<p><i>[2]</i> ข้ากำลังไขว่คว้าไปถึงที่สูง<br>
+เพื่อข้าจะได้รางวัล<br>
+ดำเนินต่อไป ข้าจะก้าวไป<br>
+ไม่มีสิ่งใด ที่จะขวางได้<br>
+เพราะอยากรู้จักมากขึ้น<br>
 </div>
 <script>
-document.addEventListener('click', function(){location.href='index.html';});
-</script>
-</div>
-<script>
-document.addEventListener('keypress', function(){location.href='index.html';});
+const DELAY_MS=500;
+var a=new Audio();
+a.src='../mp3/259.mp3';
+document.addEventListener('keypress', function(){location.href='index.html'});
+document.addEventListener('dblclick', function(){location.href='index.html'});
+document.addEventListener('click', function(){if(a.paused) setTimeout(()=>{a.play()}, DELAY_MS); else a.pause()});
 </script>
