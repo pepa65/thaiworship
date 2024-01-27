@@ -87,32 +87,10 @@ then # Make pngs
 	rm -f ~/.config/chromium/SingletonLock ~/.config/google-chrome/SingletonLock
 fi
 
-Outputsong(){ # I:pdf,png,ty,gs,ch,mo,tmp,out,id,app
+Outputsong(){ # I:pdf,png,ty,gs,ch,mo,tmp,out,id,app,mp3js
 	# Output for app (always)
-	if [[ -f mp3/$id.mp3 ]]
-	then
-		cat <<-EOS1 >>"app/$id.html"
-			</div>
-			<script>
-			const DELAY_MS=500;
-			var a=new Audio();
-			a.src='../mp3/$id.mp3';
-			document.addEventListener('keypress', function(){location.href='index.html'});
-			document.addEventListener('dblclick', function(){location.href='index.html'});
-			document.addEventListener('click', function(){if(a.paused) setTimeout(()=>{a.play()}, DELAY_MS); else a.pause()});
-			</script>
-		EOS1
-	else
-		cat <<-EOS2 >>"app/$id.html"
-			</div>
-			<script>
-			document.body.style.borderTop='8px solid red';
-			document.addEventListener('keypress', function(){location.href='index.html'});
-			document.addEventListener('dblclick', function(){location.href='index.html'});
-			document.addEventListener('click', function(){location.href='index.html'});
-			</script>
-		EOS2
-	fi
+	echo -e "</div>\n<script>\n$mp3js" >>"app/$id.html"
+	echo -e "document.addEventListener('click', function(){location.href='index.html'});\n</script>" >>"app/$id.html"
 	if ((pdf))
 	then # Output for pdf
 		$ty "$tmp" "songbook/$id.pdf"
@@ -174,11 +152,11 @@ do # Process worship.songs line
 			eng="<i>$eng</i><br>"
 		# Write to index for app (always)
 		echo "<a href=\"$id.html\">$title<br>$eng</a>" >>app/index.html
-		mp3=
+		mp3json= mp3html= mp3js= mp3css=
 		[[ -f mp3/$id.mp3 ]] &&
-			mp3=", \"audiourl\":\"$link/mp3/$id.mp3\""
-		#cat=", \"category\":\"$category\""  # Category is (not yet) used
-		jsonstr+="{\"id\":\"$id\", \"title\":\"$title\", \"lyricstype\":\"$type\", \"lyrics\":\"$link/$type/$id.$ext\"$mp3$cat},\n"
+			mp3json=", \"audiourl\":\"$link/mp3/$id.mp3\"" mp3html="<div id=\"top\"><audio controls src=\"../mp3/$id.mp3\"></div>"$'\n' mp3js="document.getElementsByTagName('audio')[0].focus();" mp3css="#top{position:fixed; top:0; width:100%; text-align:center; opacity:.9;}"$'\n'
+		#catjson=", \"category\":\"$category\""  # Category is (not yet) used
+		jsonstr+="{\"id\":\"$id\", \"title\":\"$title\", \"lyricstype\":\"$type\", \"lyrics\":\"$link/$type/$id.$ext\"$mp3json$catjson},\n"
 		# Start song
 		# Generate html for app (always)
 		cat <<-HEAD1 >"app/$id.html"
@@ -188,12 +166,12 @@ do # Process worship.songs line
 			<link rel="icon" type="image/png" sizes="192x192" href="android-chrome-192x192.png">
 			<style>
 			body{margin:0; font-family:"Garuda",serif; font-size:20pt;}
-			i{font-size:80%; font-style:normal; color:#888;}
-			div{text-align:center; overflow:auto; margin-bottom:40em;}
+			$mp3css#song{text-align:center; overflow:auto; margin:20px 0 40em;}
 			p{white-space:nowrap;}
+			i{font-size:80%; font-style:normal; color:#888;}
 			@media (prefers-color-scheme:dark){html{filter:invert();}}
 			</style>
-			<div>
+			$mp3html<div id="song">
 			<p><b>$title</b>
 		HEAD1
 		echo -n "<p>" >>"app/$id.html"

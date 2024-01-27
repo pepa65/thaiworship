@@ -4,12 +4,14 @@
 <link rel="icon" type="image/png" sizes="192x192" href="android-chrome-192x192.png">
 <style>
 body{margin:0; font-family:"Garuda",serif; font-size:20pt;}
-i{font-size:80%; font-style:normal; color:#888;}
-div{text-align:center; overflow:auto; margin-bottom:40em;}
+#top{position:fixed; top:0; width:100%; text-align:center; opacity:.9;}
+#song{text-align:center; overflow:auto; margin:20px 0 40em;}
 p{white-space:nowrap;}
+i{font-size:80%; font-style:normal; color:#888;}
 @media (prefers-color-scheme:dark){html{filter:invert();}}
 </style>
-<div>
+<div id="top"><audio controls src="../mp3/349.mp3"></div>
+<div id="song">
 <p><b>349. ทางชีวิต</b>
 <p>องค์พระคริสต์มีชีวิตสูงยิ่ง ท่านเป็นพระแท้จริง<br>
 ไม่ทอดทิ้งเราไป ภายในนั้น ดั่งสวรรค์สรรให้<br>
@@ -31,10 +33,6 @@ p{white-space:nowrap;}
 จะได้เห็นในทุกสิ่ง ดังพระตรัสนั้นเอย<br>
 </div>
 <script>
-const DELAY_MS=500;
-var a=new Audio();
-a.src='../mp3/349.mp3';
-document.addEventListener('keypress', function(){location.href='index.html'});
-document.addEventListener('dblclick', function(){location.href='index.html'});
-document.addEventListener('click', function(){if(a.paused) setTimeout(()=>{a.play()}, DELAY_MS); else a.pause()});
+document.getElementsByTagName('audio')[0].focus();
+document.addEventListener('click', function(){location.href='index.html'});
 </script>
