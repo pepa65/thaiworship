@@ -154,7 +154,11 @@ do # Process worship.songs line
 		echo "<a href=\"$id.html\">$title<br>$eng</a>" >>app/index.html
 		mp3json= mp3html= mp3js= mp3css=
 		[[ -f mp3/$id.mp3 ]] &&
-			mp3json=", \"audiourl\":\"$link/mp3/$id.mp3\"" mp3html="<div id=\"top\"><audio controls src=\"../mp3/$id.mp3\"></div>"$'\n' mp3js="document.getElementsByTagName('audio')[0].focus();" mp3css="#top{position:fixed; top:0; width:100%; text-align:center; opacity:.9;}"$'\n'
+			mp3json=", \"audiourl\":\"$link/mp3/$id.mp3\"" \
+			mp3css="#top{position:fixed; top:0; width:100%; text-align:center; opacity:.9;}$'\n'" \
+			mp3css+="audio{transform:scale(1.6) translateY(10px);}$'\n'" \
+			mp3html="<div id=\"top\"><audio controls src=\"../mp3/$id.mp3\"></div>"$'\n' \
+			mp3js="document.getElementsByTagName('audio')[0].focus();"
 		#catjson=", \"category\":\"$category\""  # Category is (not yet) used
 		jsonstr+="{\"id\":\"$id\", \"title\":\"$title\", \"lyricstype\":\"$type\", \"lyrics\":\"$link/$type/$id.$ext\"$mp3json$catjson},\n"
 		# Start song
@@ -166,7 +170,7 @@ do # Process worship.songs line
 			<link rel="icon" type="image/png" sizes="192x192" href="android-chrome-192x192.png">
 			<style>
 			body{margin:0; font-family:"Garuda",serif; font-size:20pt;}
-			$mp3css#song{text-align:center; overflow:auto; margin:20px 0 40em;}
+			$mp3css#song{text-align:center; overflow:auto; margin:60px 0 40em;}
 			p{white-space:nowrap;}
 			i{font-size:80%; font-style:normal; color:#888;}
 			@media (prefers-color-scheme:dark){html{filter:invert();}}
