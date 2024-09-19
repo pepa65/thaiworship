@@ -3,6 +3,8 @@
 # build-all.sh - Make all the files in the project
 # Required: time a5toa4 [https://gitlab.com/pepa65/misc]
 
+date
+
 echo 'Making OpenLP/*.xml files'
 \time -f%E ./openlp.sh
 
@@ -20,3 +22,5 @@ echo 'Making worship.pdf and worship2.pdf'
 
 echo 'making BookletA4.pdf'
 \time -f%E a5toa4 BookletA5.pdf BookletA4.pdf
+
+date
