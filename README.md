@@ -8,29 +8,6 @@ and "The Lord is our shelter" as song 638.
 * Repo: https://github.com/pepa65/thaiworship
 * Build: All files can be built with the bash script `build-all.sh`.
 
-## worship.sh
-
-### Produce single-page browser application for song lyrics display
-
-The bash script `worship.sh` builds the single-page browser application `worship.html` and `worship.html5`
-from the html-head file `worship.head`, the javascript code part `worship.js` 
-and the CSS style sheet `worship.css`.
-
-The content is provided by the files `worship.songs` and `worship.index`
-
-[View the result online](https://good4.eu/thws)
-
-## worshipp.sh
-
-### Produce single-webpage of all song lyrics for easy use on handhelds
-
-The bash script `worshipp.sh` builds the single-webpage `worshipp.html` and `worshipp.html5`
-from the html-head file `worshipp.head` and the CSS style sheet `worshipp.css`.
-
-The content is provided by the files `worship.songs` and `worship.index`
-
-[View the result online](https://good4.eu/thw)
-
 ## songbook.sh
 
 ### Produce png files for use in Song Book (Soli Deo Gloria app on Android & iOS)
@@ -43,6 +20,31 @@ https://good4.eu/ and the song files need to be located wherever the URL in the
 URLs to audio files in a `audio` field.
 The file `songlistVersion.json` needs to be updated whenever any of the files
 gets changed/updated, so the app knows to refresh its cache.
+
+## worship.sh
+
+### Produce single-page browser application for song lyrics display
+
+The bash script `worship.sh` builds the single-page browser application `worship.html` and `worship.html5`
+from the html-head file `worship.head`, the javascript code part `worship.js` 
+and the CSS style sheet `worship.css`.
+
+The content is provided by the files `worship.songs` and `worship.index`
+
+<!--[View the result online](https://good4.eu/thws)-->
+[View the result online](https://songs.godat.work)
+
+## worshipp.sh
+
+### Produce single-webpage of all song lyrics for easy use on handhelds
+
+The bash script `worshipp.sh` builds the single-webpage `worshipp.html` and `worshipp.html5`
+from the html-head file `worshipp.head` and the CSS style sheet `worshipp.css`.
+
+The content is provided by the files `worship.songs` and `worship.index`
+
+<!--[View the result online](https://good4.eu/thw)-->
+[View the result online](https://song.godat.work)
 
 ## openlp.sh
 
@@ -61,6 +63,7 @@ which uses `worship.htm` and `worship2.htm` as input.
 
 ## Booklet
 
-The BookletA5.pdf is editable with LibreOffice. The a5toa4 script in
-[pepa65's misc gitlab repo](https://gitlab.com/pepa65/misc) can convert it into
-BookletA4.pdf for printing. Just call it like: `bash a5toa4 -r BookletA5.pdf`
+The booklet is an evangelistic booklet. The BookletA5.pdf is editable with LibreOffice.
+The a5toa4 script in [pepa65's misc gitlab repo](https://gitlab.com/pepa65/misc)
+can convert it into BookletA4.pdf for printing.
+Just call it like: `bash a5toa4 -r BookletA5.pdf`

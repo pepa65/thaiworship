@@ -1,11 +1,11 @@
 //<![CDATA[<!--
-// Copyright 2023 © OMF International (GPL-3+ licence)
+// Copyright 2024 © OMF International (GPL-3+ licence)
 // Based on slidy, copyright 2005 W3C (MIT licence)
 var w3 = {
 	// user modifiable: website, email, year, langs, timer, dfont, sizept, minpt, maxpt, steppt
 	website: "omf.org/thailand", // Go to website
 	email: "worship@godat.work", // Contact by email
-	year: "2023", // Copyright year
+	year: "2024", // Copyright year
 	langs: ["th", "en", "nl"], // Interface languages offered; empty: all available
 	timer: -1, // In minutes; 0: keep time; pos: count down to zero; neg: don't show
 	dfont: -1, // Initial font size adjustment (see sizept, minpt, maxpt, steppt)
