@@ -155,8 +155,8 @@ do # Process worship.songs line
 		mp3json= mp3html= mp3js= mp3css=
 		[[ -f mp3/$id.mp3 ]] &&
 			mp3json=", \"audiourl\":\"$link/mp3/$id.mp3\"" \
-			mp3css="#top{position:fixed; top:0; width:100%; text-align:center; opacity:.9;}"$'\n' \
-			mp3css+="audio{transform:scale(1.6) translateY(10px);}"$'\n' \
+			mp3css="#top{position:fixed; top:0; width:100%; text-align:center; opacity:.6;}"$'\n' \
+			mp3css+="audio{transform:scale(1.1);}"$'\n' \
 			mp3html="<div id=\"top\"><audio controls src=\"../mp3/$id.mp3\"></div>"$'\n' \
 			mp3js="document.getElementsByTagName('audio')[0].focus();"
 		#catjson=", \"category\":\"$category\""  # Category is (not yet) used
