@@ -173,7 +173,7 @@ do # Process worship.songs line
 			$mp3css#song{text-align:center; overflow:auto; margin:60px 0 40em;}
 			p{white-space:nowrap;}
 			i{font-size:80%; font-style:normal; color:#888;}
-			@media (prefers-color-scheme:dark){html{filter:invert();}}
+			@media (prefers-color-scheme:dark){html{filter:invert(1);}}
 			</style>
 			$mp3html<div id="song">
 			<p><b>$title</b>
