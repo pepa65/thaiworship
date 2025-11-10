@@ -87,7 +87,9 @@ then # Make pngs
 	rm -f ~/.config/chromium/SingletonLock ~/.config/google-chrome/SingletonLock
 fi
 
-Outputsong(){ # I:pdf,png,ty,gs,ch,mo,tmp,out,id,app,mp3js
+Outputsong(){ # I:id,title,eng,firstline,pdf,png,ty,gs,ch,mo,tmp,out,app,mp3js
+	# Write to index for app (always)
+	echo "<a href=\"$id.html\">$title<br>$eng<span>($firstline)</span><br></a>" >>app/index.html
 	# Output for app (always)
 	echo -e "</div>\n<script>\n$mp3js" >>"app/$id.html"
 	echo -e "document.addEventListener('click', function(){location.href='index.html'});\n</script>" >>"app/$id.html"
@@ -130,14 +132,18 @@ rm -rf -- app &&
 	mkdir app
 cp android-chrome-512x512.png android-chrome-192x192.png favicon-32x32.png favicon-16x16.png apple-touch-icon.png safari-pinned-tab.svg maskable_icon.png favicon.ico app.webmanifest app/
 cp app.head app/index.html
-title= category='ข้อสรรเสริญ' cat=
+title= category='ข้อสรรเสริญ' cat= firstlinenext=0
 while read line
 do # Process worship.songs line
+	((firstlinenext)) && # Actual first line after title
+		[[ ! ${line:0:1} = [ || ! ${line: -1} = ] ]] && # Ignore header
+		firstline=${line#\[1\] } firstlinenext=0
 	first=${line:0:1} rest=${line:1}
 	[[ $first = $c1 ]] &&
 		continue
 	if [[ $first = $t1 ]]
 	then # title
+		firstlinenext=1
 		# Finish previous title
 		[[ $title ]] &&
 			Outputsong
@@ -150,8 +156,6 @@ do # Process worship.songs line
 			eng=$(cut -d';' -f5 <<<"$eng")
 		[[ $eng ]] &&
 			eng="<i>$eng</i><br>"
-		# Write to index for app (always)
-		echo "<a href=\"$id.html\">$title<br>$eng</a>" >>app/index.html
 		mp3json= mp3html= mp3js= mp3css=
 		[[ -f mp3/$id.mp3 ]] &&
 			mp3json=", \"audiourl\":\"$link/mp3/$id.mp3\"" \
