@@ -4,8 +4,8 @@
 #
 # Produce:
 # - html files for Thai Worship app
-# - pdf files of each song with Typst [pdf]
-# - png files with chromium [png]
+# - Song Book pdf files of each song with Typst [pdf]
+# - (or: Song Book png files with chromium [png])
 # - songs.json file for online use in Song Book (Soli Deo Gloria app)
 #
 # Input: worship.songs (song content), expected in the same directory, and the mp3 files `$mp3/<id>.mp3`.
@@ -88,11 +88,14 @@ then # Make pngs
 fi
 
 Outputsong(){ # I:id,title,eng,firstline,pdf,png,ty,gs,ch,mo,tmp,out,app,mp3js
+	local jsontitle=$title fl=
 	# Write to index for app (always)
-	[[ $firstline = ${title#*. } ]] &&
-		firstline= ||
-		firstline="<span>($firstline)</span><br>"
-	echo "<a href=\"$id.html\">$title<br>$eng$firstline</a>" >>app/index.html
+	[[ ! $firstline = ${title#*. } ]] &&
+		fl="<span>($firstline)</span><br>" jsontitle="$title ($firstline)"
+	echo "<a href=\"$id.html\">$title<br>$eng$fl</a>" >>app/index.html
+	# Append jsonstr
+	#catjson=", \"category\":\"$category\""  # Category is (not yet) used
+	jsonstr+="{\"id\":\"$id\", \"title\":\"$jsontitle\", \"lyricstype\":\"$type\", \"lyrics\":\"$link/$type/$id.$ext\"$mp3json$catjson},\n"
 	# Output for app (always)
 	echo -e "</div>\n<script>\n$mp3js" >>"app/$id.html"
 	echo -e "document.addEventListener('click', function(){location.href='index.html'});\n</script>" >>"app/$id.html"
@@ -166,8 +169,6 @@ do # Process worship.songs line
 			mp3css+="audio{transform:scale(1.1);}"$'\n' \
 			mp3html="<div id=\"top\"><audio controls src=\"../mp3/$id.mp3\"></div>"$'\n' \
 			mp3js="document.getElementsByTagName('audio')[0].focus();"
-		#catjson=", \"category\":\"$category\""  # Category is (not yet) used
-		jsonstr+="{\"id\":\"$id\", \"title\":\"$title\", \"lyricstype\":\"$type\", \"lyrics\":\"$link/$type/$id.$ext\"$mp3json$catjson},\n"
 		# Start song
 		# Generate html for app (always)
 		cat <<-HEAD1 >"app/$id.html"
