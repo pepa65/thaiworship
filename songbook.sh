@@ -88,9 +88,9 @@ then # Make pngs
 fi
 
 Outputsong(){ # I:id,title,eng,firstline,pdf,png,ty,gs,ch,mo,tmp,out,app,mp3js
-	local jsontitle=$title fl=
+	local jsontitle=$title fl= justtitle=${title#*. }
 	# Write to index for app (always)
-	[[ ! $firstline = ${title#*. } ]] &&
+	[[ ! ${firstline// } = ${justtitle// } ]] &&
 		fl="<span>($firstline)</span><br>" jsontitle="$title ($firstline)"
 	echo "<a href=\"$id.html\">$title<br>$eng$fl</a>" >>app/index.html
 	# Append jsonstr
