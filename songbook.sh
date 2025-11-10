@@ -89,7 +89,10 @@ fi
 
 Outputsong(){ # I:id,title,eng,firstline,pdf,png,ty,gs,ch,mo,tmp,out,app,mp3js
 	# Write to index for app (always)
-	echo "<a href=\"$id.html\">$title<br>$eng<span>($firstline)</span><br></a>" >>app/index.html
+	[[ $firstline = ${title#*. } ]] &&
+		firstline= ||
+		firstline="<span>($firstline)</span><br>"
+	echo "<a href=\"$id.html\">$title<br>$eng$firstline</a>" >>app/index.html
 	# Output for app (always)
 	echo -e "</div>\n<script>\n$mp3js" >>"app/$id.html"
 	echo -e "document.addEventListener('click', function(){location.href='index.html'});\n</script>" >>"app/$id.html"

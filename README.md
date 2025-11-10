@@ -10,14 +10,26 @@ and "The Lord is our shelter" as song 638.
 
 ## songbook.sh
 
-### Produce png files for use in Song Book (Soli Deo Gloria app on Android & iOS)
+### Produce files for worship apps
+#### Produce files for use in the Worship app (PWA)
+* Command: `songbook.sh`
 
-The bash script `songbook.sh` builds the files necessary: `songbook/*.png` and
-`songs.json` plus intermediate files `songbook/*.htm` [and `songbook/*.pdf`].
+The bash script `songbook.sh` builds all files in the `app` directory:
+* Icons
+* `app.webmanifest` and `index.html`
+* The html-files for each song: `*.html`
+* When matching mp3 files are present in the `mp3` directory, they get linked.
+
+#### Produce files for use in Song Book (Soli Deo Gloria app on Android & iOS)
+* Command: `songbook.sh pdf` (alternatively: `songbook.sh png`)
+
+The bash script `songbook.sh` can build all files necessary: `songbook/*.pdf` and
+`songs.json` (with intermediate files `songbook/*.htm`) [or `songbook/*.png`].
 The files `songs.json` and `songlistVersion.json` need to be present at
 https://good4.eu/ and the song files need to be located wherever the URL in the
-`lyrics` field in the json file points to. The json file could also include
-URLs to audio files in a `audio` field.
+`lyrics` field in the json file points to (`good4.eu/pdf/*.pdf`).
+The json file could also include URLs to audio files in a `audio` field
+(all matching mp3 files in the `mp3` directory), right now `good4.eu/mp3/*.mp3`.
 The file `songlistVersion.json` needs to be updated whenever any of the files
 gets changed/updated, so the app knows to refresh its cache.
 
