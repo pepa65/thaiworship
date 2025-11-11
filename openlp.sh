@@ -5,6 +5,7 @@
 # Expects worship.songs in the same directory
 # For each song xml files are added into the subdirectory OpenLP
 # (These can be imported by the OpenLP presentation software)
+# Required: coreutils(readlink stat rm mkdir) date
 
 self=$(readlink -e "$0")
 dir=${self%/*}  ## directory where the build-script resides has all necessary files

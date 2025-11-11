@@ -12,7 +12,7 @@
 #
 # The $head_file is the html with the head section and the body with the title.
 #  will be closed at the end of this script.
-# Required: weasyprint (https://github.com/Kozea/WeasyPrint)
+# Required: weasyprint (https://github.com/Kozea/WeasyPrint) coreutils(stat cut cat tee) sed
 
 self=$(readlink -e "$0")
 dir=${self%/*}  ## directory where the build-script resides has all necessary files

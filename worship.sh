@@ -12,6 +12,7 @@
 # The head_file is the html with the head section, the body with Help slide,
 #  start of Index slide; div not closed, will be closed at the bottom of
 #  this script.
+# Required: coreutils(readlink stat cut cat) sed
 
 self=$(readlink -e "$0")
 dir=${self%/*}  ## directory where the build-script resides has all necessary files
