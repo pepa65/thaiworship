@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<song xmlns="http://openlyrics.info/namespace/2009/song" version="0.8" createdIn="OpenLP 2.0.5" modifiedIn="OpenLP 2.0.5" modifiedDate="2025-11-11T13:41:54+07:00">
+ <properties>
+  <titles><title>307 พระเจ้าของเราโอ้พระนาม</title></titles>
+  <authors><author> </author></authors>
+ </properties>
+ <lyrics>
+  <verse name="v1"><lines>พระเจ้าของเราพระนาม<br/>ช่างงามสง่าทั่วทั้งโลกา<br/>พระเจ้าของเราโอ้พระนาม<br/>ช่างงามสง่าทั่วทั้งโลกา</lines></verse>
+  <verse name="v2"><lines>เราขอสรรเสริญ ถวายพระเกียรติ<br/>ยกย่องพระนามอันบริสุทธิ์<br/>เราขอเทิดทูน นมัสการ<br/>ถวายพระเกียรติพระองค์</lines></verse>
+ </lyrics>
+</song>
+

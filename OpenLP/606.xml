@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<song xmlns="http://openlyrics.info/namespace/2009/song" version="0.8" createdIn="OpenLP 2.0.5" modifiedIn="OpenLP 2.0.5" modifiedDate="2025-11-11T13:41:54+07:00">
+ <properties>
+  <titles><title>606 ธงชัย</title></titles>
+  <authors><author> </author></authors>
+ </properties>
+ <lyrics>
+  <verse name="v1"><lines>ฟังเสียงธงแห่งชัยชนะปลิวโบกพัด<br/>ทำให้ข้าสะท้านด้วยเสียงที่อยู่ในใจ<br/>ชัยชนะของพระเยซู<br/>ข้าต้องการให้ชนทุกชาติรับรู้</lines></verse>
+  <verse name="v2"><lines>เพราะพระเยซูดำรงทุกวันในชีวิต<br/>เป็นธงชัยเหนือความละอาย<br/>เดินในทางสว่างกับพระคริสต์<br/>ประกาศให้ทุกคนเห็นชัยชนะ<br/>ในพระเยซู</lines></verse>
+ </lyrics>
+</song>
+

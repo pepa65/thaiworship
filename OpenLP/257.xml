@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<song xmlns="http://openlyrics.info/namespace/2009/song" version="0.8" createdIn="OpenLP 2.0.5" modifiedIn="OpenLP 2.0.5" modifiedDate="2025-11-11T13:41:54+07:00">
+ <properties>
+  <titles><title>257 ข้าขอสรรเสริญพระเจ้ายิ่งใหญ่</title></titles>
+  <authors><author> </author></authors>
+ </properties>
+ <lyrics>
+  <verse name="v1"><lines>ข้าขอสรรเสริญ พระเจ้ายิ่งใหญ่<br/>ไม่มีใครเหมือนพระองค์<br/>นมัสการ องค์จอมราชา<br/>จิตข้าขอเทิดทูนพระองค์</lines></verse>
+  <verse name="v2"><lines>ข้าขอบูชา กษัตราผู้ทรงชอบธรรม<br/>ข้าขอสรรเสริญพระเจ้ายิ่งใหญ่<br/>ไม่มีใครเหมือนพระองค์</lines></verse>
+ </lyrics>
+</song>
+

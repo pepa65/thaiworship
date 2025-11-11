@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<song xmlns="http://openlyrics.info/namespace/2009/song" version="0.8" createdIn="OpenLP 2.0.5" modifiedIn="OpenLP 2.0.5" modifiedDate="2025-11-11T13:41:54+07:00">
+ <properties>
+  <titles><title>91 จงร้องเพลงสรรเสริญ</title></titles>
+  <authors><author> </author></authors>
+ </properties>
+ <lyrics>
+  <verse name="v1"><lines>จงร้องเพลงสรรเสริญ ถวายพระเจ้า<br/>จงร้องเพลงสรรเสริญพระองค์<br/>จงร้องเพลงสรรเสริญ ถวายแด่จอมราชา<br/>จงร้องด้วยสิ้นสุดหัวใจ</lines></verse>
+  <verse name="v2"><lines>เพราะพระองค์เป็น ราชาเหนือแผ่นดิน<br/>จงร้องเพลงสรรเสริญพระองค์<br/>เพราะทรงครอบครอง ชนชาติทั้งหลาย<br/>และทรงประทับบนบัลลังก์ศักดิ์สิทธิ์</lines></verse>
+ </lyrics>
+</song>
+

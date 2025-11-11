@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<song xmlns="http://openlyrics.info/namespace/2009/song" version="0.8" createdIn="OpenLP 2.0.5" modifiedIn="OpenLP 2.0.5" modifiedDate="2025-11-11T13:41:54+07:00">
+ <properties>
+  <titles><title>74 โปรดทรงสำแดง</title></titles>
+  <authors><author> </author></authors>
+ </properties>
+ <lyrics>
+  <verse name="v1"><lines>โปรดทรงสำแดงใบใจข้าเถิด<br/>โปรดทรงสำแดงในใจข้า<br/>ข้าอยากพบพระองค์<br/>ข้าอยากพบพระองค์ [x2]</lines></verse>
+  <verse name="v2"><lines>ยกพระนามพระองค์ เกรียงไกร<br/>ผู้ทรงสิริงดงามยิ่งใหญ่<br/>ประทานกำลังและความรัก<br/>พระองค์ผู้บริสุทธ์ บริสุทธ์</lines></verse>
+  <verse name="v3"><lines>บริสุทธ์ บริสุทธ์ บริสุทธ์ บริสุทธ์<br/>บริสุทธ์ บริสุทธ์<br/>ข้าอยากพบพระองค์</lines></verse>
+ </lyrics>
+</song>
+

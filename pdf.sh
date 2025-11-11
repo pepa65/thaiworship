@@ -29,6 +29,11 @@ s1='='  ## Verse Separator
 h1='+'  ## Section Header
 c1='#'  ## Comment
 nl=$'\n'  ## Newline
+pt=$(stat -c%Y "$pdf2_file") wit=$(stat -c%Y "$index_file") wst=$(stat -c%Y "$songs_file")
+wt=$((wit<wst ? wst : wit))
+((wt < pt)) &&
+  echo "--- The pdf files are up-to-date already" &&
+  exit 0
 
 ## Reading song index, key, Thai title, English title from the index_file
 declare -A title_indexes

@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<song xmlns="http://openlyrics.info/namespace/2009/song" version="0.8" createdIn="OpenLP 2.0.5" modifiedIn="OpenLP 2.0.5" modifiedDate="2025-11-11T13:41:54+07:00">
+ <properties>
+  <titles><title>283 พระเยซู พระเยซู</title></titles>
+  <authors><author> </author></authors>
+ </properties>
+ <lyrics>
+  <verse name="v1"><lines>พระเยซู พระเยซู บริสุทธิ์<br/>และรับการเจิม พระเยซู<br/>พระเยซู พระเยซู ฟื้นพระชนม์<br/>และรับการเชิดชู พระเยซู</lines></verse>
+  <verse name="v2"><lines>พระนามหวานดังน้ำผึ้งบนลิ้นข้า<br/>พระวิญญาณดังน้ำชุ่มชื่นใจข้า<br/>พระคำดังแสงนำส่องทางเดินไป<br/>ข้ารักพระเยซู ข้ารักพระองค์</lines></verse>
+ </lyrics>
+</song>
+

@@ -2,25 +2,27 @@
 
 # songbook.sh - Make pdf and html files of each song
 #
-# Produce:
-# - html files for Thai Worship app
-# - Song Book pdf files of each song with Typst [pdf]
-# - (or: Song Book png files with chromium [png])
-# - songs.json file for online use in Song Book (Soli Deo Gloria app)
-#
-# Input: worship.songs (song content), expected in the same directory, and the mp3 files `$mp3/<id>.mp3`.
-# Output:
-# - app/*.html [Thai Worship app]
-# - songs.json(id,title,lyricstype,lyrics,audiourl[,category]) [Song Book]
-# - [pdf] songbook/*.pdf [Song Book]
-# - [png] songbook/*.png (Song Book old style, songbook/*.htm are intermediate files)
-#
 # Usage: songbook.sh [pdf|png]
 # 'pdf' for Song Book, 'png' for old-style Song Book, none for Thai Worship app
+#
+# Produce:
+# - Always make html files for Thai Worship app
+# - Make Song Book pdf files of each song with Typst [pdf]
+#   (or: Song Book png files with chromium [png]).
+#   With corresponding songs.json file for Song Book (Soli Deo Gloria app)
+# Input: worship.songs (song content) and worship.index (both expected in the same directory)
+#   and the mp3 files `$mp3/<id>.mp3` (if available).
+# Output:
+# - Always: app/*.html [Thai Worship app]
+# - When pdf/png:
+#   * songs.json(id,title,lyricstype,lyrics,audiourl[,category])
+#   * [pdf] songbook/*.pdf [Song Book] or
+#     [png] songbook/*.png [Song Book old style, songbook/*.htm are intermediate files]
+#
 # Required: typst[github.com/typst/typst]:'pdf' ghostscript(gs):'pdf'
 #           coreutils(rm mkdir cat) chromium/google-chrome-stable:'png'
 
-pdf=0 png=0
+pdf=0 png=0 app=1
 [[ $1 = pdf ]] &&
 	pdf=1
 [[ $1 = png ]] &&
@@ -29,8 +31,20 @@ pdf=0 png=0
 	echo "Optional argument only 'pdf' or 'png', not: $1" &&
 	exit 1
 
+appdir=app sb=songbook updateapp=0 updatesongbook=0
+ws=worship.songs wi=worship.index ai=$appdir/index.html sj=songs.json
 self=$(readlink -e "$0")
 cd ${self%/*}  # The build-script directory must have all necessary files
+wst=$(stat -c%Y "$ws") wit=$(stat -c%Y "$wi") ait=$(stat -c%Y "$ai") sjt=$(stat -c%Y "$sj")
+wt=$((wit<wst ? wst : wit))
+((wt < sjt)) &&
+	pdf=0 png=0
+((wt < ait)) &&
+	app=0
+((app+pdf+png==0)) &&
+	echo "--- Songbook files are up-to-date already" &&
+	exit 0
+
 link="https://good4.eu" jsonstr="[\n"
 t1='-'  # Song Title
 s1='='  # Verse Separator
@@ -87,36 +101,37 @@ then # Make pngs
 	rm -f ~/.config/chromium/SingletonLock ~/.config/google-chrome/SingletonLock
 fi
 
-Outputsong(){ # I:id,title,eng,firstline,pdf,png,ty,gs,ch,mo,tmp,out,app,mp3js
+Outputsong(){ # I:id,appdir,title,eng,firstline,pdf,png,ty,gs,ch,mo,tmp,out,app,mp3js
 	local jsontitle=$title fl= justtitle=${title#*. }
 	# Write to index for app (always)
 	[[ ! ${firstline// } = ${justtitle// } ]] &&
 		fl="<span>($firstline)</span><br>" jsontitle="$title ($firstline)"
-	echo "<a href=\"$id.html\">$title<br>$eng$fl</a>" >>app/index.html
+	echo "<a href=\"$id.html\">$title<br>$eng$fl</a>" >>"$ai"
 	# Append jsonstr
 	#catjson=", \"category\":\"$category\""  # Category is (not yet) used
 	jsonstr+="{\"id\":\"$id\", \"title\":\"$jsontitle\", \"lyricstype\":\"$type\", \"lyrics\":\"$link/$type/$id.$ext\"$mp3json$catjson},\n"
-	# Output for app (always)
-	echo -e "</div>\n<script>\n$mp3js" >>"app/$id.html"
-	echo -e "document.addEventListener('click', function(){location.href='index.html'});\n</script>" >>"app/$id.html"
+	# Output for app
+	((app)) &&
+		echo -e "</div>\n<script>\n$mp3js" >>"$appdir/$id.html" &&
+		echo -e "document.addEventListener('click', function(){location.href='index.html'});\n</script>" >>"$appdir/$id.html"
 	if ((pdf))
 	then # Output for pdf
-		$ty "$tmp" "songbook/$id.pdf"
-		$gs "$tmp" "songbook/$id.pdf" >/dev/null
-		mv "$tmp" "songbook/$id.pdf"
+		$ty "$tmp" "$sb/$id.pdf"
+		$gs "$tmp" "$sb/$id.pdf" >/dev/null
+		mv "$tmp" "$sb/$id.pdf"
 	fi
 	if ((png))
 	then # Output for png
-		$ch --screenshot="songbook/$id.png" "songbook/$id.htm" 2>/dev/null
-		$mo "songbook/$id.png"
+		$ch --screenshot="$sb/$id.png" "$sb/$id.htm" 2>/dev/null
+		$mo "$sb/$id.png"
 	fi
 }
 
-Handleline(){ # 1:line 2:newverse I:pdf,png,tmp,out,id
+Handleline(){ # 1:line 2:newverse I:pdf,png,tmp,out,appdir,id
 	# Handle for html (always)
 	(($2)) &&
-		echo -n "<p>" >>"app/$id.html"
-	echo "$(sed -e 's@\[@<i>[@g' -e 's@]@]</i>@g' <<<"$1")<br>" >>"app/$id.html"
+		echo -n "<p>" >>"$appdir/$id.html"
+	echo "$(sed -e 's@\[@<i>[@g' -e 's@]@]</i>@g' <<<"$1")<br>" >>"$appdir/$id.html"
 	if ((pdf))
 	then # Handle for typst
 		(($2)) &&
@@ -126,18 +141,21 @@ Handleline(){ # 1:line 2:newverse I:pdf,png,tmp,out,id
 	if ((png))
 	then # Handle for png
 		(($2)) &&
-			echo -n "<p>" >>"songbook/$id.htm"
-		echo "$(sed -e 's@\[@<i>[@g' -e 's@]@]</i>@g' <<<"$1")<br>" >>"songbook/$id.htm"
+			echo -n "<p>" >>"$sb/$id.htm"
+		echo "$(sed -e 's@\[@<i>[@g' -e 's@]@]</i>@g' <<<"$1")<br>" >>"$sb/$id.htm"
 	fi
 }
 
 ((pdf || png)) && # Recreate songbook directory
-	rm -rf -- songbook &&
-	mkdir songbook
-rm -rf -- app &&
-	mkdir app
-cp android-chrome-512x512.png android-chrome-192x192.png favicon-32x32.png favicon-16x16.png apple-touch-icon.png safari-pinned-tab.svg maskable_icon.png favicon.ico app.webmanifest app/
-cp app.head app/index.html
+	rm -rf -- "$sb" &&
+	mkdir "$sb"
+if ((app))
+then
+	rm -rf -- "$appdir"
+	mkdir "$appdir"
+	cp android-chrome-512x512.png android-chrome-192x192.png favicon-32x32.png favicon-16x16.png apple-touch-icon.png safari-pinned-tab.svg maskable_icon.png favicon.ico app.webmanifest "$appdir/"
+	cp app.head "$ai"
+fi
 title= category='ข้อสรรเสริญ' cat= firstlinenext=0
 while read line
 do # Process worship.songs line
@@ -170,24 +188,26 @@ do # Process worship.songs line
 			mp3html="<div id=\"top\"><audio controls src=\"../mp3/$id.mp3\"></div>"$'\n' \
 			mp3js="document.getElementsByTagName('audio')[0].focus();"
 		# Start song
-		# Generate html for app (always)
-		cat <<-HEAD1 >"app/$id.html"
-			<!DOCTYPE html>
-			<html lang="th">
-			<title>$title</title>
-			<link rel="icon" type="image/png" sizes="192x192" href="android-chrome-192x192.png">
-			<style>
-			html{color:#000; background-color:#fff;}
-			body{margin:0; font-family:"Garuda",serif; font-size:20pt;}
-			$mp3css#song{text-align:center; overflow:auto; margin:60px 0 40em;}
-			p{white-space:nowrap;}
-			i{font-size:80%; font-style:normal; color:#888;}
-			@media (prefers-color-scheme:dark){html{filter:invert(1);}}
-			</style>
-			$mp3html<div id="song">
-			<p><b>$title</b>
-		HEAD1
-		echo -n "<p>" >>"app/$id.html"
+		if ((app))
+		then # Generate html for app
+			cat <<-HEAD1 >"$appdir/$id.html"
+				<!DOCTYPE html>
+				<html lang="th">
+				<title>$title</title>
+				<link rel="icon" type="image/png" sizes="192x192" href="android-chrome-192x192.png">
+				<style>
+				html{color:#000; background-color:#fff;}
+				body{margin:0; font-family:"Garuda",serif; font-size:20pt;}
+				$mp3css#song{text-align:center; overflow:auto; margin:60px 0 40em;}
+				p{white-space:nowrap;}
+				i{font-size:80%; font-style:normal; color:#888;}
+				@media (prefers-color-scheme:dark){html{filter:invert(1);}}
+				</style>
+				$mp3html<div id="song">
+				<p><b>$title</b>
+			HEAD1
+			echo -n "<p>" >>"$appdir/$id.html"
+		fi
 		if ((pdf))
 		then # Generate typst title
 			echo -e "$header" >"$tmp"
@@ -195,7 +215,7 @@ do # Process worship.songs line
 		fi
 		if ((png))
 		then # Generate html title
-			cat <<-HEAD2 >"songbook/$id.htm"
+			cat <<-HEAD2 >"$sb/$id.htm"
 				<!DOCTYPE html>
 				<html lang="th">
 				<title>$title</title>
@@ -206,7 +226,7 @@ do # Process worship.songs line
 				</style>
 				<p><b>$title</b>
 			HEAD2
-			echo -n "<p>" >>"songbook/$id.htm"
+			echo -n "<p>" >>"$sb/$id.htm"
 		fi
 	elif [[ $first = $h1 ]]
 	then # Section/category
@@ -223,11 +243,12 @@ done <"worship.songs"
 Outputsong
 
 ((png || pdf)) && # Make json-file for Song Book
-	echo -e "${jsonstr:0: -3}\n]" >songs.json && # Remove the final comma and append a closing square-bracket
+	echo -e "${jsonstr:0: -3}\n]" >"$sj" && # Remove the final comma and append a closing square-bracket
 	echo "[{\"songlistVersion\": \"$(date +%Y%m%d)\"}]" >songlistVersion.json
 
 # Make link
-cd app
-ln -s ../mp3
+((app)) &&
+	cd "$appdir" &&
+	ln -s ../mp3
 
 exit 0

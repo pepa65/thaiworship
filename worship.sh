@@ -27,6 +27,11 @@ s1='='  ## Verse Separator
 h1='+'  ## Section Header
 c1='#'  ## Comment
 nonum='&#160;&#160;'
+hft=$(stat -c%Y "$html_file") wit=$(stat -c%Y "$index_file") wst=$(stat -c%Y "$songs_file")
+wt=$((wit<wst ? wst : wit))
+((wt < hft)) &&
+	echo "--- The html (with js) files are up-to-date already" &&
+	exit 0
 
 #book="$dir/worship.book"
 #ref="$dir/worship.ref"

@@ -21,6 +21,6 @@ echo 'Making worship.pdf and worship2.pdf'
 \time -f%E ./pdf.sh
 
 echo 'making BookletA4.pdf'
-\time -f%E a5toa4 BookletA5.pdf BookletA4.pdf
+\time -f%E ./booklet.sh
 
 date

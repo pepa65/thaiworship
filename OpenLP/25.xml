@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<song xmlns="http://openlyrics.info/namespace/2009/song" version="0.8" createdIn="OpenLP 2.0.5" modifiedIn="OpenLP 2.0.5" modifiedDate="2025-11-11T13:41:54+07:00">
+ <properties>
+  <titles><title>25 ความรักของพระเจ้าดีกว่าชีวิต</title></titles>
+  <authors><author> </author></authors>
+ </properties>
+ <lyrics>
+  <verse name="v1"><lines>ความรักของพระเจ้า ดีกว่าชีวิต<br/>ความรักของพระเจ้า ดีกว่าชีวิต<br/>ริมฝีปากของข้า จะสรรเสริญพระองค์<br/>ข้าชูมือต่อ พระนามของพระองค์</lines></verse>
+  <verse name="v2"><lines>ข้าชูมือต่อ พระนามของพระองค์<br/>ข้าชูมือต่อ พระนามของพระองค์<br/>ริมฝีปากของข้า จะสรรเสริญพระองค์<br/>ข้าชูมือต่อ พระนามของพระองค์</lines></verse>
+ </lyrics>
+</song>
+

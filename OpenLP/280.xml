@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<song xmlns="http://openlyrics.info/namespace/2009/song" version="0.8" createdIn="OpenLP 2.0.5" modifiedIn="OpenLP 2.0.5" modifiedDate="2025-11-11T13:41:54+07:00">
+ <properties>
+  <titles><title>280 สิ่งเดียวฉันขอ</title></titles>
+  <authors><author> </author></authors>
+ </properties>
+ <lyrics>
+  <verse name="v1"><lines>สิ่งเดียวฉันขอ สิ่งเดียวฉันหา<br/>คือ ฉันได้อยู่ ในวิหารพระองค์<br/>ตลอดชีวิต ตลอดเวลา<br/>คือ เพื่อได้พบ พระองค์</lines></verse>
+  <verse name="c1"><lines>[ร้องรับ]<br/>สิ่งเดียวฉันขอ สิ่งเดียวฉันต้องการ<br/>คือพบพระองค์ คือพบพระองค์</lines></verse>
+  <verse name="v2"><lines>รับฟังเสียงฉัน ฟังเมื่อฉันทูลขอ<br/>โปรด ทรงอย่าหลบ พระพักตร์จากฉัน<br/>ทรงเป็นกำลังฉัน ทรงเป็นโล่ป้องกัน<br/>และ ทรงยกชู ใจฉัน</lines></verse>
+  <verse name="c2"><lines>[ร้องรับ]<br/>สิ่งเดียวฉันขอ สิ่งเดียวฉันต้องการ<br/>คือพบพระองค์ คือพบพระองค์</lines></verse>
+ </lyrics>
+</song>
+

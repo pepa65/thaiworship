@@ -23,6 +23,11 @@ t1='-'  ## Song Title
 s1='='  ## Verse Separator
 h1='+'  ## Section Header
 c1='#'  ## Comment
+hft=$(stat -c%Y "$html_file") wit=$(stat -c%Y "$index_file") wst=$(stat -c%Y "$songs_file")
+wt=$((wit<wst ? wst : wit))
+((wt < hft)) &&
+  echo "--- The plain html files are up-to-date already" &&
+  exit 0
 
 ## Reading song index, key, Thai title, English title from the index_file
 declare -A title_indexes

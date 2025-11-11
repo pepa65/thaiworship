@@ -10,7 +10,13 @@ self=$(readlink -e "$0")
 dir=${self%/*}  ## directory where the build-script resides has all necessary files
 xml="$dir/OpenLP"
 songs="$dir/worship.songs"
+st=$(stat -c%Y "$songs")
+xt=$(stat -c%Y "$xml")
+((xt > st)) &&
+	echo "--- OpenLP files are up-to-date already" &&
+	exit 0
 
+rm -r -- "$xml"
 mkdir -p "$xml"
 chorus=0
 

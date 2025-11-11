@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<song xmlns="http://openlyrics.info/namespace/2009/song" version="0.8" createdIn="OpenLP 2.0.5" modifiedIn="OpenLP 2.0.5" modifiedDate="2025-11-11T13:41:54+07:00">
+ <properties>
+  <titles><title>115 เราจะร้องสรรเสริญพระนาม</title></titles>
+  <authors><author> </author></authors>
+ </properties>
+ <lyrics>
+  <verse name="v1"><lines>เราจะร้องสรรเสริญพระนาม พระองค์<br/>ร้องสรรเสริญพระนาม พระองค์<br/>เพราะพระองค์ประเสริฐ<br/>ล้ำเลิศกว่า นามอื่นใด [x2]</lines></verse>
+  <verse name="v2"><lines>เราจะร้องเพลงสาธุการ พระนาม<br/>สาธุการ พระนาม ยิ่งใหญ่<br/>เพราะพระนามพระองค์<br/>เกรียงไกรกว่า คำสรรเสริญ [x2]</lines></verse>
+  <verse name="v3"><lines>จะถวายคำสดุดี เรื่อยไป<br/>มอบพระเจ้าผู้ทรงยิ่งใหญ่<br/>เพราะพระนามพระองค์<br/>เกรียงไกรกว่า คำสรรเสริญ [x2]</lines></verse>
+ </lyrics>
+</song>
+

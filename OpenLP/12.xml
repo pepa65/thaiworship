@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<song xmlns="http://openlyrics.info/namespace/2009/song" version="0.8" createdIn="OpenLP 2.0.5" modifiedIn="OpenLP 2.0.5" modifiedDate="2025-11-11T13:41:54+07:00">
+ <properties>
+  <titles><title>12 สรรเสริญพระนามพระเยโฮวาห์</title></titles>
+  <authors><author> </author></authors>
+ </properties>
+ <lyrics>
+  <verse name="v1"><lines>สรรเสริญพระนามพระเยโฮวาห์<br/>ในสถานนมัสการของพระองค์<br/>สรรเสริญพระนามพระเยโฮวาห์<br/>ในพื้นฟ้าอานุภาพของพระองค์</lines></verse>
+  <verse name="v2"><lines>สรรเสริญในความรักมั่นคงของพระองค์<br/>สรรเสริญในในพระคุณมากล้นของพระองค์<br/>สรรเสริญในความสัตย์ซื่อยิ่งของพระองค์<br/>จงให้ทุกสิ่งที่หายใจสรรเสริญพระเจ้า</lines></verse>
+  <verse name="v3"><lines>สรรเสริญพระนามพระเยโฮวาห์<br/>จงร้องเพลงสดุดีแด่พระองค์<br/>สรรเสริญพระนามพระเยโฮวาห์<br/>จงร้องเพลงโมทนาแด่พระองค์</lines></verse>
+  <verse name="v4"><lines>สรรเสริญในความรักมั่นคงของพระองค์<br/>สรรเสริญในในพระคุณมากล้นของพระองค์<br/>สรรเสริญในความสัตย์ซื่อยิ่งของพระองค์<br/>จงให้ทุกสิ่งที่หายใจสรรเสริญพระเจ้า</lines></verse>
+ </lyrics>
+</song>
+
