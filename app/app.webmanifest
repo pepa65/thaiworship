@@ -9,6 +9,11 @@
 			"src": "/screenshot.png",
 			"sizes": "432x911",
 			"type": "image/png"
+		},
+		{
+			"src": "/desktop.png",
+			"sizes": "1625x1017",
+			"type": "image/png"
 		}
 	],
 	"icons": [
