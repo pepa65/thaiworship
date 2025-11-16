@@ -27,13 +27,6 @@ i{font-size:80%; color:#555; padding-left:1em;}
 <h3>เพลงนมัสการพระเจ้า<br><span>ร้องและฟังบทเพลงคริสเตียน</span></h3>
 <input type="search" id="search" value="" placeholder=" &#x1F50D; ค้นหา หัวข้อ/เลขที่/บรรทัดแรก" autocomplete autofocus>
 <script>
-if('serviceWorker' in navigator){
-	window.addEventListener('load', () => {
-		navigator.serviceWorker.register('/service-worker.js')
-			.then(reg => console.log('SW registered:', reg))
-			.catch(err => console.log('SW registration failed:', err));
-  });
-};
 const search=document.getElementById('search');
 search.addEventListener('keyup', function(e){
 	filter(search.value.toLowerCase());
@@ -694,3 +687,12 @@ function filter(query){
 <a href="637.html">637. คำอธิษฐาน<br><span>(พระบิดา พระเจ้าแห่งฟ้าสวรรค์)</span><br></a>
 <a href="638.html">638. พระเจ้าทรงเป็นที่ลี้ภัย<br></a>
 <a href="639.html">639. พระเจ้าของข้า<br><i>My God</i><br><span>(พระองค์เป็นพระเจ้าของข้า)</span><br></a>
+<script>
+if('serviceWorker' in navigator){
+	window.addEventListener('load', () => {
+		navigator.serviceWorker.register('/service-worker.js')
+			.then(reg => console.log('SW registered:', reg))
+			.catch(err => console.log('SW registration failed:', err));
+  });
+};
+</script>
