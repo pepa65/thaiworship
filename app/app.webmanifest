@@ -3,6 +3,13 @@
 	"short_name" : "เพลงนมัสการพระเจ้า Thai Worship",
 	"start_url": "/index.html",
 	"scope" : "/",
+	"screenshots": [
+		{
+			"src": "/screenshot.png",
+			"sizes": "432x911",
+			"type": "image/png"
+		}
+	],
 	"icons": [
 		{
 			"src": "/favicon-16x16.png",
