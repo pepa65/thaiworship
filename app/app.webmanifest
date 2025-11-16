@@ -13,7 +13,7 @@
 		{
 			"src": "/desktop.png",
 			"sizes": "1625x1017",
-			form_factor": "wide",
+			"form_factor": "wide",
 			"type": "image/png"
 		}
 	],
