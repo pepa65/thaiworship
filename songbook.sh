@@ -153,7 +153,7 @@ if ((app))
 then
 	rm -rf -- "$appdir"
 	mkdir "$appdir"
-	cp android-chrome-512x512.png android-chrome-192x192.png favicon-32x32.png favicon-16x16.png apple-touch-icon.png safari-pinned-tab.svg maskable_icon.png favicon.ico app.webmanifest "$appdir/"
+	cp android-chrome-512x512.png android-chrome-192x192.png favicon-32x32.png favicon-16x16.png apple-touch-icon.png safari-pinned-tab.svg maskable_icon.png favicon.ico app.webmanifest service-worker.js screenshot.png desktop.png "$appdir/"
 	cp app.head "$ai"
 fi
 title= category='ข้อสรรเสริญ' cat= firstlinenext=0
@@ -239,8 +239,19 @@ do # Process worship.songs line
 	fi
 done <"worship.songs"
 
-# Finish last title
+# Finish last title and final js
 Outputsong
+cat <<EOJS >>"$ai"
+<script>
+if('serviceWorker' in navigator){
+	window.addEventListener('load', () => {
+		navigator.serviceWorker.register('/service-worker.js')
+			.then(reg => console.log('SW registered:', reg))
+			.catch(err => console.log('SW registration failed:', err));
+	});
+};
+</script>
+EOJS
 
 ((png || pdf)) && # Make json-file for Song Book
 	echo -e "${jsonstr:0: -3}\n]" >"$sj" && # Remove the final comma and append a closing square-bracket
