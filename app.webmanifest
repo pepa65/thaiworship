@@ -1,6 +1,7 @@
 {
 	"name": "บทเพลงนมัสการพระเจ้า เนื้อเพลงและเสียง Thai Christian Worship Song lyrics and audio",
 	"short_name": "เพลงนมัสการพระเจ้า Thai Worship",
+	"description": "บทเพลงนมัสการพระเจ้า เนื้อเพลงและเสียง  มากกว่าหกร้อยบทเพลง ไม่มีโฆษณา Thai Christian worship songs with lyrics and audio, over six hundred songs, no ads.",
 	"categories": ["music"],
 	"id": "/index.html",
 	"start_url": "/index.html",
@@ -61,6 +62,5 @@
 	"background_color": "#ffffff",
 	"display": "fullscreen",
 	"orientation": "portrait-primary",
-  "orientation": "landscape-secondary",
   "lang": "th"
 }
