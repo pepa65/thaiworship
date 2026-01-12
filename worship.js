@@ -1,5 +1,5 @@
 //<![CDATA[<!--
-// Copyright 2024 © OMF International (GPL-3+ licence)
+// Copyright 2016-2026 © OMF International (GPL-3+ licence)
 // Based on slidy, copyright 2005 W3C (MIT licence)
 var w3 = {
 	// user modifiable: website, email, year, langs, timer, dfont, sizept, minpt, maxpt, steppt
